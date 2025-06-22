@@ -1,8 +1,7 @@
 import * as motion from "motion/react-client";
-import { useSpring, useTransform, useMotionValue } from "motion/react";
 import Image from "next/image";
 import patientCenteredImage from "@/public/images/about/patient-centered.webp";
-import customizedCareImage from "@/public/images/about/customized-care.webp";
+import customizedCareImage from "@/public/images/about/customized-card.webp";
 import advancedTechImage from "@/public/images/about/advanced-tech.webp";
 import responsibleCareImage from "@/public/images/about/responsible-care.webp";
 import logoIcon from "@/public/images/about/logo-icon.svg";
