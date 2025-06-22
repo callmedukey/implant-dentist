@@ -163,6 +163,16 @@ exports.Prisma.VerificationTokenScalarFieldEnum = {
   expires: 'expires'
 };
 
+exports.Prisma.InquiryScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  phone: 'phone',
+  message: 'message',
+  isAgreed: 'isAgreed',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.PopupScalarFieldEnum = {
   id: 'id',
   type: 'type',
@@ -210,6 +220,7 @@ exports.Prisma.ModelName = {
   Account: 'Account',
   Session: 'Session',
   VerificationToken: 'VerificationToken',
+  Inquiry: 'Inquiry',
   Popup: 'Popup',
   PopupImage: 'PopupImage'
 };

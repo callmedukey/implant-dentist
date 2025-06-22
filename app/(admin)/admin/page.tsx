@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PopupManagement from "./components/popup-management";
 import PasswordReset from "./components/password-reset";
+import InquiryManagement from "./components/inquiry-management";
 
 export const metadata: Metadata = {
   title: "관리자 대시보드 | 조은이플란트치과",
@@ -26,13 +27,18 @@ export default async function AdminPage() {
         </h1>
         
         <Tabs defaultValue="popup" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 max-w-md">
+          <TabsList className="grid w-full grid-cols-3 max-w-lg">
             <TabsTrigger value="popup">팝업 관리</TabsTrigger>
+            <TabsTrigger value="inquiry">문의 관리</TabsTrigger>
             <TabsTrigger value="password">비밀번호 변경</TabsTrigger>
           </TabsList>
           
           <TabsContent value="popup" className="mt-6">
             <PopupManagement />
+          </TabsContent>
+          
+          <TabsContent value="inquiry" className="mt-6">
+            <InquiryManagement />
           </TabsContent>
           
           <TabsContent value="password" className="mt-6">
