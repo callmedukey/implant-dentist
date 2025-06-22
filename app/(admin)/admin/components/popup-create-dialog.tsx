@@ -1,8 +1,8 @@
 "use client";
 
 import { useActionState, useState, useEffect } from "react";
+
 import { createPopupAction } from "@/app/actions/popup/popup.action";
-import { PopupType } from "@/prisma/generated/prisma";
 import {
   Dialog,
   DialogContent,
@@ -11,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { PopupType } from "@/prisma/generated/prisma";
 
 export default function PopupCreateDialog() {
   const [state, action, pending] = useActionState(createPopupAction, {});
@@ -23,7 +24,9 @@ export default function PopupCreateDialog() {
       setOpen(false);
       setImagePreview(null);
       // Reset form
-      const form = document.getElementById("popup-create-form") as HTMLFormElement;
+      const form = document.getElementById(
+        "popup-create-form"
+      ) as HTMLFormElement;
       if (form) {
         form.reset();
       }
@@ -57,7 +60,7 @@ export default function PopupCreateDialog() {
             텍스트 또는 이미지 팝업을 생성할 수 있습니다.
           </DialogDescription>
         </DialogHeader>
-        
+
         <form id="popup-create-form" action={action} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -73,14 +76,19 @@ export default function PopupCreateDialog() {
               <option value="IMAGE">이미지 팝업</option>
             </select>
             {state.errors?.type && (
-              <p className="mt-2 text-sm text-red-600">{state.errors.type[0]}</p>
+              <p className="mt-2 text-sm text-red-600">
+                {state.errors.type[0]}
+              </p>
             )}
           </div>
 
           {popupType === "TEXT" && (
             <>
               <div>
-                <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="title"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   제목
                 </label>
                 <input
@@ -91,12 +99,17 @@ export default function PopupCreateDialog() {
                   placeholder="팝업 제목을 입력하세요"
                 />
                 {state.errors?.title && (
-                  <p className="mt-2 text-sm text-red-600">{state.errors.title[0]}</p>
+                  <p className="mt-2 text-sm text-red-600">
+                    {state.errors.title[0]}
+                  </p>
                 )}
               </div>
 
               <div>
-                <label htmlFor="content" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="content"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   내용
                 </label>
                 <textarea
@@ -107,7 +120,9 @@ export default function PopupCreateDialog() {
                   placeholder="팝업 내용을 입력하세요"
                 />
                 {state.errors?.content && (
-                  <p className="mt-2 text-sm text-red-600">{state.errors.content[0]}</p>
+                  <p className="mt-2 text-sm text-red-600">
+                    {state.errors.content[0]}
+                  </p>
                 )}
               </div>
             </>
@@ -115,7 +130,10 @@ export default function PopupCreateDialog() {
 
           {popupType === "IMAGE" && (
             <div>
-              <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-2">
+              <label
+                htmlFor="image"
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
                 이미지 업로드
               </label>
               <input
@@ -130,12 +148,16 @@ export default function PopupCreateDialog() {
                 JPG, PNG, WebP 형식 (최대 5MB)
               </p>
               {state.errors?.image && (
-                <p className="mt-2 text-sm text-red-600">{state.errors.image[0]}</p>
+                <p className="mt-2 text-sm text-red-600">
+                  {state.errors.image[0]}
+                </p>
               )}
-              
+
               {imagePreview && (
                 <div className="mt-4">
-                  <p className="text-sm font-medium text-gray-700 mb-2">미리보기</p>
+                  <p className="text-sm font-medium text-gray-700 mb-2">
+                    미리보기
+                  </p>
                   <img
                     src={imagePreview}
                     alt="팝업 이미지 미리보기"

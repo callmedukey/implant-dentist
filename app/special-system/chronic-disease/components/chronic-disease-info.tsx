@@ -1,7 +1,8 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
-import treatmentExpertiseImage from "@/public/images/chronic-disease/treatment-expertise-bg.webp";
+
 import educationProcessImage from "@/public/images/chronic-disease/education-process-bg.webp";
+import treatmentExpertiseImage from "@/public/images/chronic-disease/treatment-expertise-bg.webp";
 
 const ChronicDiseaseInfo = () => {
   return (

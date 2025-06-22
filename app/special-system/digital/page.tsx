@@ -1,7 +1,8 @@
-import DigitalBanner from "./components/digital-banner";
-import RealDataSection from "./components/real-data-section";
-import DigitalScanner from "./components/digital-scanner";
 import { Metadata } from "next";
+
+import DigitalBanner from "./components/digital-banner";
+import DigitalScanner from "./components/digital-scanner";
+import RealDataSection from "./components/real-data-section";
 
 export const metadata: Metadata = {
   title: "디지털 시스템 | 조은이플란트치과",

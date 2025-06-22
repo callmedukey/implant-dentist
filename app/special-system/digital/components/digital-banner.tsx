@@ -1,5 +1,6 @@
-import Image from "next/image";
 import * as motion from "motion/react-client";
+import Image from "next/image";
+
 import digitalBannerImage from "@/public/images/digital/digital-banner.webp";
 
 export default function DigitalBanner() {

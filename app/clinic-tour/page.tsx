@@ -1,14 +1,18 @@
 import * as motion from "motion/react-client";
-import { ClinicCarousel } from "./components/clinic-carousel";
 import { Metadata } from "next";
+
+import { ClinicCarousel } from "./components/clinic-carousel";
 
 export const metadata: Metadata = {
   title: "둘러보기 | 조은이플란트치과",
-  description: "조은이플란트치과의 현대적이고 편안한 시설을 둘러보세요. 최신 의료장비와 쾌적한 환경을 갖춘 치과 내부를 소개합니다.",
-  keywords: "치과 시설, 치과 둘러보기, 치과 인테리어, 최신 의료장비, 쾌적한 치과, 조은이플란트치과 시설, 양주 치과 시설",
+  description:
+    "조은이플란트치과의 현대적이고 편안한 시설을 둘러보세요. 최신 의료장비와 쾌적한 환경을 갖춘 치과 내부를 소개합니다.",
+  keywords:
+    "치과 시설, 치과 둘러보기, 치과 인테리어, 최신 의료장비, 쾌적한 치과, 조은이플란트치과 시설, 양주 치과 시설",
   openGraph: {
     title: "둘러보기 | 조은이플란트치과",
-    description: "조은이플란트치과의 현대적이고 편안한 시설을 둘러보세요. 최신 의료장비와 쾌적한 환경을 갖춘 치과 내부를 소개합니다.",
+    description:
+      "조은이플란트치과의 현대적이고 편안한 시설을 둘러보세요. 최신 의료장비와 쾌적한 환경을 갖춘 치과 내부를 소개합니다.",
     type: "website",
   },
 };

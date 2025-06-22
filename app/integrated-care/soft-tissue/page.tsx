@@ -1,8 +1,9 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
-import softTissueBanner from "@/public/images/integrated-care/soft-tissue-banner.webp";
+
 import biopsyProcess from "@/public/images/integrated-care/biopsy-process.webp";
+import softTissueBanner from "@/public/images/integrated-care/soft-tissue-banner.webp";
 
 export const metadata: Metadata = {
   title: "구강연조직질환 | 조은이플란트치과",

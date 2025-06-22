@@ -1,6 +1,7 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
+
 import PopupDisplay from "@/components/popup-display";
 import { Popup, PopupImage } from "@/prisma/generated/prisma";
 
@@ -16,8 +17,14 @@ function fetchPopups(): Promise<PopupWithImage[]> {
   });
 }
 
-export default function PopupProvider({ children }: { children: React.ReactNode }) {
-  const [popupPromise, setPopupPromise] = useState<Promise<PopupWithImage[]> | null>(null);
+export default function PopupProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const [popupPromise, setPopupPromise] = useState<Promise<
+    PopupWithImage[]
+  > | null>(null);
   const [currentPopupIndex, setCurrentPopupIndex] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -33,7 +40,7 @@ export default function PopupProvider({ children }: { children: React.ReactNode 
   const visiblePopups = popups.filter((popup) => {
     const hiddenUntil = localStorage.getItem(`popup-${popup.id}-hidden`);
     if (!hiddenUntil) return true;
-    
+
     const hiddenDate = new Date(hiddenUntil);
     return new Date() > hiddenDate;
   });

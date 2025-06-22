@@ -1,7 +1,8 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
-import scannerIcon from "@/public/images/digital/scanner-icon.webp";
+
 import dataSectionBg from "@/public/images/digital/data-section-bg.webp";
+import scannerIcon from "@/public/images/digital/scanner-icon.webp";
 
 export default function RealDataSection() {
   return (

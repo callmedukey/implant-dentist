@@ -1,10 +1,11 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import specialistIcon from "@/public/images/wisdom-tooth/surgeon-association.webp";
+
 import highDifficultyBg from "@/public/images/wisdom-tooth/high-difficulty-wisdom-tooth.webp";
 import nerveLineBg from "@/public/images/wisdom-tooth/nerve-line-wisdom-tooth.webp";
+import specialistIcon from "@/public/images/wisdom-tooth/surgeon-association.webp";
 
 export const metadata: Metadata = {
   title: "사랑니 발치 | 조은이플란트치과",

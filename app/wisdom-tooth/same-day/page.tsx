@@ -1,10 +1,11 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
-import sameDay from "@/public/images/wisdom-tooth/same-day-wisdom-tooth-bg.webp";
-import horizontalWT from "@/public/images/wisdom-tooth/horizontal-wisdom-tooth.webp";
-import verticalWT from "@/public/images/wisdom-tooth/vertical-wisdom-tooth.webp";
+
 import angledWT from "@/public/images/wisdom-tooth/angled-wisdom-tooth.webp";
+import horizontalWT from "@/public/images/wisdom-tooth/horizontal-wisdom-tooth.webp";
+import sameDay from "@/public/images/wisdom-tooth/same-day-wisdom-tooth-bg.webp";
+import verticalWT from "@/public/images/wisdom-tooth/vertical-wisdom-tooth.webp";
 
 export const metadata: Metadata = {
   title: "당일 사랑니 발치 | 조은이플란트치과",

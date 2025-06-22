@@ -1,17 +1,18 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
-import tmdInfoBg from "@/public/images/jaw-treatment/tmd-info-bg.webp";
-import causeMalocclusion from "@/public/images/jaw-treatment/cause-malocclusion.webp";
+
 import causeBadHabits from "@/public/images/jaw-treatment/cause-bad-habits.webp";
+import causeMalocclusion from "@/public/images/jaw-treatment/cause-malocclusion.webp";
 import causeStress from "@/public/images/jaw-treatment/cause-stress.webp";
 import causeTrauma from "@/public/images/jaw-treatment/cause-trauma.webp";
+import symptomFacialAsymmetry from "@/public/images/jaw-treatment/symptom-facial-asymmetry.webp";
+import symptomJawPain from "@/public/images/jaw-treatment/symptom-jaw-pain.webp";
 import symptomJawSound from "@/public/images/jaw-treatment/symptom-jaw-sound.webp";
 import symptomLimitedOpening from "@/public/images/jaw-treatment/symptom-limited-opening.webp";
-import symptomJawPain from "@/public/images/jaw-treatment/symptom-jaw-pain.webp";
-import symptomTinnitusHeadache from "@/public/images/jaw-treatment/symptom-tinnitus-headache.webp";
 import symptomNeckShoulder from "@/public/images/jaw-treatment/symptom-neck-shoulder.webp";
-import symptomFacialAsymmetry from "@/public/images/jaw-treatment/symptom-facial-asymmetry.webp";
+import symptomTinnitusHeadache from "@/public/images/jaw-treatment/symptom-tinnitus-headache.webp";
+import tmdInfoBg from "@/public/images/jaw-treatment/tmd-info-bg.webp";
 
 export const metadata: Metadata = {
   title: "턱관절 질환 | 조은이플란트치과",

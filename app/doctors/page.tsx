@@ -1,5 +1,6 @@
-import React from "react";
 import { Metadata } from "next";
+import React from "react";
+
 import DoctorsHeadingSection from "./components/doctors-heading-section";
 import DoctorsIntroSection from "./components/doctors-intro-section";
 

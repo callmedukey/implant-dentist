@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { prisma } from "@/prisma/prisma-client";
 
 export async function GET() {
@@ -15,6 +16,9 @@ export async function GET() {
     return NextResponse.json(popups);
   } catch (error) {
     console.error("Failed to fetch popups:", error);
-    return NextResponse.json({ error: "Failed to fetch popups" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to fetch popups" },
+      { status: 500 }
+    );
   }
 }

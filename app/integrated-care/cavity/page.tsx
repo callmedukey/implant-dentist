@@ -1,14 +1,15 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
-import heroBg from "@/public/images/integrated-care/cavity-hero-bg.webp";
-import preservationIcon from "@/public/images/integrated-care/natural-tooth-preservation-icon.webp";
-import longevityIcon from "@/public/images/integrated-care/tooth-longevity-icon.webp";
+
 import diagnosisIcon from "@/public/images/integrated-care/accurate-diagnosis-icon.webp";
-import enamelCavity from "@/public/images/integrated-care/enamel-cavity.webp";
+import heroBg from "@/public/images/integrated-care/cavity-hero-bg.webp";
 import dentinCavity from "@/public/images/integrated-care/dentin-cavity.webp";
-import pulpitisCavity from "@/public/images/integrated-care/pulpitis-cavity.webp";
+import enamelCavity from "@/public/images/integrated-care/enamel-cavity.webp";
+import preservationIcon from "@/public/images/integrated-care/natural-tooth-preservation-icon.webp";
 import necrosisCavity from "@/public/images/integrated-care/pulp-necrosis-cavity.webp";
+import pulpitisCavity from "@/public/images/integrated-care/pulpitis-cavity.webp";
+import longevityIcon from "@/public/images/integrated-care/tooth-longevity-icon.webp";
 
 export const metadata: Metadata = {
   title: "충치치료 | 조은이플란트치과",

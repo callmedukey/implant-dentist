@@ -1,13 +1,14 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
-import digitalImplantMain from "@/public/images/digital/digital-implant-main.webp";
+
 import ctScanIcon from "@/public/images/digital/3d-ct-scan.svg";
-import surgeryRouteIcon from "@/public/images/digital/surgery-route.svg";
-import digitalSurgeryIcon from "@/public/images/digital/digital-surgery.svg";
 import digitalCard1Bg from "@/public/images/digital/digital-card-1-bg.webp";
 import digitalCard2Bg from "@/public/images/digital/digital-card-2-bg.webp";
 import digitalCard3Bg from "@/public/images/digital/digital-card-3-bg.webp";
+import digitalImplantMain from "@/public/images/digital/digital-implant-main.webp";
+import digitalSurgeryIcon from "@/public/images/digital/digital-surgery.svg";
+import surgeryRouteIcon from "@/public/images/digital/surgery-route.svg";
 
 export const metadata: Metadata = {
   title: "디지털 임플란트 | 조은이플란트치과",
@@ -148,7 +149,9 @@ export default function DigitalImplantPage() {
                 </div>
                 <div className="w-[0.9375rem] h-[0.9375rem] rounded-full bg-teal-secondary" />
                 <h3 className="text-lg font-bold text-black text-center">
-                  안전성 높은<br />수술 경로 파악
+                  안전성 높은
+                  <br />
+                  수술 경로 파악
                 </h3>
               </motion.div>
 

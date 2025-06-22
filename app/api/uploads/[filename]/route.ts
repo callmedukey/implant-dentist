@@ -1,6 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
 import { readFile } from "fs/promises";
 import path from "path";
+
+import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   request: NextRequest,
@@ -9,14 +10,14 @@ export async function GET(
   try {
     const filename = params.filename;
     const filepath = path.join(process.cwd(), "public", "uploads", filename);
-    
+
     // Read the file
     const file = await readFile(filepath);
-    
+
     // Determine content type based on file extension
     const ext = path.extname(filename).toLowerCase();
     let contentType = "application/octet-stream";
-    
+
     switch (ext) {
       case ".jpg":
       case ".jpeg":
@@ -32,7 +33,7 @@ export async function GET(
         contentType = "image/gif";
         break;
     }
-    
+
     // Return the file with appropriate headers
     return new NextResponse(file, {
       headers: {

@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { ArrowUp, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
-import { ArrowUp, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import React, { useState, useEffect } from "react";
 
 // Import images
 import kakaoIcon from "@/public/images/quick-menu/kakao-icon.webp";
-import naverReservationIcon from "@/public/images/quick-menu/naver-reservation-icon.webp";
 import naverBlogIcon from "@/public/images/quick-menu/naver-blog-icon.webp";
+import naverReservationIcon from "@/public/images/quick-menu/naver-reservation-icon.webp";
 import phoneIcon from "@/public/images/quick-menu/phone-icon.svg";
 
 const FixedMenus = () => {
@@ -44,7 +44,9 @@ const FixedMenus = () => {
         href="https://pf.kakao.com/_FMavxj/chat"
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex flex-col items-center ${isMobile ? 'gap-3 px-0 py-4' : 'gap-2 md:gap-4 px-0 py-3 md:py-4'} border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
+        className={`flex flex-col items-center ${
+          isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
+        } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
         onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
@@ -55,7 +57,13 @@ const FixedMenus = () => {
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />
-        <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'}`}>카톡 상담</span>
+        <span
+          className={`text-dark-primary ${
+            isMobile ? "text-sm" : "text-xs md:text-sm"
+          }`}
+        >
+          카톡 상담
+        </span>
       </a>
 
       {/* Naver Reservation */}
@@ -63,7 +71,9 @@ const FixedMenus = () => {
         href="https://booking.naver.com/booking/13/bizes/860783?tr=bnm"
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex flex-col items-center ${isMobile ? 'gap-3 px-0 py-4' : 'gap-2 md:gap-4 px-0 py-3 md:py-4'} border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
+        className={`flex flex-col items-center ${
+          isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
+        } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
         onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
@@ -74,7 +84,13 @@ const FixedMenus = () => {
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />
-        <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'}`}>네이버 예약</span>
+        <span
+          className={`text-dark-primary ${
+            isMobile ? "text-sm" : "text-xs md:text-sm"
+          }`}
+        >
+          네이버 예약
+        </span>
       </a>
 
       {/* Naver Blog */}
@@ -82,7 +98,9 @@ const FixedMenus = () => {
         href="https://blog.naver.com/chooneeplant"
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex flex-col items-center ${isMobile ? 'gap-3 px-0 py-4' : 'gap-2 md:gap-4 px-0 py-3 md:py-4'} border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
+        className={`flex flex-col items-center ${
+          isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
+        } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
         onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
@@ -93,33 +111,68 @@ const FixedMenus = () => {
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />
-        <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'}`}>네이버 블로그</span>
+        <span
+          className={`text-dark-primary ${
+            isMobile ? "text-sm" : "text-xs md:text-sm"
+          }`}
+        >
+          네이버 블로그
+        </span>
       </a>
 
       {/* Phone */}
       <a
         href="tel:031-847-5550"
-        className={`flex flex-col items-center ${isMobile ? 'gap-3 px-0 py-4' : 'gap-2 md:gap-4 px-0 py-3 md:py-4'} hover:bg-gray-50 transition-colors duration-200`}
+        className={`flex flex-col items-center ${
+          isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
+        } hover:bg-gray-50 transition-colors duration-200`}
         onClick={() => isMobile && setIsExpanded(false)}
       >
-        <div className={`relative ${isMobile ? 'w-10 h-10' : 'w-8 h-8 md:w-10 md:h-10'}`}>
+        <div
+          className={`relative ${
+            isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"
+          }`}
+        >
           <Image src={phoneIcon} alt="전화 아이콘" fill unoptimized />
         </div>
         <div className="flex flex-col items-center gap-0">
-          <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'} font-bold`}>
+          <span
+            className={`text-dark-primary ${
+              isMobile ? "text-sm" : "text-xs md:text-sm"
+            } font-bold`}
+          >
             031-847-5550
           </span>
-          <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'}`}>전화 문의</span>
+          <span
+            className={`text-dark-primary ${
+              isMobile ? "text-sm" : "text-xs md:text-sm"
+            }`}
+          >
+            전화 문의
+          </span>
         </div>
       </a>
 
       {/* Back to Top */}
       <button
         onClick={scrollToTop}
-        className={`flex flex-col items-center gap-1 px-0 ${isMobile ? 'py-3' : 'py-1.5 md:py-2'} bg-gray-100 hover:bg-gray-200 transition-colors duration-200`}
+        className={`flex flex-col items-center gap-1 px-0 ${
+          isMobile ? "py-3" : "py-1.5 md:py-2"
+        } bg-gray-100 hover:bg-gray-200 transition-colors duration-200`}
       >
-        <ArrowUp className={`${isMobile ? 'w-6 h-6' : 'w-5 h-5 md:w-6 md:h-6'} text-dark-primary`} strokeWidth={2} />
-        <span className={`text-dark-primary ${isMobile ? 'text-sm' : 'text-xs md:text-sm'} font-bold`}>TOP</span>
+        <ArrowUp
+          className={`${
+            isMobile ? "w-6 h-6" : "w-5 h-5 md:w-6 md:h-6"
+          } text-dark-primary`}
+          strokeWidth={2}
+        />
+        <span
+          className={`text-dark-primary ${
+            isMobile ? "text-sm" : "text-xs md:text-sm"
+          } font-bold`}
+        >
+          TOP
+        </span>
       </button>
     </>
   );
@@ -165,7 +218,7 @@ const FixedMenus = () => {
           >
             {/* Backdrop */}
             <div className="absolute inset-0 bg-black/30" />
-            
+
             {/* Menu Content */}
             <motion.div
               className="absolute right-0 bottom-24 bg-white rounded-l-lg shadow-lg overflow-hidden"
@@ -208,16 +261,17 @@ const FixedMenus = () => {
         }}
         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden" style={{ width: "120px" }}>
+        <div
+          className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden"
+          style={{ width: "120px" }}
+        >
           {/* Header */}
           <div className="bg-teal-secondary px-4 py-2 text-center">
             <span className="text-white text-sm">QUICK MENU</span>
           </div>
 
           {/* Menu Items */}
-          <div className="flex flex-col">
-            {renderMenuItems(false)}
-          </div>
+          <div className="flex flex-col">{renderMenuItems(false)}</div>
         </div>
       </motion.div>
     </>

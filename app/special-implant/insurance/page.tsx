@@ -1,6 +1,7 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
+
 import toothIcon from "@/public/images/special-implant/insurance-tooth-icon.webp";
 
 export const metadata: Metadata = {

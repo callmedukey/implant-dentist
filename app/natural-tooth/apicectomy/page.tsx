@@ -1,6 +1,7 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
+
 import apicectomyInfoBg from "@/public/images/natural-tooth/apicectomy-info-bg.webp";
 import apicectomyStep1 from "@/public/images/natural-tooth/apicectomy-step1.webp";
 import apicectomyStep2 from "@/public/images/natural-tooth/apicectomy-step2.webp";

@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+
 import digitalScannerBg from "@/public/images/digital/digital-scanner-bg.webp";
 
 export default function DigitalScanner() {

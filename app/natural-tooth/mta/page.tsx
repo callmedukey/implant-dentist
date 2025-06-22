@@ -1,6 +1,7 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
+
 import mtaBg from "@/public/images/natural-tooth/mta-treatment-bg.webp";
 
 export const metadata: Metadata = {

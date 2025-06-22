@@ -1,29 +1,19 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { getInquiries, deleteInquiry } from "../actions/inquiry-actions";
-import { 
-  Eye, 
-  Trash2, 
-  Calendar, 
-  Phone, 
-  User, 
+import {
+  Eye,
+  Trash2,
+  Calendar,
+  Phone,
+  User,
   Search,
   ChevronLeft,
   ChevronRight,
-  ArrowUpDown,
   ArrowUp,
-  ArrowDown
+  ArrowDown,
 } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+import { useState, useEffect, useCallback } from "react";
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -34,6 +24,17 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+
+import { getInquiries, deleteInquiry } from "../actions/inquiry-actions";
 
 type Inquiry = {
   id: string;
@@ -103,7 +104,7 @@ export default function InquiryManagement() {
   };
 
   const toggleSortOrder = () => {
-    setSortOrder(prev => prev === "desc" ? "asc" : "desc");
+    setSortOrder((prev) => (prev === "desc" ? "asc" : "desc"));
     setCurrentPage(1); // Reset to first page when changing sort
   };
 
@@ -141,7 +142,7 @@ export default function InquiryManagement() {
                 총 {pagination.totalCount}개의 문의가 있습니다
               </p>
             </div>
-            
+
             {/* Search Form */}
             <form onSubmit={handleSearch} className="flex gap-2">
               <div className="relative">
@@ -271,52 +272,63 @@ export default function InquiryManagement() {
             {/* Pagination */}
             <div className="flex items-center justify-between px-6 py-4 border-t">
               <div className="text-sm text-gray-600">
-                {pagination.totalCount}개 중 {((currentPage - 1) * 10) + 1}-
+                {pagination.totalCount}개 중 {(currentPage - 1) * 10 + 1}-
                 {Math.min(currentPage * 10, pagination.totalCount)}개 표시
               </div>
               <div className="flex items-center gap-2">
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.max(1, prev - 1))
+                  }
                   disabled={!pagination.hasPrevPage}
                 >
                   <ChevronLeft className="w-4 h-4" />
                   이전
                 </Button>
-                
+
                 {/* Page numbers */}
                 <div className="flex items-center gap-1">
-                  {Array.from({ length: Math.min(5, pagination.totalPages) }, (_, i) => {
-                    let pageNum;
-                    if (pagination.totalPages <= 5) {
-                      pageNum = i + 1;
-                    } else if (currentPage <= 3) {
-                      pageNum = i + 1;
-                    } else if (currentPage >= pagination.totalPages - 2) {
-                      pageNum = pagination.totalPages - 4 + i;
-                    } else {
-                      pageNum = currentPage - 2 + i;
+                  {Array.from(
+                    { length: Math.min(5, pagination.totalPages) },
+                    (_, i) => {
+                      let pageNum;
+                      if (pagination.totalPages <= 5) {
+                        pageNum = i + 1;
+                      } else if (currentPage <= 3) {
+                        pageNum = i + 1;
+                      } else if (currentPage >= pagination.totalPages - 2) {
+                        pageNum = pagination.totalPages - 4 + i;
+                      } else {
+                        pageNum = currentPage - 2 + i;
+                      }
+
+                      return (
+                        <Button
+                          key={pageNum}
+                          variant={
+                            currentPage === pageNum ? "default" : "outline"
+                          }
+                          size="sm"
+                          onClick={() => setCurrentPage(pageNum)}
+                          className="w-8 h-8 p-0"
+                        >
+                          {pageNum}
+                        </Button>
+                      );
                     }
-                    
-                    return (
-                      <Button
-                        key={pageNum}
-                        variant={currentPage === pageNum ? "default" : "outline"}
-                        size="sm"
-                        onClick={() => setCurrentPage(pageNum)}
-                        className="w-8 h-8 p-0"
-                      >
-                        {pageNum}
-                      </Button>
-                    );
-                  })}
+                  )}
                 </div>
-                
+
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => setCurrentPage(prev => Math.min(pagination.totalPages, prev + 1))}
+                  onClick={() =>
+                    setCurrentPage((prev) =>
+                      Math.min(pagination.totalPages, prev + 1)
+                    )
+                  }
                   disabled={!pagination.hasNextPage}
                 >
                   다음
@@ -381,10 +393,7 @@ export default function InquiryManagement() {
             </div>
           )}
           <DialogFooter>
-            <Button
-              variant="outline"
-              onClick={() => setSelectedInquiry(null)}
-            >
+            <Button variant="outline" onClick={() => setSelectedInquiry(null)}>
               닫기
             </Button>
           </DialogFooter>
@@ -392,10 +401,7 @@ export default function InquiryManagement() {
       </Dialog>
 
       {/* Delete Confirmation Dialog */}
-      <AlertDialog
-        open={!!deleteId}
-        onOpenChange={() => setDeleteId(null)}
-      >
+      <AlertDialog open={!!deleteId} onOpenChange={() => setDeleteId(null)}>
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>문의 삭제</AlertDialogTitle>

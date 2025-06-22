@@ -1,8 +1,9 @@
 "use server";
 
+import { AuthError } from "next-auth";
+
 import { signIn } from "@/auth";
 import { signInSchema } from "@/validations/auth.schema";
-import { AuthError } from "next-auth";
 
 export type LoginState = {
   errors?: {

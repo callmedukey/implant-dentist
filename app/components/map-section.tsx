@@ -2,6 +2,7 @@
 // import * as motion from "motion/react-client";
 import { motion } from "motion/react";
 import Image from "next/image";
+
 import mobileMapImage from "@/public/images/mobile-map.webp";
 
 const MapSection = () => {

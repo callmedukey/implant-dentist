@@ -1,9 +1,10 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
-import gargleAnesthesia from "@/public/images/pain-relief/gargle-anesthesia.webp";
-import topicalAnesthesia from "@/public/images/pain-relief/topical-anesthesia.webp";
+
 import digitalPainless from "@/public/images/pain-relief/digital-painless.webp";
+import gargleAnesthesia from "@/public/images/pain-relief/gargle-anesthesia.webp";
 import painReliefInfoBg from "@/public/images/pain-relief/pain-relief-info-bg.webp";
+import topicalAnesthesia from "@/public/images/pain-relief/topical-anesthesia.webp";
 
 const anesthesiaSteps = [
   {
@@ -126,8 +127,8 @@ export default function PainReliefSystem() {
                   }}
                   className="text-lg md:text-xl lg:text-xl text-dark-primary text-center leading-[1.6] px-4 py-6"
                 >
-                  치과가실때마다 "무통마취기로 해주세요"라고 부탁하지 않으셔도
-                  됩니다.
+                  치과가실때마다 {`"무통마취기로 해주세요"`}라고 부탁하지
+                  않으셔도 됩니다.
                   <br />
                   조은이플란트치과에서는 마취가 필요한 모든 분들의 모든 치료에
                   무통마취기를 사용하고있습니다.

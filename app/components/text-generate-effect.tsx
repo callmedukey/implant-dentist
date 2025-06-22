@@ -1,6 +1,7 @@
 "use client";
-import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
+import { useEffect } from "react";
+
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -17,7 +18,7 @@ export const TextGenerateEffect = ({
   delay?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
   useEffect(() => {
     const timer = setTimeout(() => {
       animate(
@@ -32,7 +33,7 @@ export const TextGenerateEffect = ({
         }
       );
     }, delay * 1000);
-    
+
     return () => clearTimeout(timer);
   }, [scope.current, delay]);
 
@@ -57,9 +58,5 @@ export const TextGenerateEffect = ({
     );
   };
 
-  return (
-    <div className={cn(className)}>
-      {renderWords()}
-    </div>
-  );
+  return <div className={cn(className)}>{renderWords()}</div>;
 };

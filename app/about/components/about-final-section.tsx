@@ -1,8 +1,9 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
-import backgroundImage from "@/public/images/about/final-section-bg.webp";
+
 import arrowIcon from "@/public/images/about/arrow-right.svg";
+import backgroundImage from "@/public/images/about/final-section-bg.webp";
 
 const AboutFinalSection = () => {
   return (

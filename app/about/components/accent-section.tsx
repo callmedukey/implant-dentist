@@ -18,9 +18,11 @@ const AccentSection = () => {
             좋은 이 + 좋은 임플란트
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl text-dark-primary text-center font-bold mt-2">
-            조은이플란트치과는 "
-            <span className="text-teal-secondary">좋은 치아</span>"와 "
-            <span className="text-teal-secondary">좋은 임플란트</span>" 를
+            {`조은이플란트치과는 "`}
+            <span className="text-teal-secondary">좋은 치아</span>
+            {`"와 "`}
+            <span className="text-teal-secondary">좋은 임플란트</span>
+            {`" 를`}
             생각합니다.
           </p>
         </motion.div>

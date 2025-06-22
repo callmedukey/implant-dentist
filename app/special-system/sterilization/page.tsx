@@ -1,10 +1,11 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
+import Image from "next/image";
+
 import sterilizationHeroBg from "@/public/images/sterilization/sterilization-hero-bg.webp";
 import individualToolsImage from "@/public/images/sterilization/sterilization-individual-tools.webp";
-import sanitizedWaterImage from "@/public/images/sterilization/sterilization-sanitized-water.webp";
 import safeEnvironmentImage from "@/public/images/sterilization/sterilization-safe-environment.webp";
-import Image from "next/image";
+import sanitizedWaterImage from "@/public/images/sterilization/sterilization-sanitized-water.webp";
 
 export const metadata: Metadata = {
   title: "멸균 시스템 | 조은이플란트치과",

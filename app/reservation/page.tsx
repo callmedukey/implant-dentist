@@ -1,18 +1,22 @@
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import phoneIcon from "@/public/images/reservation/phone-icon.svg";
+
 import kakaoChatImage from "@/public/images/reservation/kakao-chat.webp";
 import naverBookingImage from "@/public/images/reservation/naver-booking.webp";
-import { Metadata } from "next";
+import phoneIcon from "@/public/images/reservation/phone-icon.svg";
 
 export const metadata: Metadata = {
   title: "진료 및 예약안내 | 조은이플란트치과",
-  description: "조은이플란트치과의 진료시간 안내와 전화, 카카오톡, 네이버를 통한 간편한 예약 방법을 안내합니다.",
-  keywords: "치과 예약, 진료시간, 카카오톡 예약, 네이버 예약, 전화 예약, 조은이플란트치과 예약, 양주 치과 예약",
+  description:
+    "조은이플란트치과의 진료시간 안내와 전화, 카카오톡, 네이버를 통한 간편한 예약 방법을 안내합니다.",
+  keywords:
+    "치과 예약, 진료시간, 카카오톡 예약, 네이버 예약, 전화 예약, 조은이플란트치과 예약, 양주 치과 예약",
   openGraph: {
     title: "진료 및 예약안내 | 조은이플란트치과",
-    description: "조은이플란트치과의 진료시간 안내와 전화, 카카오톡, 네이버를 통한 간편한 예약 방법을 안내합니다.",
+    description:
+      "조은이플란트치과의 진료시간 안내와 전화, 카카오톡, 네이버를 통한 간편한 예약 방법을 안내합니다.",
     type: "website",
   },
 };

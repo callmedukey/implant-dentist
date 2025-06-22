@@ -1,6 +1,8 @@
 "use client";
 
+import { X } from "lucide-react";
 import React from "react";
+
 import {
   Dialog,
   DialogContent,
@@ -9,13 +11,14 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { X } from "lucide-react";
 
 interface PrivacyPolicyDialogProps {
   children: React.ReactNode;
 }
 
-const PrivacyPolicyDialog: React.FC<PrivacyPolicyDialogProps> = ({ children }) => {
+const PrivacyPolicyDialog: React.FC<PrivacyPolicyDialogProps> = ({
+  children,
+}) => {
   const privacyPolicyContent = `<개인정보 취급방침>
 
 광주본플란트치과의원(이하 '본원')는 귀하의 개인정보보호를 매우 중요시하며, 『개인정보보호법』을 준수하고 있습니다.
@@ -167,7 +170,9 @@ const PrivacyPolicyDialog: React.FC<PrivacyPolicyDialogProps> = ({ children }) =
           <button
             className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
             onClick={() => {
-              const closeButton = document.querySelector('[data-state="open"] button[type="button"]');
+              const closeButton = document.querySelector(
+                '[data-state="open"] button[type="button"]'
+              );
               if (closeButton instanceof HTMLElement) {
                 closeButton.click();
               }

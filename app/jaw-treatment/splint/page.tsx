@@ -1,10 +1,11 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
+
+import splintHabitControl from "@/public/images/jaw-treatment/splint-habit-control.webp";
+import splintJointStability from "@/public/images/jaw-treatment/splint-joint-stability.webp";
 import splintMainBg from "@/public/images/jaw-treatment/splint-main-bg.webp";
 import splintPainRelief from "@/public/images/jaw-treatment/splint-pain-relief.webp";
-import splintJointStability from "@/public/images/jaw-treatment/splint-joint-stability.webp";
-import splintHabitControl from "@/public/images/jaw-treatment/splint-habit-control.webp";
 
 export const metadata: Metadata = {
   title: "교합안정 스플린트 | 조은이플란트치과",

@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
-import { Checkbox } from "@/components/ui/checkbox";
+import { motion } from "motion/react";
+import Image from "next/image";
+import React, { useState, useEffect } from "react";
+
 import PrivacyPolicyDialog from "@/components/privacy-policy-dialog";
 import TermsDialog from "@/components/terms-dialog";
-import naverLogo from "@/public/images/naver-logo.svg";
+import { Checkbox } from "@/components/ui/checkbox";
 import kakaoLogo from "@/public/images/kakao-logo.svg";
+import naverLogo from "@/public/images/naver-logo.svg";
 
 const Footer = () => {
   const [showBannerInGap, setShowBannerInGap] = useState(false);

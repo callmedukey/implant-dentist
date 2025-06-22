@@ -1,17 +1,19 @@
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
-import locationMainMap from "@/public/images/location/location-main-map.webp";
+
 import locationDetailMap from "@/public/images/location/location-detail-map.webp";
 import locationInterior from "@/public/images/location/location-interior.webp";
+import locationMainMap from "@/public/images/location/location-main-map.webp";
 import locationParking from "@/public/images/location/location-parking.webp";
 
 export const metadata: Metadata = {
   title: "오시는 길 | 조은이플란트치과",
   description:
     "조은이플란트치과 오시는 길 안내. 경기도 양주시 부흥로 2152-4 2층, 옥정역 인근 위치",
-  keywords: "조은이플란트치과 위치, 양주 치과, 옥정역 치과, 부흥로 치과, 양주시 치과, 오시는 길, 주차 안내",
+  keywords:
+    "조은이플란트치과 위치, 양주 치과, 옥정역 치과, 부흥로 치과, 양주시 치과, 오시는 길, 주차 안내",
   openGraph: {
     title: "오시는 길 | 조은이플란트치과",
     description:

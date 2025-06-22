@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
 import { useState } from "react";
+
+import { cn } from "@/lib/utils";
 
 interface MobileMenuProps {
   navItems: Array<{
@@ -16,13 +17,19 @@ interface MobileMenuProps {
   onClose: () => void;
 }
 
-export default function MobileMenu({ navItems, dropdownItems, onClose }: MobileMenuProps) {
-  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
+export default function MobileMenu({
+  navItems,
+  dropdownItems,
+  onClose,
+}: MobileMenuProps) {
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>(
+    {}
+  );
 
   const toggleExpanded = (itemText: string) => {
-    setExpandedItems(prev => ({
+    setExpandedItems((prev) => ({
       ...prev,
-      [itemText]: !prev[itemText]
+      [itemText]: !prev[itemText],
     }));
   };
 
@@ -60,7 +67,7 @@ export default function MobileMenu({ navItems, dropdownItems, onClose }: MobileM
                     <ChevronDown className="w-4 h-4" />
                   </motion.div>
                 </button>
-                
+
                 <AnimatePresence>
                   {expandedItems[item.text] && (
                     <motion.div

@@ -1,9 +1,10 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
-import whiteningMain from "@/public/images/integrated-care/whitening/whitening-main.webp";
-import whiteningBackground from "@/public/images/integrated-care/whitening/whitening-definition-bg.webp";
+
 import teethBeforeAfterWhitening from "@/public/images/integrated-care/whitening/teeh-before-after-whitening.webp";
+import whiteningBackground from "@/public/images/integrated-care/whitening/whitening-definition-bg.webp";
+import whiteningMain from "@/public/images/integrated-care/whitening/whitening-main.webp";
 import whiteningProduct from "@/public/images/integrated-care/whitening/whitening-product.webp";
 
 export const metadata: Metadata = {

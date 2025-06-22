@@ -1,15 +1,19 @@
 import * as motion from "motion/react-client";
-import Image from "next/image";
-import staffBgImage from "@/public/images/staff/staff-bg.webp";
 import type { Metadata } from "next";
+import Image from "next/image";
+
+import staffBgImage from "@/public/images/staff/staff-bg.webp";
 
 export const metadata: Metadata = {
   title: "의료진 소개 | 조은이플란트치과",
-  description: "양주 조은이플란트치과는 전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다. 꼼꼼하고 세심한 진료를 약속드립니다.",
-  keywords: "양주 치과위생사, 조은이플란트치과 의료진, 양주 치과 스태프, 치과위생사 면허, 양주 임플란트 의료진",
+  description:
+    "양주 조은이플란트치과는 전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다. 꼼꼼하고 세심한 진료를 약속드립니다.",
+  keywords:
+    "양주 치과위생사, 조은이플란트치과 의료진, 양주 치과 스태프, 치과위생사 면허, 양주 임플란트 의료진",
   openGraph: {
     title: "의료진 소개 | 조은이플란트치과",
-    description: "전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다.",
+    description:
+      "전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다.",
     type: "website",
     locale: "ko_KR",
     siteName: "조은이플란트치과",
@@ -25,7 +29,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "의료진 소개 | 조은이플란트치과",
-    description: "전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다.",
+    description:
+      "전원 치과위생사 면허 소지자로 구성된 의료진이 정성과 책임으로 진료를 돕고 있습니다.",
     images: ["/images/staff/staff-bg.webp"],
   },
   alternates: {
@@ -46,10 +51,10 @@ const StaffPage = () => {
         <motion.p
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 0.5, y: 0, filter: "blur(0px)" }}
-          transition={{ 
-            duration: 0.8, 
+          transition={{
+            duration: 0.8,
             delay: 0.2,
-            ease: [0.16, 1, 0.3, 1]
+            ease: [0.16, 1, 0.3, 1],
           }}
           className="text-base md:text-lg text-dark-primary text-center uppercase"
         >
@@ -60,10 +65,10 @@ const StaffPage = () => {
           <motion.h1
             initial={{ opacity: 0, y: 40, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ 
-              duration: 0.8, 
+            transition={{
+              duration: 0.8,
               delay: 0.4,
-              ease: [0.16, 1, 0.3, 1]
+              ease: [0.16, 1, 0.3, 1],
             }}
             className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-primary text-center leading-relaxed"
           >
@@ -75,10 +80,10 @@ const StaffPage = () => {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ 
-              duration: 0.8, 
+            transition={{
+              duration: 0.8,
               delay: 0.6,
-              ease: [0.16, 1, 0.3, 1]
+              ease: [0.16, 1, 0.3, 1],
             }}
             className="text-lg md:text-xl text-black text-center leading-relaxed"
           >
@@ -97,14 +102,14 @@ const StaffPage = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.8, y: 60 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ 
-          duration: 1.2, 
+        transition={{
+          duration: 1.2,
           delay: 0.8,
-          ease: [0.16, 1, 0.3, 1]
+          ease: [0.16, 1, 0.3, 1],
         }}
-        whileInView={{ 
+        whileInView={{
           scale: [1, 1.02, 1],
-          transition: { duration: 2, ease: "easeInOut" }
+          transition: { duration: 2, ease: "easeInOut" },
         }}
         viewport={{ once: true, amount: 0.3 }}
         className="w-full max-w-[69.375rem] h-[400px] md:h-[500px] lg:h-[42.75rem] rounded-lg overflow-hidden my-16 md:my-24 shadow-2xl"
@@ -140,10 +145,10 @@ const StaffPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ 
-              duration: 0.8, 
+            transition={{
+              duration: 0.8,
               delay: 0.3,
-              ease: [0.16, 1, 0.3, 1]
+              ease: [0.16, 1, 0.3, 1],
             }}
             className="text-xl md:text-2xl font-bold text-white text-center"
           >
@@ -151,38 +156,44 @@ const StaffPage = () => {
             약속드립니다.
           </motion.p>
 
-          <motion.div
-            className="flex flex-wrap justify-center items-center gap-2"
-          >
-            <motion.span 
+          <motion.div className="flex flex-wrap justify-center items-center gap-2">
+            <motion.span
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.5,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               className="text-xl md:text-2xl font-bold text-white"
             >
               한분, 한분을 위한
             </motion.span>
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, scale: 0, rotate: -10 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true }}
-              transition={{ 
-                duration: 0.8, 
+              transition={{
+                duration: 0.8,
                 delay: 0.7,
                 ease: [0.16, 1, 0.3, 1],
-                scale: { type: "spring", damping: 15, stiffness: 200 }
+                scale: { type: "spring", damping: 15, stiffness: 200 },
               }}
               whileHover={{ scale: 1.05, rotate: 2 }}
               className="bg-white text-teal-secondary px-4 py-1 rounded font-bold text-xl md:text-2xl cursor-default"
             >
               꼼꼼하고 세심한 진료
             </motion.span>
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.9,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               className="text-xl md:text-2xl font-bold text-white"
             >
               를 시행합니다.

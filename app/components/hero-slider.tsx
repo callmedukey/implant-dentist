@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
+
 import heroSlider1 from "@/public/images/index/hero-slider-1.webp";
 import heroSlider2 from "@/public/images/index/hero-slider-2.webp";
 import heroSlider3 from "@/public/images/index/hero-slider-3.webp";

@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
-import FixedContactBanner from "@/components/layout/fixed-contact-banner";
-import PopupProvider from "@/components/popup-provider";
+import { Metadata } from "next";
 import localFont from "next/font/local";
-import { cn } from "@/lib/utils";
+
+import FixedContactBanner from "@/components/layout/fixed-contact-banner";
 import FixedMenus from "@/components/layout/fixed-menus";
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import PopupProvider from "@/components/popup-provider";
+import { cn } from "@/lib/utils";
 
 const Pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",

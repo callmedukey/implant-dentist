@@ -1,25 +1,27 @@
 "use client";
 
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { Menu, ChevronDown } from "lucide-react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
-import logoImage from "@/public/images/logo.svg";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetTitle,
-} from "@/components/ui/sheet";
+import { useState } from "react";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
+import logoImage from "@/public/images/logo.svg";
+
 import MobileMenu from "./mobile-menu";
 
 const dropdownItems: Record<string, Array<{ text: string; href: string }>> = {
@@ -160,23 +162,21 @@ export default function Header() {
                       className="bg-dark-secondary border-none rounded-b-lg p-4 min-w-[12.1875rem] z-50"
                       onCloseAutoFocus={(e) => e.preventDefault()}
                     >
-                      {dropdownItems[item.text]?.map(
-                        (dropdownItem, dropdownIndex) => (
-                          <DropdownMenuItem key={dropdownItem.href} asChild>
-                            <Link
-                              href={dropdownItem.href}
-                              className={cn(
-                                "flex items-center justify-center px-6 py-2 rounded-md",
-                                "text-base font-normal leading-[1.6] text-teal-secondary",
-                                "transition-all hover:text-teal-primary hover:bg-dark-secondary/50",
-                                "cursor-pointer"
-                              )}
-                            >
-                              {dropdownItem.text}
-                            </Link>
-                          </DropdownMenuItem>
-                        )
-                      )}
+                      {dropdownItems[item.text]?.map((dropdownItem) => (
+                        <DropdownMenuItem key={dropdownItem.href} asChild>
+                          <Link
+                            href={dropdownItem.href}
+                            className={cn(
+                              "flex items-center justify-center px-6 py-2 rounded-md",
+                              "text-base font-normal leading-[1.6] text-teal-secondary",
+                              "transition-all hover:text-teal-primary hover:bg-dark-secondary/50",
+                              "cursor-pointer"
+                            )}
+                          >
+                            {dropdownItem.text}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
                 ) : (

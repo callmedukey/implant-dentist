@@ -1,6 +1,8 @@
 "use client";
 
+import { X } from "lucide-react";
 import React from "react";
+
 import {
   Dialog,
   DialogContent,
@@ -9,7 +11,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { X } from "lucide-react";
 
 interface TermsDialogProps {
   children: React.ReactNode;
@@ -138,7 +139,9 @@ const TermsDialog: React.FC<TermsDialogProps> = ({ children }) => {
           <button
             className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
             onClick={() => {
-              const closeButton = document.querySelector('[data-state="open"] button[type="button"]');
+              const closeButton = document.querySelector(
+                '[data-state="open"] button[type="button"]'
+              );
               if (closeButton instanceof HTMLElement) {
                 closeButton.click();
               }

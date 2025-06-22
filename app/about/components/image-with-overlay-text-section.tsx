@@ -1,6 +1,7 @@
-import React from "react";
 import * as motion from "motion/react-client";
 import Image from "next/image";
+import React from "react";
+
 import backgroundImage from "@/public/images/about/overlay-background.webp";
 import patientIcon from "@/public/images/about/patient-icon.svg";
 import accentLogo from "@/public/images/white-accent-logo.svg";

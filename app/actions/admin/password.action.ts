@@ -1,25 +1,28 @@
 "use server";
 
-import { auth } from "@/auth";
-import { prisma } from "@/prisma/prisma-client";
 import { hash, compare } from "bcryptjs";
 import { z } from "zod";
 
-const passwordSchema = z.object({
-  currentPassword: z.string().min(1, "현재 비밀번호를 입력해주세요."),
-  newPassword: z
-    .string()
-    .min(8, "비밀번호는 최소 8자 이상이어야 합니다.")
-    .max(16, "비밀번호는 16자 이하여야 합니다.")
-    .regex(
-      /^(?=.*[A-Za-z])(?=.*\d)/,
-      "비밀번호는 영문자와 숫자를 포함해야 합니다."
-    ),
-  confirmPassword: z.string(),
-}).refine((data) => data.newPassword === data.confirmPassword, {
-  message: "새 비밀번호가 일치하지 않습니다.",
-  path: ["confirmPassword"],
-});
+import { auth } from "@/auth";
+import { prisma } from "@/prisma/prisma-client";
+
+const passwordSchema = z
+  .object({
+    currentPassword: z.string().min(1, "현재 비밀번호를 입력해주세요."),
+    newPassword: z
+      .string()
+      .min(8, "비밀번호는 최소 8자 이상이어야 합니다.")
+      .max(16, "비밀번호는 16자 이하여야 합니다.")
+      .regex(
+        /^(?=.*[A-Za-z])(?=.*\d)/,
+        "비밀번호는 영문자와 숫자를 포함해야 합니다."
+      ),
+    confirmPassword: z.string(),
+  })
+  .refine((data) => data.newPassword === data.confirmPassword, {
+    message: "새 비밀번호가 일치하지 않습니다.",
+    path: ["confirmPassword"],
+  });
 
 export type PasswordResetState = {
   errors?: {
@@ -36,7 +39,7 @@ export async function resetPasswordAction(
   formData: FormData
 ): Promise<PasswordResetState> {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     return {
       errors: {

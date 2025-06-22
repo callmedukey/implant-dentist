@@ -1,13 +1,14 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+
+import biopsyBg from "@/public/images/services/biopsy-bg.webp";
+import boneGraftBg from "@/public/images/services/bone-graft-bg.webp";
+import cavityTreatmentBg from "@/public/images/services/cavity-treatment-bg.webp";
+import digitalImplantBg from "@/public/images/services/digital-implant-bg.webp";
 import implantBg from "@/public/images/services/implant-bg.webp";
 import jawTreatmentBg from "@/public/images/services/jaw-treatment-bg.webp";
-import wisdomToothBg from "@/public/images/services/wisdom-tooth-bg.webp";
-import cavityTreatmentBg from "@/public/images/services/cavity-treatment-bg.webp";
 import naturalToothBg from "@/public/images/services/natural-tooth-bg.webp";
-import boneGraftBg from "@/public/images/services/bone-graft-bg.webp";
-import biopsyBg from "@/public/images/services/biopsy-bg.webp";
-import digitalImplantBg from "@/public/images/services/digital-implant-bg.webp";
+import wisdomToothBg from "@/public/images/services/wisdom-tooth-bg.webp";
 
 const services = [
   {

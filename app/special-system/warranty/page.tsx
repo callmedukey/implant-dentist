@@ -1,10 +1,11 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
-import warrantyCardImage from "@/public/images/warranty/warranty-card.webp";
+import Image from "next/image";
+
+import decorativeBrackets from "@/public/images/warranty/decorative-brackets.svg";
 import osstemLogo1 from "@/public/images/warranty/osstem-logo-1.webp";
 import osstemLogo2 from "@/public/images/warranty/osstem-logo-2.webp";
-import decorativeBrackets from "@/public/images/warranty/decorative-brackets.svg";
-import Image from "next/image";
+import warrantyCardImage from "@/public/images/warranty/warranty-card.webp";
 
 export const metadata: Metadata = {
   title: "보증 시스템 | 조은이플란트치과",

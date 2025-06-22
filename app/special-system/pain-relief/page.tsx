@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+
 import PainReliefHero from "./components/pain-relief-hero";
 import PainReliefSystem from "./components/pain-relief-system";
 

@@ -1,12 +1,13 @@
 "use client";
+import { ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
+import { useInView } from "motion/react";
 import Image from "next/image";
 import React from "react";
-import leeChungHwiImage from "@/public/images/doctors/lee-chung-hwi.webp";
+
 import joSeungWonImage from "@/public/images/doctors/jo-seung-won.webp";
+import leeChungHwiImage from "@/public/images/doctors/lee-chung-hwi.webp";
 import leeJongWonImage from "@/public/images/doctors/lee-jong-won.webp";
-import { ChevronRight } from "lucide-react";
-import { useInView } from "motion/react";
 
 interface DoctorData {
   name: string;

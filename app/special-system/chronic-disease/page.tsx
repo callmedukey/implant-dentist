@@ -1,13 +1,15 @@
 import * as motion from "motion/react-client";
-import Image from "next/image";
 import { Metadata } from "next";
-import diabetesBg from "@/public/images/chronic-disease/diabetes-bg.webp";
-import hypertensionBg from "@/public/images/chronic-disease/hypertension-bg.webp";
+import Image from "next/image";
+
 import cardiovascularBg from "@/public/images/chronic-disease/cardiovascular-bg.webp";
-import osteoporosisBg from "@/public/images/chronic-disease/osteoporosis-bg.webp";
+import diabetesBg from "@/public/images/chronic-disease/diabetes-bg.webp";
 import dialysisBg from "@/public/images/chronic-disease/dialysis-bg.webp";
 import doctorIcon from "@/public/images/chronic-disease/doctor-icon.svg";
+import hypertensionBg from "@/public/images/chronic-disease/hypertension-bg.webp";
+import osteoporosisBg from "@/public/images/chronic-disease/osteoporosis-bg.webp";
 import patientIcon from "@/public/images/chronic-disease/patient-icon.svg";
+
 import { ChronicDiseaseBanner } from "./components/chronic-disease-banner";
 import ChronicDiseaseInfo from "./components/chronic-disease-info";
 
@@ -15,7 +17,8 @@ export const metadata: Metadata = {
   title: "만성질환 특화진료 | 조은이플란트치과",
   description:
     "당뇨, 고혈압, 심혈관 질환, 골다공증, 신장 투석 등 만성질환이 있는 분들도 안심하고 치료 받을 수 있도록 만성질환에 특화된 진료 프로세스를 갖추고 있습니다.",
-  keywords: "만성질환 치과, 당뇨 치과치료, 고혈압 치과치료, 심혈관질환 치과, 골다공증 치과, 신장투석 치과, 전신질환 치과, 조은이플란트치과",
+  keywords:
+    "만성질환 치과, 당뇨 치과치료, 고혈압 치과치료, 심혈관질환 치과, 골다공증 치과, 신장투석 치과, 전신질환 치과, 조은이플란트치과",
   openGraph: {
     title: "만성질환 특화진료 | 조은이플란트치과",
     description:

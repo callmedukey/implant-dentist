@@ -1,5 +1,6 @@
-import Image from "next/image";
 import * as motion from "motion/react-client";
+import Image from "next/image";
+
 import logoImage from "@/public/images/accent-logo.svg";
 
 const AccentBanner = () => {

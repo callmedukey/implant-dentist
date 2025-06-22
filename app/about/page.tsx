@@ -1,11 +1,12 @@
-import React from "react";
 import { Metadata } from "next";
-import TopVideoSection from "./components/top-video-section";
-import AccentSection from "./components/accent-section";
-import ImageWithOverlayTextSection from "./components/image-with-overlay-text-section";
-import BasicInfoSection from "./components/basic-info-section";
+import React from "react";
+
 import AboutFinalSection from "./components/about-final-section";
+import AccentSection from "./components/accent-section";
+import BasicInfoSection from "./components/basic-info-section";
 import ImageBanner from "./components/image-banner";
+import ImageWithOverlayTextSection from "./components/image-with-overlay-text-section";
+import TopVideoSection from "./components/top-video-section";
 
 export const dynamic = "force-static";
 

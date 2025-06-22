@@ -1,11 +1,13 @@
 "use server";
 
-import { auth } from "@/auth";
-import { prisma } from "@/prisma/prisma-client";
-import { PopupType } from "@/prisma/generated/prisma";
-import { revalidatePath } from "next/cache";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
+
+import { revalidatePath } from "next/cache";
+
+import { auth } from "@/auth";
+import { PopupType } from "@/prisma/generated/prisma";
+import { prisma } from "@/prisma/prisma-client";
 
 export type PopupState = {
   errors?: {
@@ -23,7 +25,7 @@ export async function createPopupAction(
   formData: FormData
 ): Promise<PopupState> {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     return {
       errors: {
@@ -90,7 +92,7 @@ export async function createPopupAction(
     // Handle image upload
     if (type === "IMAGE" && imageFile && imageFile.size > 0) {
       const uploadsDir = path.join(process.cwd(), "public", "uploads");
-      
+
       // Create uploads directory if it doesn't exist
       await mkdir(uploadsDir, { recursive: true });
 
@@ -105,12 +107,12 @@ export async function createPopupAction(
 
       // Write file
       await writeFile(filepath, buffer);
-      
+
       imageUrl = `/api/uploads/${filename}`;
     }
 
     // Create popup in database
-    const popup = await prisma.popup.create({
+    await prisma.popup.create({
       data: {
         type,
         title: type === "TEXT" ? title : undefined,
@@ -126,7 +128,7 @@ export async function createPopupAction(
     });
 
     revalidatePath("/admin");
-    
+
     return { success: true };
   } catch (error) {
     console.error("Failed to create popup:", error);
@@ -140,7 +142,7 @@ export async function createPopupAction(
 
 export async function getPopupsAction() {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     throw new Error("Unauthorized");
   }
@@ -159,7 +161,7 @@ export async function getPopupsAction() {
 
 export async function deletePopupAction(id: string): Promise<void> {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     throw new Error("Unauthorized");
   }

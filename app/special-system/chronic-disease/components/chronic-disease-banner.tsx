@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+
 import bannerImage from "@/public/images/chronic-disease/chronic-disease-banner.webp";
 
 export const ChronicDiseaseBanner = () => {

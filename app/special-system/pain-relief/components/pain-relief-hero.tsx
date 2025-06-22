@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+
 import painReliefHeroBg from "@/public/images/pain-relief/pain-relief-hero-bg.webp";
 
 export default function PainReliefHero() {

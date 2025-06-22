@@ -1,8 +1,10 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+
 import doctorImage from "@/public/images/intro/doctor-lee.webp";
 import quoteSvg1 from "@/public/images/intro/quote-left-1.svg";
 import quoteSvg2 from "@/public/images/intro/quote-left-2.svg";
+
 import { TextGenerateEffect } from "./text-generate-effect";
 
 const IntroSection = () => {

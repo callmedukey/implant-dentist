@@ -1,8 +1,9 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
-import bioOssProduct from "@/public/images/bone-graft/bio-oss-product.webp";
-import bioOssFeature from "@/public/images/bone-graft/bio-oss-feature.webp";
 import Image from "next/image";
+
+import bioOssFeature from "@/public/images/bone-graft/bio-oss-feature.webp";
+import bioOssProduct from "@/public/images/bone-graft/bio-oss-product.webp";
 
 export const metadata: Metadata = {
   title: "스위스 명품 뼈이식재 바이오오스 | 조은이플란트치과",
@@ -61,7 +62,7 @@ const BoneGraftPage = () => {
           >
             일반 치과에서는 찾아보기 어렵고,
             <br />
-            대학병원에서만 사용한다는 '바이오오스'를 들어보셨나요?
+            대학병원에서만 사용한다는 {`'바이오오스'`}를 들어보셨나요?
           </motion.p>
         </div>
 

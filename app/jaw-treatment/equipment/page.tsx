@@ -1,8 +1,9 @@
-import { Metadata } from "next";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 import Image from "next/image";
-import equipmentBg from "@/public/images/jaw-treatment/jaw-treatment-equipment-bg.webp";
+
 import ctaBg from "@/public/images/jaw-treatment/jaw-treatment-cta-bg.webp";
+import equipmentBg from "@/public/images/jaw-treatment/jaw-treatment-equipment-bg.webp";
 
 export const metadata: Metadata = {
   title: "턱관절 치료 장비 | 조은이플란트치과",

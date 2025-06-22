@@ -1,13 +1,14 @@
 "use client";
 
-import { Popup, PopupImage } from "@/prisma/generated/prisma";
+import Image from "next/image";
+
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import Image from "next/image";
+import { Popup, PopupImage } from "@/prisma/generated/prisma";
 
 type PopupWithImage = Popup & {
   popupImage: PopupImage | null;
@@ -19,7 +20,11 @@ interface PopupDisplayProps {
   onOpenChange: (open: boolean) => void;
 }
 
-export default function PopupDisplay({ popup, open, onOpenChange }: PopupDisplayProps) {
+export default function PopupDisplay({
+  popup,
+  open,
+  onOpenChange,
+}: PopupDisplayProps) {
   if (!popup) return null;
 
   const handleDontShowAgain = () => {
@@ -73,7 +78,7 @@ export default function PopupDisplay({ popup, open, onOpenChange }: PopupDisplay
             </>
           )}
         </div>
-        
+
         <div className="border-t bg-gray-50 p-4 flex justify-end gap-3">
           <button
             onClick={handleDontShowAgain}

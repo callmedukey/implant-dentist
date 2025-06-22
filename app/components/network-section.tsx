@@ -1,7 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
+import Image from "next/image";
+
 import { Marquee } from "@/components/magicui/marquee";
 import goldenLeavesImage from "@/public/images/network/golden-leaves.webp";
 import networkLogo1 from "@/public/images/network/network-logo-1.webp";

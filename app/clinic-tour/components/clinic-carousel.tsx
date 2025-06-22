@@ -1,20 +1,22 @@
 "use client";
 
+import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { motion } from "motion/react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+
+// Import actual images
 import {
+  CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
   CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { type CarouselApi } from "@/components/ui/carousel";
-
-// Import actual images
+import { ScrollBar } from "@/components/ui/scroll-area";
 import clinic1 from "@/public/images/clinic-tour/clinic-1.webp";
+import clinic10 from "@/public/images/clinic-tour/clinic-10.webp";
 import clinic2 from "@/public/images/clinic-tour/clinic-2.webp";
 import clinic3 from "@/public/images/clinic-tour/clinic-3.webp";
 import clinic4 from "@/public/images/clinic-tour/clinic-4.webp";
@@ -23,7 +25,6 @@ import clinic6 from "@/public/images/clinic-tour/clinic-6.webp";
 import clinic7 from "@/public/images/clinic-tour/clinic-7.webp";
 import clinic8 from "@/public/images/clinic-tour/clinic-8.webp";
 import clinic9 from "@/public/images/clinic-tour/clinic-9.webp";
-import clinic10 from "@/public/images/clinic-tour/clinic-10.webp";
 
 const carouselImages = [
   { id: 1, src: clinic1, alt: "조은이플란트치과 대기실" },

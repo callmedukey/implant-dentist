@@ -1,8 +1,9 @@
 "use client";
 
-import { useActionState, useEffect } from "react";
-import { loginAction } from "@/app/actions/login/login.action";
 import { useRouter } from "next/navigation";
+import { useActionState, useEffect } from "react";
+
+import { loginAction } from "@/app/actions/login/login.action";
 
 export default function LoginForm() {
   const [state, action, pending] = useActionState(loginAction, {});

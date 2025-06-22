@@ -1,11 +1,12 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
 import Image from "next/image";
-import toothBanner from "@/public/images/natural-tooth/tooth-banner.webp";
+
 import gumStage1 from "@/public/images/natural-tooth/gum-stage-1.webp";
 import gumStage2 from "@/public/images/natural-tooth/gum-stage-2.webp";
 import gumStage3 from "@/public/images/natural-tooth/gum-stage-3.webp";
 import gumStage4 from "@/public/images/natural-tooth/gum-stage-4.webp";
+import toothBanner from "@/public/images/natural-tooth/tooth-banner.webp";
 
 export const metadata: Metadata = {
   title: "잇몸치료 | 조은이플란트치과",

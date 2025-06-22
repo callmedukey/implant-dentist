@@ -1,12 +1,13 @@
 import * as motion from "motion/react-client";
 import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
 import specialCard1Bg from "@/public/images/services/implant-bg.webp";
 import specialCard2Bg from "@/public/images/special-implant/special-card-2-bg.webp";
 import specialCard3Bg from "@/public/images/special-implant/special-card-3-bg.webp";
 import specialCard4Bg from "@/public/images/special-implant/special-card-4-bg.webp";
 import specialCareBg from "@/public/images/special-implant/special-care-bg.webp";
-import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "조은이플란트의 특별함 | 조은이플란트치과",

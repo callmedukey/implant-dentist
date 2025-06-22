@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+
 import improvedResImage from "@/public/images/doctors/improved-res-2.webp";
 
 const DoctorsHeadingSection = () => {

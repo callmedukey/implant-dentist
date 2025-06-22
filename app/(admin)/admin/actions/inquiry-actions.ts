@@ -1,8 +1,9 @@
 "use server";
 
-import { prisma } from "@/prisma/prisma-client";
-import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+
+import { auth } from "@/auth";
+import { prisma } from "@/prisma/prisma-client";
 
 interface GetInquiriesParams {
   page?: number;
@@ -18,7 +19,7 @@ export async function getInquiries({
   sortOrder = "desc",
 }: GetInquiriesParams = {}) {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     redirect("/admin/login");
   }
@@ -86,7 +87,7 @@ export async function getInquiries({
 
 export async function getInquiryById(id: string) {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     redirect("/admin/login");
   }
@@ -105,7 +106,7 @@ export async function getInquiryById(id: string) {
 
 export async function deleteInquiry(id: string) {
   const session = await auth();
-  
+
   if (!session || session.user.role !== "ADMIN") {
     redirect("/admin/login");
   }
