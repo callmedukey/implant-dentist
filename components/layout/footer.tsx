@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
+import PrivacyPolicyDialog from "@/components/privacy-policy-dialog";
+import TermsDialog from "@/components/terms-dialog";
 import naverLogo from "@/public/images/naver-logo.svg";
 import kakaoLogo from "@/public/images/kakao-logo.svg";
 
@@ -213,7 +215,10 @@ const Footer = () => {
                   진료 예약 · 채팅 상담
                 </motion.h3>
                 <div className="flex items-center gap-6">
-                  <motion.button
+                  <motion.a
+                    href="https://booking.naver.com/booking/13/bizes/860783?tr=bnm"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex flex-col items-center gap-4 group"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -235,8 +240,11 @@ const Footer = () => {
                     <span className="text-base text-black group-hover:text-teal-secondary transition-colors">
                       네이버 예약
                     </span>
-                  </motion.button>
-                  <motion.button
+                  </motion.a>
+                  <motion.a
+                    href="https://pf.kakao.com/_FMavxj/chat"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex flex-col items-center gap-4 group"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -258,7 +266,7 @@ const Footer = () => {
                     <span className="text-base text-black group-hover:text-teal-secondary transition-colors">
                       카카오톡 문의
                     </span>
-                  </motion.button>
+                  </motion.a>
                 </div>
               </motion.div>
             </motion.div>
@@ -488,21 +496,25 @@ const Footer = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.9 }}
                 >
-                  <motion.button
-                    className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    개인청보처리방침
-                  </motion.button>
+                  <PrivacyPolicyDialog>
+                    <motion.button
+                      className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      개인정보처리방침
+                    </motion.button>
+                  </PrivacyPolicyDialog>
                   <div className="w-0 h-5 border-l border-dark-primary" />
-                  <motion.button
-                    className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    이용약관
-                  </motion.button>
+                  <TermsDialog>
+                    <motion.button
+                      className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      이용약관
+                    </motion.button>
+                  </TermsDialog>
                 </motion.div>
                 <motion.p
                   className="text-xs lg:text-sm text-dark-primary text-center lg:text-right w-full lg:w-[16.625rem]"

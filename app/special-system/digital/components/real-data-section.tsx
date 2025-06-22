@@ -56,7 +56,7 @@ export default function RealDataSection() {
               src={dataSectionBg}
               alt="디지털 시스템 배경"
               fill
-              className="object-cover"
+              className="object-cover object-right"
               quality={100}
             />
           </div>

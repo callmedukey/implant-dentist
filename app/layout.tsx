@@ -6,6 +6,7 @@ import FixedContactBanner from "@/components/layout/fixed-contact-banner";
 import PopupProvider from "@/components/popup-provider";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import FixedMenus from "@/components/layout/fixed-menus";
 
 const Pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -68,6 +69,7 @@ export default function RootLayout({
           <main className="pt-[4rem] sm:pt-[6.25rem]">{children}</main>
           <Footer />
           <FixedContactBanner />
+          <FixedMenus />
         </PopupProvider>
       </body>
     </html>
