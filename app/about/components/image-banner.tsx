@@ -6,7 +6,7 @@ import bannerImage from "@/public/images/about/about-banner.webp";
 const ImageBanner = () => {
   return (
     <motion.div
-      className="relative w-full h-[31.25rem] overflow-hidden"
+      className="relative w-full h-[10rem] sm:h-[21.25rem] overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -17,7 +17,7 @@ const ImageBanner = () => {
         alt="조은이플란트치과 병원 내부"
         fill
         quality={100}
-        className="object-cover"
+        className="sm:object-cover"
         priority
       />
     </motion.div>

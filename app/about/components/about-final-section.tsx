@@ -16,7 +16,7 @@ const AboutFinalSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed break-keep"
           >
             편안함과 신뢰, 그 이상의 진료환경
           </motion.h2>
