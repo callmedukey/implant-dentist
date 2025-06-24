@@ -417,33 +417,33 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex flex-col justify-center items-center gap-2 py-8 lg:py-10 px-4 lg:px-0">
+        <div className="flex flex-col justify-center items-center py-4 lg:py-6 px-4 lg:px-0">
           <motion.div
-            className="flex flex-col gap-2 w-full max-w-screen-max"
+            className="flex flex-col gap-1 w-full max-w-screen-max"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <motion.div
-              className="flex items-center gap-2 px-4 lg:px-6 py-2 w-full"
+              className="flex items-center px-4 lg:px-6 py-1 w-full"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-xl lg:text-2xl font-bold text-dark-primary leading-[1.6] text-center w-full sm:text-left">
+              <h2 className="text-lg lg:text-xl font-bold text-dark-primary text-center w-full sm:text-left">
                 양주 조은이플란트치과의원
               </h2>
             </motion.div>
             <motion.div
-              className="flex items-center gap-4 lg:gap-[2.9375rem] px-4 lg:px-6 py-4"
+              className="flex items-center gap-2 lg:gap-6 px-4 lg:px-6 py-2"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-[2.9375rem] text-center lg:text-left mx-auto w-full">
+              <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-6 text-center lg:text-left mx-auto w-full">
                 <motion.span
                   className="text-sm lg:text-base text-dark-primary leading-[1.6]"
                   initial={{ opacity: 0, x: -10 }}
@@ -483,13 +483,13 @@ const Footer = () => {
               </div>
             </motion.div>
             <motion.div
-              className="flex items-center gap-4 lg:gap-[2.0625rem] w-full"
+              className="flex items-center w-full"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <div className="flex flex-col lg:flex-row justify-between items-center gap-4 py-2 border-t border-dark-primary border-opacity-80 w-full">
+              <div className="flex flex-col lg:flex-row justify-between items-center gap-2 py-1 border-t border-dark-primary border-opacity-80 w-full">
                 <motion.div
                   className="flex items-center gap-1"
                   initial={{ opacity: 0 }}
@@ -499,17 +499,17 @@ const Footer = () => {
                 >
                   <PrivacyPolicyDialog>
                     <motion.button
-                      className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
+                      className="px-2 lg:px-4 py-1 text-xs lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       개인정보처리방침
                     </motion.button>
                   </PrivacyPolicyDialog>
-                  <div className="w-0 h-5 border-l border-dark-primary" />
+                  <div className="w-0 h-4 border-l border-dark-primary" />
                   <TermsDialog>
                     <motion.button
-                      className="px-3 lg:px-6 py-2 text-sm lg:text-base text-dark-primary hover:text-teal-secondary transition-colors"
+                      className="px-2 lg:px-4 py-1 text-xs lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -518,7 +518,7 @@ const Footer = () => {
                   </TermsDialog>
                 </motion.div>
                 <motion.p
-                  className="text-xs lg:text-sm text-dark-primary text-center lg:text-right w-full lg:w-[16.625rem]"
+                  className="text-xs lg:text-sm text-dark-primary text-center lg:text-right"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}

@@ -50,7 +50,7 @@ const AboutFinalSection = () => {
           <div className="absolute inset-0 flex flex-col justify-end items-end p-6 md:p-8 lg:p-9">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="/clinic-tour"
+                href="/about#clinic-tour"
                 className="inline-flex items-center gap-4 bg-teal-primary text-white px-6 py-1 rounded-full hover:bg-teal-primary/90 transition-colors"
               >
                 <span className="text-base font-bold">병원 둘러보기</span>

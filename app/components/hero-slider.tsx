@@ -167,10 +167,10 @@ const HeroSlider = () => {
     });
 
     // Animation state
-    let currentIndex = 0;
-    let progress = 0;
-    let isTransitioning = false;
-    let displayTimer = 0;
+    // const currentIndex = 0;
+    // let progress = 0;
+    // let isTransitioning = false;
+    // let displayTimer = 0;
     let zoomTimer = 0; // Separate timer for continuous zoom
     let lastTime = performance.now();
     let elapsedTime = 0;
@@ -194,44 +194,45 @@ const HeroSlider = () => {
         return;
       }
 
-      if (!isTransitioning) {
-        displayTimer += deltaTime;
+      // Sliding feature commented out - only show first image
+      // if (!isTransitioning) {
+      //   displayTimer += deltaTime;
 
-        // Start transition after 4 seconds
-        if (displayTimer >= 4) {
-          isTransitioning = true;
-          progress = 0;
+      //   // Start transition after 4 seconds
+      //   if (displayTimer >= 4) {
+      //     isTransitioning = true;
+      //     progress = 0;
 
-          // Setup transition - current stays the same, next is the upcoming image
-          const nextIndex = (currentIndex + 1) % images.length;
-          material.uniforms.currentTexture.value = textures[currentIndex];
-          material.uniforms.nextTexture.value = textures[nextIndex];
-        }
-      } else {
-        // Update transition progress
-        progress += deltaTime * 0.8; // Cinematic transition (1.25 seconds)
-        material.uniforms.progress.value = progress;
+      //     // Setup transition - current stays the same, next is the upcoming image
+      //     const nextIndex = (currentIndex + 1) % images.length;
+      //     material.uniforms.currentTexture.value = textures[currentIndex];
+      //     material.uniforms.nextTexture.value = textures[nextIndex];
+      //   }
+      // } else {
+      //   // Update transition progress
+      //   progress += deltaTime * 0.8; // Cinematic transition (1.25 seconds)
+      //   material.uniforms.progress.value = progress;
 
-        if (progress >= 1) {
-          // Ensure we're at full black before switching
-          material.uniforms.progress.value = 1;
-          renderer.render(scene, camera);
+      //   if (progress >= 1) {
+      //     // Ensure we're at full black before switching
+      //     material.uniforms.progress.value = 1;
+      //     renderer.render(scene, camera);
 
-          // Transition complete - update index and reset
-          currentIndex = (currentIndex + 1) % images.length;
+      //     // Transition complete - update index and reset
+      //     currentIndex = (currentIndex + 1) % images.length;
 
-          // Set both textures to the new current image
-          material.uniforms.currentTexture.value = textures[currentIndex];
-          material.uniforms.nextTexture.value = textures[currentIndex];
-          material.uniforms.progress.value = 0;
+      //     // Set both textures to the new current image
+      //     material.uniforms.currentTexture.value = textures[currentIndex];
+      //     material.uniforms.nextTexture.value = textures[currentIndex];
+      //     material.uniforms.progress.value = 0;
 
-          // Reset state
-          isTransitioning = false;
-          progress = 0;
-          displayTimer = 0; // Reset display timer for next image
-          // Note: zoomTimer continues running for smooth zoom
-        }
-      }
+      //     // Reset state
+      //     isTransitioning = false;
+      //     progress = 0;
+      //     displayTimer = 0; // Reset display timer for next image
+      //     // Note: zoomTimer continues running for smooth zoom
+      //   }
+      // }
 
       // Update texture scaling on resize
       if (textures.length > 0) {

@@ -1,20 +1,18 @@
 "use client";
 
-import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-// Import actual images
 import {
-  CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ScrollBar } from "@/components/ui/scroll-area";
+import { type CarouselApi } from "@/components/ui/carousel";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import clinic1 from "@/public/images/clinic-tour/clinic-1.webp";
 import clinic10 from "@/public/images/clinic-tour/clinic-10.webp";
 import clinic2 from "@/public/images/clinic-tour/clinic-2.webp";

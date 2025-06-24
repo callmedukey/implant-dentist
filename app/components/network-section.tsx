@@ -19,7 +19,7 @@ const logos = [
 
 const NetworkSection = () => {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="relative py-8 md:py-10 overflow-hidden">
       <div className="max-w-[95.625rem] mx-auto px-4 md:px-8">
         <div className="flex flex-col items-center gap-8 md:gap-12">
           {/* Header */}

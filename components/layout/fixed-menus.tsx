@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 
 // Import images
 import kakaoIcon from "@/public/images/quick-menu/kakao-icon.webp";
-import naverBlogIcon from "@/public/images/quick-menu/naver-blog-icon.webp";
+import naverBlogIcon from "@/public/images/quick-menu/naver-logo.png";
 import naverReservationIcon from "@/public/images/quick-menu/naver-reservation-icon.webp";
 import phoneIcon from "@/public/images/quick-menu/phone-icon.svg";
 
@@ -52,8 +52,6 @@ const FixedMenus = () => {
         <Image
           src={kakaoIcon}
           alt="카카오톡 아이콘"
-          width={32}
-          height={32}
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />
@@ -79,8 +77,6 @@ const FixedMenus = () => {
         <Image
           src={naverReservationIcon}
           alt="네이버 예약 아이콘"
-          width={32}
-          height={32}
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />
@@ -106,8 +102,6 @@ const FixedMenus = () => {
         <Image
           src={naverBlogIcon}
           alt="네이버 블로그 아이콘"
-          width={32}
-          height={32}
           className={isMobile ? "w-10 h-10" : "w-8 h-8 md:w-10 md:h-10"}
           quality={100}
         />

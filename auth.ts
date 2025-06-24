@@ -4,7 +4,7 @@ import NextAuth, { CredentialsSignin } from "next-auth";
 import type { DefaultSession } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 // import Google from "next-auth/providers/google";
-import Kakao, { Gender } from "next-auth/providers/kakao";
+import { Gender } from "next-auth/providers/kakao";
 // import Naver from "next-auth/providers/naver";
 
 import { Role } from "@/prisma/generated/prisma";
@@ -49,9 +49,9 @@ class UserNotFoundError extends CredentialsSignin {
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(prisma),
   pages: {
-    signIn: "/admin/login",
-    signOut: "/admin/login",
-    error: "/admin/login",
+    signIn: "/login",
+    signOut: "/login",
+    error: "/login",
   },
   providers: [
     Credentials({

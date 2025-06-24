@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import PopupDisplay from "@/components/popup-display";
 import { Popup, PopupImage } from "@/prisma/generated/prisma";
@@ -9,40 +9,49 @@ type PopupWithImage = Popup & {
   popupImage: PopupImage | null;
 };
 
-// Create a promise for fetching popups
-function fetchPopups(): Promise<PopupWithImage[]> {
-  return fetch("/api/popups").then((res) => {
-    if (!res.ok) throw new Error("Failed to fetch popups");
-    return res.json();
-  });
-}
-
 export default function PopupProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [popupPromise, setPopupPromise] = useState<Promise<
-    PopupWithImage[]
-  > | null>(null);
+  const [popups, setPopups] = useState<PopupWithImage[]>([]);
   const [currentPopupIndex, setCurrentPopupIndex] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
 
-  // Trigger fetch on mount
+  // Fetch popups on mount
   useEffect(() => {
-    setPopupPromise(fetchPopups());
+    fetch("/api/popups")
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        // Don't throw error, just return empty array
+        console.warn("Failed to fetch popups:", res.status);
+        return [];
+      })
+      .then((data) => {
+        setPopups(data);
+      })
+      .catch((error) => {
+        // Silently handle errors, just log them
+        console.warn("Error fetching popups:", error);
+        setPopups([]);
+      });
   }, []);
-
-  // Get popups using the use() hook
-  const popups = popupPromise ? use(popupPromise) : [];
 
   // Filter out popups that have been hidden for the day
   const visiblePopups = popups.filter((popup) => {
-    const hiddenUntil = localStorage.getItem(`popup-${popup.id}-hidden`);
-    if (!hiddenUntil) return true;
+    try {
+      const hiddenUntil = localStorage.getItem(`popup-${popup.id}-hidden`);
+      if (!hiddenUntil) return true;
 
-    const hiddenDate = new Date(hiddenUntil);
-    return new Date() > hiddenDate;
+      const hiddenDate = new Date(hiddenUntil);
+      return new Date() > hiddenDate;
+    } catch (error) {
+      // If localStorage is not available or throws an error, show the popup
+      console.warn("Error accessing localStorage:", error);
+      return true;
+    }
   });
 
   // Show first visible popup when they're loaded

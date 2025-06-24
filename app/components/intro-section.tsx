@@ -9,7 +9,7 @@ import { TextGenerateEffect } from "./text-generate-effect";
 
 const IntroSection = () => {
   return (
-    <section className="w-full flex justify-center bg-white sm:py-12 md:py-16 lg:py-20">
+    <section className="w-full flex justify-center bg-white py-8 md:py-10">
       <div className="w-full max-w-screen-max px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

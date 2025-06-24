@@ -71,7 +71,7 @@ const services = [
 
 const ServiceList = () => {
   return (
-    <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-[3.5rem] w-full max-w-[69.375rem] mx-auto px-4 md:px-6 lg:px-8 my-16">
+    <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-[3.5rem] w-full max-w-[69.375rem] mx-auto px-4 md:px-6 lg:px-8 my-8">
       <div className="flex flex-col gap-2 w-full">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-dark-primary leading-[1.6]">
           진료과목 및 서비스 안내

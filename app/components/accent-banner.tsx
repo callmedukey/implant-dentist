@@ -5,7 +5,7 @@ import logoImage from "@/public/images/accent-logo.svg";
 
 const AccentBanner = () => {
   return (
-    <section className="flex justify-center items-center bg-white py-8 md:py-10 min-h-[20rem] md:min-h-[27.8125rem] px-4 md:px-6 lg:px-8 **:break-keep">
+    <section className="flex justify-center items-center bg-white py-4 min-h-[20rem] md:min-h-[27.8125rem] px-4 md:px-6 lg:px-8 **:break-keep">
       <div className="flex flex-col items-center gap-8 w-full">
         <motion.div
           className="max-w-[15rem] md:max-w-[18rem] lg:max-w-[20.6875rem] h-[9rem] md:h-[11rem] lg:h-[12.576rem]"

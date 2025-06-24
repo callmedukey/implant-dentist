@@ -46,7 +46,7 @@ export default function PainReliefSystem() {
 
             {/* Cards Container */}
             <div className="relative w-full">
-              <div className="flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-[1.875rem] flex-wrap">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-[1.875rem] flex-wrap relative">
                 {anesthesiaSteps.map((step, index) => (
                   <motion.div
                     key={step.id}
@@ -71,8 +71,15 @@ export default function PainReliefSystem() {
                       />
                     </div>
 
-                    {/* Number Circle */}
-                    <div className="relative z-10 w-[0.9375rem] h-[0.9375rem] bg-teal-secondary rounded-full" />
+                    {/* Dot and Line Container */}
+                    <div className="relative flex items-center justify-center w-full h-[0.9375rem]">
+                      {/* Line segments between dots - only show on desktop between cards */}
+                      {index < anesthesiaSteps.length - 1 && (
+                        <div className="absolute left-[50%] w-[calc(100%+1.875rem)] h-[1.5px] bg-teal-secondary hidden lg:block" />
+                      )}
+                      {/* Number Circle */}
+                      <div className="relative z-10 w-[0.9375rem] h-[0.9375rem] bg-teal-secondary rounded-full" />
+                    </div>
 
                     {/* Text */}
                     <div className="flex flex-col items-center">
@@ -86,9 +93,6 @@ export default function PainReliefSystem() {
                   </motion.div>
                 ))}
               </div>
-
-              {/* Connecting Line */}
-              <div className="absolute top-[calc(16rem+1.5rem+0.46875rem)] left-0 right-0 h-[1.5px] bg-teal-secondary hidden lg:block" />
             </div>
           </div>
 

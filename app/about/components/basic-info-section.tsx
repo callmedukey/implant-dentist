@@ -34,7 +34,7 @@ const BasicInfoSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-12 md:gap-16 lg:gap-[5.25rem] px-4 py-12 md:py-16 lg:py-24 **:break-keep">
+    <section className="flex flex-col items-center gap-12 md:gap-16 lg:gap-[5.25rem] px-4 py-12 md:py-16 **:break-keep">
       {/* Description Section */}
       <motion.div
         className="flex flex-col gap-2 max-w-full md:max-w-2xl lg:max-w-[61.3125rem] text-center"
