@@ -99,8 +99,8 @@ export default function IntegratedCarePage() {
               />
 
               {/* Text Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center lg:left-1/2 lg:right-0">
-                <div className="flex flex-col items-center gap-2 md:gap-4 px-4 text-center lg:w-1/2">
+              <div className="absolute inset-0 left-1/2 right-0 flex items-center justify-center">
+                <div className="flex flex-col items-center gap-2 md:gap-4 px-4 text-center w-full">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
