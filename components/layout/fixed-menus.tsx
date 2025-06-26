@@ -178,7 +178,7 @@ const FixedMenus = () => {
     <>
       {/* Mobile Vertical Button */}
       <motion.div
-        className="fixed right-0 bottom-24 z-40 md:hidden"
+        className="fixed right-4 bottom-24 z-40 md:hidden"
         initial={{ x: 100 }}
         animate={{
           x: isVisible ? 0 : 100,
@@ -213,15 +213,18 @@ const FixedMenus = () => {
             {/* Backdrop */}
             <div className="absolute inset-0 bg-black/30" />
 
-            {/* Menu Content */}
+            {/* Menu Content - positioned from the right edge, sliding left into view */}
             <motion.div
-              className="absolute right-0 bottom-24 bg-white rounded-l-lg shadow-lg overflow-hidden"
-              initial={{ x: 300 }}
+              className="absolute bottom-24 bg-white rounded-l-lg shadow-lg overflow-hidden"
+              style={{
+                right: 0,
+                width: "200px",
+              }}
+              initial={{ x: 200 }}
               animate={{ x: 0 }}
-              exit={{ x: 300 }}
+              exit={{ x: 200 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               onClick={(e) => e.stopPropagation()}
-              style={{ width: "200px" }}
             >
               {/* Header */}
               <div className="bg-teal-secondary px-4 py-3 flex items-center justify-between">
@@ -235,10 +238,7 @@ const FixedMenus = () => {
               </div>
 
               {/* Menu Items */}
-              <div className="flex flex-col">
-                {/* Same menu items as desktop but with mobile sizing */}
-                {renderMenuItems(true)}
-              </div>
+              <div className="flex flex-col">{renderMenuItems(true)}</div>
             </motion.div>
           </motion.div>
         )}

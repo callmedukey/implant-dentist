@@ -5,14 +5,14 @@ import improvedResImage from "@/public/images/doctors/improved-res-2.webp";
 
 const DoctorsHeadingSection = () => {
   return (
-    <section className="flex w-full max-w-[69.375rem] flex-col items-end gap-[2.313rem] px-4 md:px-0 mx-auto py-16 md:py-24">
+    <section className="flex w-full max-w-[69.375rem] flex-col items-end gap-6 md:gap-8 lg:gap-[2.313rem] px-4 md:px-0 mx-auto py-8 md:py-12 lg:py-16">
       {/* Heading */}
-      <div className="flex w-full flex-col items-center gap-8 md:gap-12">
+      <div className="flex w-full flex-col items-center gap-4 md:gap-6 lg:gap-8">
         <div className="flex w-full flex-col items-center gap-2">
-          <p className="text-center text-base font-normal leading-[1.6] text-dark-primary opacity-50 md:text-lg">
+          <p className="text-center text-14 md:text-base lg:text-lg font-normal leading-[1.6] text-dark-primary opacity-50">
             CHOONEEPLANT DENTAL CLINIC
           </p>
-          <h1 className="text-center text-3xl font-bold leading-[1.6] text-dark-primary md:text-4xl">
+          <h1 className="text-center text-xl md:text-3xl lg:text-4xl font-bold leading-[1.6] text-dark-primary">
             전문의 소개
           </h1>
         </div>
@@ -23,7 +23,7 @@ const DoctorsHeadingSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex w-full flex-col items-center gap-6 rounded-lg bg-black/5 p-6 md:p-8 **:break-keep"
+        className="flex w-full flex-col items-center gap-4 md:gap-5 lg:gap-6 rounded-lg bg-black/5 p-4 md:p-6 lg:p-8 **:break-keep"
       >
         <Image
           src={improvedResImage}
@@ -34,11 +34,11 @@ const DoctorsHeadingSection = () => {
           className="h-auto w-full max-w-[31.25rem]"
         />
         <div className="flex w-full flex-col gap-4">
-          <h2 className="text-center text-xl font-bold leading-[1.6] text-black md:text-2xl">
+          <h2 className="text-center text-base md:text-xl lg:text-2xl font-bold leading-[1.6] text-black">
             양주 조은이플란트치과는 전원 보건복지부 인증 전문의로 구성된
             치과입니다.
           </h2>
-          <p className="text-center text-base font-normal leading-[1.6] text-dark-primary md:text-lg">
+          <p className="text-center text-14 md:text-base lg:text-lg font-normal leading-[1.6] text-dark-primary">
             저희 양주 조은이플란트치과는 풍부한 경험과 철저한 전문 지식을
             바탕으로,
             <br />

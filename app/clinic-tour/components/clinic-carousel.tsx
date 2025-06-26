@@ -19,7 +19,6 @@ import clinic2 from "@/public/images/clinic-tour/clinic-2.webp";
 import clinic3 from "@/public/images/clinic-tour/clinic-3.webp";
 import clinic4 from "@/public/images/clinic-tour/clinic-4.webp";
 import clinic5 from "@/public/images/clinic-tour/clinic-5.webp";
-import clinic6 from "@/public/images/clinic-tour/clinic-6.webp";
 import clinic7 from "@/public/images/clinic-tour/clinic-7.webp";
 import clinic8 from "@/public/images/clinic-tour/clinic-8.webp";
 import clinic9 from "@/public/images/clinic-tour/clinic-9.webp";
@@ -30,7 +29,7 @@ const carouselImages = [
   { id: 3, src: clinic3, alt: "조은이플란트치과 상담실" },
   { id: 4, src: clinic4, alt: "조은이플란트치과 수술실" },
   { id: 5, src: clinic5, alt: "조은이플란트치과 엑스레이실" },
-  { id: 6, src: clinic6, alt: "조은이플란트치과 소독실" },
+  // { id: 6, src: clinic6, alt: "조은이플란트치과 소독실" },
   { id: 7, src: clinic7, alt: "조은이플란트치과 복도" },
   { id: 8, src: clinic8, alt: "조은이플란트치과 안내데스크" },
   { id: 9, src: clinic9, alt: "조은이플란트치과 회복실" },

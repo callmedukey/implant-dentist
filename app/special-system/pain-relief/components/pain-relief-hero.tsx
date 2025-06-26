@@ -5,7 +5,7 @@ import painReliefHeroBg from "@/public/images/pain-relief/pain-relief-hero-bg.we
 
 export default function PainReliefHero() {
   return (
-    <section className="relative w-full h-[25rem] md:h-[30rem] lg:h-[39.75rem] overflow-hidden">
+    <section className="relative w-full h-[15rem] md:h-[20rem] lg:h-[39.75rem] overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -26,7 +26,7 @@ export default function PainReliefHero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col gap-2 md:gap-4 lg:gap-2 max-w-3xl"
+            className="flex flex-col gap-3 md:gap-4 lg:gap-2 max-w-3xl mx-auto text-center lg:text-left"
           >
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export default function PainReliefHero() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-3xl md:text-4xl lg:text-4xl font-bold text-white leading-[1.6]"
+              className="text-xl md:text-2xl lg:text-4xl font-bold text-white leading-[1.6]"
             >
               치과 치료 너무 무서우시죠?
             </motion.h1>
@@ -51,7 +51,7 @@ export default function PainReliefHero() {
                 delay: 0.4,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-3xl md:text-4xl lg:text-4xl font-bold text-white leading-[1.6]"
+              className="text-xl md:text-2xl lg:text-4xl font-bold text-white leading-[1.6]"
             >
               조은이플란트치과가 준비했습니다.
             </motion.p>

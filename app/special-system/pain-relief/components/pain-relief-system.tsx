@@ -29,9 +29,9 @@ const anesthesiaSteps = [
 
 export default function PainReliefSystem() {
   return (
-    <section className="relative w-full py-16 md:py-20 lg:py-24 mb-16 lg:mb-24">
+    <section className="relative w-full pt-8 md:py-20 lg:py-24 mb-16 lg:mb-24">
       <div className="mx-auto max-w-[90rem] px-4 md:px-8 lg:px-16">
-        <div className="flex flex-col items-center gap-16 lg:gap-40">
+        <div className="flex flex-col items-center gap-12 md:gap-16 lg:gap-40">
           {/* First Section - Cards */}
           <div className="flex flex-col items-center gap-8 lg:gap-[3.1875rem] w-full">
             <motion.h2
@@ -39,7 +39,7 @@ export default function PainReliefSystem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="text-2xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
+              className="text-xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
             >
               조은이플란트치과의 통증 완화 시스템
             </motion.h2>
@@ -58,7 +58,7 @@ export default function PainReliefSystem() {
                       delay: 0.2 + index * 0.2,
                       ease: [0.22, 1, 0.36, 1],
                     }}
-                    className="flex flex-col items-center gap-6 w-full max-w-[21.875rem]"
+                    className="flex flex-col items-center gap-4 md:gap-6 w-full max-w-[21.875rem]"
                   >
                     {/* Card Image */}
                     <div className="relative w-full h-[16rem] rounded-lg overflow-hidden">
@@ -83,10 +83,10 @@ export default function PainReliefSystem() {
 
                     {/* Text */}
                     <div className="flex flex-col items-center">
-                      <p className="text-xl font-bold text-dark-primary">
+                      <p className="text-14 md:text-lg lg:text-xl font-bold text-dark-primary">
                         {step.title}
                       </p>
-                      <p className="text-xl font-bold text-teal-secondary">
+                      <p className="text-14 md:text-lg lg:text-xl font-bold text-teal-secondary">
                         {step.subtitle}
                       </p>
                     </div>
@@ -102,7 +102,7 @@ export default function PainReliefSystem() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-12 w-full max-w-[57.5rem]"
+            className="flex flex-col items-center gap-8 md:gap-12 w-full max-w-[57.5rem]"
           >
             <div className="flex flex-col items-center gap-10 w-full">
               <div className="flex flex-col items-center gap-4 w-full">
@@ -115,7 +115,7 @@ export default function PainReliefSystem() {
                     delay: 0.2,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="text-2xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
+                  className="text-xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
                 >
                   조은이플란트치과의 통증 완화 시스템
                 </motion.h3>
@@ -129,7 +129,7 @@ export default function PainReliefSystem() {
                     delay: 0.4,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="text-lg md:text-xl lg:text-xl text-dark-primary text-center leading-[1.6] px-4 py-6"
+                  className="text-14 md:text-xl lg:text-xl text-dark-primary text-center leading-[1.6] px-3 py-4 md:px-4 md:py-6"
                 >
                   치과가실때마다 {`"무통마취기로 해주세요"`}라고 부탁하지
                   않으셔도 됩니다.
@@ -169,9 +169,9 @@ export default function PainReliefSystem() {
                   delay: 0.8,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="text-2xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
+                className="text-base md:text-xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
               >
-                조은이플란트치과에서는{" "}
+                조은이플란트치과에서는 <br className="sm:hidden" />
                 <span className="text-teal-secondary">
                   깊은 마취까지 무통마취기
                 </span>

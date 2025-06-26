@@ -11,9 +11,10 @@ import ctScanIcon from "@/public/images/digital/3d-ct-scan.svg";
 import digitalCard1Bg from "@/public/images/digital/digital-card-1-bg.webp";
 import digitalCard2Bg from "@/public/images/digital/digital-card-2-bg.webp";
 import digitalCard3Bg from "@/public/images/digital/digital-card-3-bg.webp";
-import digitalImplantMain from "@/public/images/digital/digital-implant-main.webp";
 import digitalSurgeryIcon from "@/public/images/digital/digital-surgery.svg";
 import surgeryRouteIcon from "@/public/images/digital/surgery-route.svg";
+import digitalImplantBg from "@/public/images/digital-implant-bg.webp";
+import digitalTooth from "@/public/images/digital-tooth.webp";
 import specialCard1Bg from "@/public/images/services/implant-bg.webp";
 import toothIcon from "@/public/images/special-implant/insurance-tooth-icon.webp";
 import specialCard2Bg from "@/public/images/special-implant/special-card-2-bg.webp";
@@ -41,9 +42,9 @@ export default function SpecialImplantPage() {
       {/* 특별한 임플란트 Section - EXACT COPY FROM special-implant/page.tsx */}
       <section
         id="special-implant"
-        className="scroll-mt-[6.25rem] pt-8 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
-        <div className="flex flex-col items-center py-12 md:py-16 lg:py-20 **:break-keep">
+        <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -59,7 +60,7 @@ export default function SpecialImplantPage() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-base md:text-lg lg:text-[1.2rem] text-dark-primary uppercase"
+              className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary uppercase"
             >
               CHOONEEPLANT DENTAL CLINIC
             </motion.p>
@@ -72,7 +73,7 @@ export default function SpecialImplantPage() {
                 delay: 0.4,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-2xl md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary"
+              className="text-xl md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary"
             >
               조은이플란트의 특별함
             </motion.h1>
@@ -85,7 +86,7 @@ export default function SpecialImplantPage() {
                 delay: 0.6,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-lg md:text-xl lg:text-[1.44rem] text-dark-primary mt-1"
+              className="text-base md:text-xl lg:text-[1.44rem] text-dark-primary mt-1"
             >
               고난이도 케이스일수록 강한 임플란트,
               <br />
@@ -102,7 +103,7 @@ export default function SpecialImplantPage() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex flex-col gap-12 md:gap-16 lg:gap-20 mt-12 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col gap-8 md:gap-16 lg:gap-20 mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             {/* Card 1 - 치과 전문의 직접 수술 */}
             <motion.div
@@ -128,18 +129,18 @@ export default function SpecialImplantPage() {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col gap-4 px-0 lg:px-4 w-full lg:w-1/2 order-1 lg:order-2">
-                <div className="flex items-center gap-4">
-                  <span className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-teal-secondary">
+              <div className="flex flex-col gap-4 px-0 lg:px-4 w-full lg:w-1/2 order-1 lg:order-2 text-center lg:text-left">
+                <div className="flex items-center gap-4 justify-center lg:justify-start">
+                  <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-teal-secondary">
                     01
                   </span>
-                  <h3 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary">
+                  <h3 className="text-base md:text-xl lg:text-[2.074rem] font-bold text-dark-primary">
                     치과 전문의 직접 수술
                   </h3>
                 </div>
 
                 <div className="flex flex-col gap-2 mt-2">
-                  <p className="text-base lg:text-lg text-dark-primary leading-relaxed">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
                     조은이플란트치과의 전문의가 만족스러운 결과를 받아볼 수
                     있도록{" "}
                     <span className="font-bold text-teal-secondary">
@@ -150,9 +151,9 @@ export default function SpecialImplantPage() {
 
                   <Link
                     href="/about#doctors"
-                    className="inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors w-fit mt-4 lg:mt-6"
+                    className="inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors w-fit mt-4 lg:mt-6 mx-auto lg:mx-0"
                   >
-                    <span className="text-base">전문의 보기</span>
+                    <span className="text-14 md:text-base">전문의 보기</span>
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                       <path
                         d="M1 4H9M9 4L6 1M9 4L6 7"
@@ -180,17 +181,17 @@ export default function SpecialImplantPage() {
               className="flex flex-col lg:flex-row gap-6 lg:gap-6 rounded-lg overflow-hidden"
             >
               {/* Content */}
-              <div className="flex flex-col gap-4 px-0 lg:px-4 w-full lg:w-1/2">
-                <div className="flex items-center gap-4">
-                  <span className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-teal-secondary">
+              <div className="flex flex-col gap-4 px-0 lg:px-4 w-full lg:w-1/2 text-center lg:text-left">
+                <div className="flex items-center gap-4 justify-center lg:justify-start">
+                  <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-teal-secondary">
                     02
                   </span>
-                  <h3 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary">
+                  <h3 className="text-base md:text-xl lg:text-[2.074rem] font-bold text-dark-primary">
                     첨단 디지털 장비와 기술력
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base lg:text-lg text-dark-primary leading-relaxed mt-2">
+                <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed mt-2">
                   장비에 진심인 조은이플란트는 빠르게 변해가는 임플란트 트렌드를
                   항상 익히고,{" "}
                   <span className="font-bold text-teal-secondary">
@@ -219,7 +220,7 @@ export default function SpecialImplantPage() {
           </motion.section>
 
           {/* Additional Features Section - Grid */}
-          <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[1.625rem] mt-12 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full">
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[1.625rem] mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full">
             {/* Card 3 - Left Column */}
             <div className="flex flex-col gap-4">
               {/* Header with colored background */}
@@ -235,12 +236,12 @@ export default function SpecialImplantPage() {
                 className="bg-teal-secondary rounded-lg p-6 md:p-8 lg:p-10 flex flex-col items-center"
               >
                 <div className="flex items-center gap-4 flex-col">
-                  <div className="bg-white rounded-full px-4 py-3">
-                    <span className="text-xl md:text-2xl font-bold text-teal-secondary">
+                  <div className="bg-white rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                    <span className="text-base md:text-xl lg:text-2xl font-bold text-teal-secondary">
                       03
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white">
+                  <h3 className="text-base md:text-xl lg:text-2xl font-bold text-white">
                     임상적 예후가 검증된 정품만 사용
                   </h3>
                 </div>
@@ -277,9 +278,9 @@ export default function SpecialImplantPage() {
                   delay: 0.5,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="px-0 lg:px-9"
+                className="px-0 lg:px-9 text-center lg:text-left"
               >
-                <p className="text-sm md:text-base lg:text-lg text-dark-primary leading-relaxed">
+                <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
                   조은이플란트치과는 임상적 예후가 검증된{" "}
                   <span className="font-bold text-teal-secondary">
                     100% <br /> 정품
@@ -325,12 +326,12 @@ export default function SpecialImplantPage() {
                 className="bg-teal-bg rounded-lg p-6 md:p-8 lg:p-10 flex flex-col items-center"
               >
                 <div className="flex items-center gap-4 flex-col">
-                  <div className="bg-white rounded-full px-4 py-3">
-                    <span className="text-xl md:text-2xl font-bold text-teal-secondary">
+                  <div className="bg-white rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                    <span className="text-base md:text-xl lg:text-2xl font-bold text-teal-secondary">
                       04
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-teal-secondary">
+                  <h3 className="text-base md:text-xl lg:text-2xl font-bold text-teal-secondary">
                     고난도 수술 및 재수술
                   </h3>
                 </div>
@@ -346,15 +347,15 @@ export default function SpecialImplantPage() {
                   delay: 0.6,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="px-6 lg:px-8"
+                className="px-6 lg:px-8 text-center lg:text-left"
               >
-                <p className="text-sm md:text-base lg:text-lg text-dark-primary leading-relaxed">
+                <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
                   조은이플란트치과는{" "}
                   <span className="font-bold text-teal-secondary">
                     고난이도 케이스에 강합니다.
                   </span>
                 </p>
-                <p className="text-sm md:text-base lg:text-lg text-dark-primary leading-relaxed">
+                <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
                   풍부한 경험과 수많은 임상 증례로 고난도를 요하는 진료도 정확성
                   높게 치료가 가능합니다.
                 </p>
@@ -371,7 +372,7 @@ export default function SpecialImplantPage() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex flex-col gap-6 mt-12 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col gap-6 mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             {/* Image */}
             <motion.div
@@ -406,10 +407,10 @@ export default function SpecialImplantPage() {
               }}
               className="flex flex-wrap items-center justify-center gap-4"
             >
-              <span className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-teal-secondary">
+              <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-teal-secondary">
                 05
               </span>
-              <h3 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary">
+              <h3 className="text-base md:text-xl lg:text-[2.074rem] font-bold text-dark-primary">
                 사후관리케어
               </h3>
             </motion.div>
@@ -426,10 +427,10 @@ export default function SpecialImplantPage() {
               }}
               className="flex flex-col gap-2 text-center px-0 md:px-8 pb-6 md:pb-8 lg:pb-12"
             >
-              <p className="text-sm md:text-base lg:text-lg text-teal-secondary font-bold leading-relaxed">
+              <p className="text-14 md:text-base lg:text-lg text-teal-secondary font-bold leading-relaxed">
                 치과 치료는 끝이 아니라, 관리의 시작입니다.
               </p>
-              <p className="text-sm md:text-base lg:text-lg text-dark-primary leading-relaxed">
+              <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
                 조은이플란트치과는 식립한 임플란트를 오랫동안 잘 사용하실 수
                 있도록 꼼꼼하게 케어해드립니다.
               </p>
@@ -441,17 +442,17 @@ export default function SpecialImplantPage() {
       {/* 명품 뼈이식 Section - EXACT COPY FROM bone-graft/page.tsx */}
       <section
         id="bone-graft"
-        className="scroll-mt-[6.25rem] pt-8 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
-        <div className="flex flex-col items-center py-12 md:py-16 lg:py-20 **:break-keep">
+        <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-12 md:gap-16 lg:gap-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col items-center gap-8 md:gap-16 lg:gap-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             {/* Header Section */}
-            <div className="flex flex-col items-center gap-6 md:gap-8 lg:gap-12 text-center">
+            <div className="flex flex-col items-center gap-4 md:gap-8 lg:gap-12 text-center">
               {/* Title Group */}
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -463,7 +464,7 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col gap-2"
               >
-                <p className="text-base md:text-lg lg:text-[1.2rem] text-dark-primary opacity-50 uppercase">
+                <p className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary opacity-50 uppercase">
                   CHOONEEPLANT DENTAL CLINIC
                 </p>
                 <h1 className="text-2xl md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary mt-2">
@@ -480,7 +481,7 @@ export default function SpecialImplantPage() {
                   delay: 0.4,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="text-lg md:text-xl lg:text-[1.44rem] text-black max-w-[45.5rem]"
+                className="text-base md:text-xl lg:text-[1.44rem] text-black max-w-[45.5rem]"
               >
                 일반 치과에서는 찾아보기 어렵고,
                 <br />
@@ -518,7 +519,7 @@ export default function SpecialImplantPage() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary text-center leading-relaxed"
+              className="text-base md:text-xl lg:text-[2.074rem] font-bold text-dark-primary text-center leading-relaxed"
             >
               양주 조은이플란트치과는 스위스 기업 가이스트리히사의
               <br />
@@ -527,7 +528,7 @@ export default function SpecialImplantPage() {
           </motion.section>
 
           {/* Full Width Banner */}
-          <section className="w-full bg-teal-secondary mt-12 md:mt-16 lg:mt-20 overflow-hidden">
+          <section className="w-full bg-teal-secondary mt-8 md:mt-16 lg:mt-20 overflow-hidden">
             <motion.div
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -550,7 +551,7 @@ export default function SpecialImplantPage() {
                   }}
                   className="bg-white rounded px-4 py-0"
                 >
-                  <span className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-teal-secondary">
+                  <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-teal-secondary">
                     잇몸뼈 이식
                   </span>
                 </motion.div>
@@ -563,7 +564,7 @@ export default function SpecialImplantPage() {
                     delay: 0.4,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-white text-center"
+                  className="text-base md:text-xl lg:text-[2.074rem] font-bold text-white text-center"
                 >
                   임플란트 전에 꼭 확인하세요!
                 </motion.h2>
@@ -580,7 +581,7 @@ export default function SpecialImplantPage() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex flex-col items-center gap-12 md:gap-16 lg:gap-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full mt-12 md:mt-16 lg:mt-20"
+            className="flex flex-col items-center gap-8 md:gap-16 lg:gap-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full mt-8 md:mt-16 lg:mt-20"
           >
             {/* Feature Row */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[1.875rem] w-full">
@@ -615,12 +616,12 @@ export default function SpecialImplantPage() {
                   delay: 0.4,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="flex flex-col gap-4 w-full max-w-[35rem] px-0 lg:px-2 order-1 lg:order-2"
+                className="flex flex-col gap-4 w-full max-w-[35rem] px-0 lg:px-2 order-1 lg:order-2 text-center lg:text-left"
               >
-                <h2 className="text-2xl md:text-3xl lg:text-[2.074rem] font-bold text-dark-primary">
+                <h2 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary">
                   왜 바이오오스를 선택해야 할까요?
                 </h2>
-                <p className="text-lg md:text-xl lg:text-[1.44rem] text-dark-primary leading-relaxed">
+                <p className="text-base md:text-xl lg:text-[1.44rem] text-dark-primary leading-relaxed">
                   바이오오스는 뛰어난 생체 적합성을 바탕으로 임플란트가 뼈에{" "}
                   <span className="font-bold text-teal-secondary">
                     자연스럽게 결합되도록{" "}
@@ -646,7 +647,7 @@ export default function SpecialImplantPage() {
               }}
               className="px-0 md:px-12 lg:px-[4.8rem]"
             >
-              <p className="text-xl md:text-2xl font-bold text-dark-primary text-center leading-relaxed max-w-xl">
+              <p className="text-base md:text-xl lg:text-2xl font-bold text-dark-primary text-center leading-relaxed max-w-xl">
                 조은이플란트는 항상 최고의 시술 방식을 고민하며,{" "}
                 <span className="font-bold text-teal-secondary">
                   최적의 치료 결과
@@ -665,49 +666,147 @@ export default function SpecialImplantPage() {
         id="digital"
         className="scroll-mt-[6.25rem] min-h-screen bg-white pt-8 pb-0 md:pt-0 md:pb-0"
       >
-        {/* Hero Section */}
-        <section className="pt-20 pb-16 md:pt-24 md:pb-20">
-          <div className="mx-auto max-w-[69.375rem] px-4">
+        {/* Updated Digital Implant Hero Section */}
+        <section className="py-8 md:py-12 lg:py-16">
+          <div className="mx-auto max-w-5xl px-4 md:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center"
-            >
-              <p className="mb-2 text-base md:text-lg text-dark-primary/50">
-                CHOONEEPLANT DENTAL CLINIC
-              </p>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark-primary mt-4 mb-12">
-                디지털 임플란트
-              </h1>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
+              initial={{ opacity: 0, y: 60, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{
-                duration: 0.8,
-                delay: 0.2,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="mt-6 md:mt-10"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="relative bg-teal-secondary rounded-lg overflow-hidden"
             >
-              <div className="relative rounded-lg overflow-hidden">
+              {/* Background decoration */}
+              <div className="absolute inset-0 hidden md:block">
+                {/* Background image - only visible on tablet and desktop */}
                 <Image
-                  src={digitalImplantMain}
-                  alt="디지털 임플란트 시술 이미지"
+                  src={digitalImplantBg}
+                  alt="디지털 임플란트 배경"
+                  fill
+                  className="object-fit"
                   quality={100}
-                  className="w-full h-auto"
                 />
+              </div>
+
+              {/* Grid Container */}
+              <div className="relative z-20 md:grid md:grid-cols-5 md:gap-4 lg:gap-8 w-full py-8 md:py-12 lg:py-16">
+                {/* Digital tooth image - Spans first 2 columns */}
+                <div className="hidden md:flex md:col-span-2 items-center justify-center relative">
+                  <div className="relative w-full h-[300px] lg:h-[400px]">
+                    <Image
+                      src={digitalTooth}
+                      alt="디지털 임플란트"
+                      fill
+                      className="object-contain scale-120 translate-y-12 translate-x-30"
+                      quality={100}
+                    />
+                  </div>
+                </div>
+
+                {/* Content - Spans last 3 columns */}
+                <div className="md:col-span-3 flex flex-col items-start px-4 md:px-0">
+                  {/* Header Section */}
+                  <div className="flex flex-col items-center md:items-start gap-2 md:gap-3 lg:gap-4 text-center md:text-left mb-6 md:mb-8 lg:mb-12 w-full">
+                    <motion.p
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 0.5, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{
+                        duration: 0.8,
+                        delay: 0.2,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="text-14 md:text-base lg:text-[1.2rem] text-white uppercase"
+                    >
+                      CHOONEEPLANT DENTAL CLINIC
+                    </motion.p>
+
+                    <motion.h1
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{
+                        duration: 0.8,
+                        delay: 0.4,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="flex flex-col items-center gap-2"
+                    >
+                      <span className="text-xl md:text-3xl lg:text-[2.489rem] font-bold text-white">
+                        올바르게 식립하는
+                      </span>
+                      <span className="bg-white text-teal-secondary px-4 md:px-6 py-1 rounded-lg text-xl md:text-3xl lg:text-[2.489rem] font-bold">
+                        디지털 임플란트
+                      </span>
+                    </motion.h1>
+                  </div>
+
+                  {/* Features List */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.6,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="flex flex-col gap-3 md:gap-4 lg:gap-6 w-full max-w-[34.375rem] mx-auto lg:mr-auto lg:ml-0"
+                  >
+                    {/* Feature 1 */}
+                    <div className="bg-white rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center gap-3 md:gap-5">
+                      <div className="bg-teal-secondary rounded-full w-10 h-10 md:w-11 md:h-11 flex items-center justify-center flex-shrink-0">
+                        <span className="text-base md:text-lg lg:text-[1.728rem] font-bold text-white">
+                          1
+                        </span>
+                      </div>
+                      <p className="text-14 md:text-base lg:text-[1.44rem] font-bold text-dark-primary">
+                        CT보다 방사선량이 적은 안전하고 정확한{" "}
+                        <span className="font-bold text-teal-secondary">
+                          CBCT
+                        </span>
+                      </p>
+                    </div>
+
+                    {/* Feature 2 */}
+                    <div className="bg-white rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center gap-3 md:gap-5">
+                      <div className="bg-teal-secondary rounded-full w-10 h-10 md:w-11 md:h-11 flex items-center justify-center flex-shrink-0">
+                        <span className="text-base md:text-lg lg:text-[1.728rem] font-bold text-white">
+                          2
+                        </span>
+                      </div>
+                      <p className="text-14 md:text-base lg:text-[1.44rem] font-bold text-dark-primary">
+                        편안하고 정확한 최신 구강 스캐너{" "}
+                        <span className="font-bold text-teal-secondary">
+                          TRIOS 5
+                        </span>
+                      </p>
+                    </div>
+
+                    {/* Feature 3 */}
+                    <div className="bg-white rounded-full px-4 md:px-6 py-2 md:py-3 flex items-center gap-3 md:gap-5">
+                      <div className="bg-teal-secondary rounded-full w-10 h-10 md:w-11 md:h-11 flex items-center justify-center flex-shrink-0">
+                        <span className="text-base md:text-lg lg:text-[1.728rem] font-bold text-white">
+                          3
+                        </span>
+                      </div>
+                      <p className="text-14 md:text-base lg:text-[1.44rem] font-bold text-dark-primary">
+                        <span className="font-bold text-teal-secondary">
+                          네비게이션
+                        </span>{" "}
+                        임플란트{" "}
+                        <span className="text-xs">(상담 시 추가 문의)</span>
+                      </p>
+                    </div>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>
         </section>
 
         {/* Navigation Implant Section */}
-        <section className="py-16 md:py-20 overflow-x-hidden">
+        <section className="py-12 md:py-20 overflow-x-hidden">
           <div className="mx-auto max-w-[69.375rem] px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -716,10 +815,10 @@ export default function SpecialImplantPage() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-primary mb-3">
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-dark-primary mb-3">
                 네비게이션 임플란트
               </h2>
-              <p className="text-lg md:text-xl lg:text-2xl text-dark-primary max-w-5xl mx-auto px-8 leading-relaxed mt-4">
+              <p className="text-14 md:text-base lg:text-2xl text-dark-primary max-w-5xl mx-auto px-4 md:px-8 leading-relaxed mt-4">
                 네비게이션 임플란트는 3D CT를 통해 골조직, 신경 위치 등을
                 파악하여 디지털 모의 수술을 진행한 후 빠르고 안전성 높은
                 수술경로를 찾아주는 디지털 임플란트 시술방법입니다.
@@ -751,7 +850,7 @@ export default function SpecialImplantPage() {
                     />
                   </div>
                   <div className="w-[0.9375rem] h-[0.9375rem] rounded-full bg-teal-secondary" />
-                  <h3 className="text-lg font-bold text-black text-center">
+                  <h3 className="text-base md:text-lg font-bold text-black text-center">
                     3D CT 스캔
                   </h3>
                 </motion.div>
@@ -790,7 +889,7 @@ export default function SpecialImplantPage() {
                     />
                   </div>
                   <div className="w-[0.9375rem] h-[0.9375rem] rounded-full bg-teal-secondary" />
-                  <h3 className="text-lg font-bold text-black text-center">
+                  <h3 className="text-base md:text-lg font-bold text-black text-center">
                     안전성 높은
                     <br />
                     수술 경로 파악
@@ -831,7 +930,7 @@ export default function SpecialImplantPage() {
                     />
                   </div>
                   <div className="w-[0.9375rem] h-[0.9375rem] rounded-full bg-teal-secondary" />
-                  <h3 className="text-lg font-bold text-black text-center">
+                  <h3 className="text-base md:text-lg font-bold text-black text-center">
                     디지털 모의 수술
                   </h3>
                 </motion.div>
@@ -969,7 +1068,7 @@ export default function SpecialImplantPage() {
                   }}
                   className="w-20 flex justify-center"
                 >
-                  <h3 className="text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
+                  <h3 className="text-base md:text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
                     3D CT 스캔
                   </h3>
                 </motion.div>
@@ -984,7 +1083,7 @@ export default function SpecialImplantPage() {
                   }}
                   className="w-20 flex justify-center"
                 >
-                  <h3 className="text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
+                  <h3 className="text-base md:text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
                     안전성 높은 수술 경로 파악
                   </h3>
                 </motion.div>
@@ -999,7 +1098,7 @@ export default function SpecialImplantPage() {
                   }}
                   className="w-20 flex justify-center"
                 >
-                  <h3 className="text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
+                  <h3 className="text-base md:text-xl lg:text-2xl font-bold text-black text-center whitespace-nowrap">
                     디지털 모의 수술
                   </h3>
                 </motion.div>
@@ -1009,7 +1108,7 @@ export default function SpecialImplantPage() {
         </section>
 
         {/* Digital Paradigm Section */}
-        <section className="py-16 md:py-20">
+        <section className="py-12 md:py-20">
           {/* Full Width Header */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -1028,7 +1127,7 @@ export default function SpecialImplantPage() {
                   delay: 0.2,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="text-base md:text-lg text-white mb-2"
+                className="text-14 md:text-base lg:text-lg text-white mb-2"
               >
                 CHOONEEPLANT DENTAL CLINIC
               </motion.p>
@@ -1041,7 +1140,7 @@ export default function SpecialImplantPage() {
                   delay: 0.4,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="text-2xl md:text-3xl lg:text-[2.074rem] font-bold text-white"
+                className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-white"
               >
                 디지털 임플란트, 기존의 패러다임을 바꾸다
               </motion.h2>
@@ -1073,10 +1172,10 @@ export default function SpecialImplantPage() {
                   />
                 </div>
                 <div className="flex flex-col gap-2 px-4">
-                  <h3 className="text-xl md:text-[1.44rem] font-bold text-teal-secondary text-center">
+                  <h3 className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary text-center">
                     경험을 넘어선 치과 치료
                   </h3>
-                  <p className="text-base md:text-lg text-dark-primary text-center leading-relaxed">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
                     조은이플란트치과는 감각이나 경험치에만 의존하지 않습니다.
                   </p>
                 </div>
@@ -1104,10 +1203,10 @@ export default function SpecialImplantPage() {
                   />
                 </div>
                 <div className="flex flex-col gap-2 px-4">
-                  <h3 className="text-xl md:text-[1.44rem] font-bold text-teal-secondary text-center">
+                  <h3 className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary text-center">
                     데이터에 기반한 정확한 진단
                   </h3>
-                  <p className="text-base md:text-lg text-dark-primary text-center leading-relaxed">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
                     돌다리도 두드리듯, 정확하고 객관적인 데이터로 진단하고
                     식립합니다.
                   </p>
@@ -1135,11 +1234,11 @@ export default function SpecialImplantPage() {
                     className="object-cover"
                   />
                 </div>
-                <div className="flex flex-col gap-2 px-4 mb-12">
-                  <h3 className="text-xl md:text-[1.44rem] font-bold text-teal-secondary text-center">
+                <div className="flex flex-col gap-2 px-4 mb-8 md:mb-12">
+                  <h3 className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary text-center">
                     최신 장비로 설계한 임플란트
                   </h3>
-                  <p className="text-base md:text-lg text-dark-primary text-center leading-relaxed">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
                     정밀한 CT와 최신 스캐너를 이용하여 파악된 정확한 환자
                     데이터를 기반으로 식립을 계획합니다.
                   </p>
@@ -1153,9 +1252,9 @@ export default function SpecialImplantPage() {
       {/* 보험 임플란트 Section - EXACT COPY FROM insurance/page.tsx */}
       <section
         id="insurance"
-        className="scroll-mt-[6.25rem] pt-8 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
-        <div className="flex flex-col items-center py-12 md:py-16 lg:py-20 **:break-keep">
+        <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -1173,7 +1272,7 @@ export default function SpecialImplantPage() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-base md:text-lg lg:text-[1.2rem] text-dark-primary uppercase leading-[1.6]"
+              className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary uppercase leading-[1.6]"
             >
               CHOONEEPLANT DENTAL CLINIC
             </motion.p>
@@ -1187,7 +1286,7 @@ export default function SpecialImplantPage() {
                 delay: 0.4,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-3xl md:text-4xl lg:text-[2.489rem] font-bold text-dark-primary leading-[1.6]"
+              className="text-xl md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary leading-[1.6]"
             >
               보험 임플란트
             </motion.h1>
@@ -1201,7 +1300,7 @@ export default function SpecialImplantPage() {
                 delay: 0.6,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-lg md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary leading-[1.6] mt-2"
+              className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary leading-[1.6] mt-2"
             >
               65세 이상 환자분들의 건강한 노후를 함께합니다
             </motion.p>
@@ -1213,7 +1312,7 @@ export default function SpecialImplantPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-12 md:gap-16 lg:gap-20 mt-12 md:mt-16 lg:mt-20 w-full"
+            className="flex flex-col items-center gap-8 md:gap-16 lg:gap-20 mt-8 md:mt-16 lg:mt-20 w-full"
           >
             {/* Age Badge */}
             <motion.div
@@ -1227,7 +1326,7 @@ export default function SpecialImplantPage() {
               }}
               className="bg-teal-secondary rounded-full w-[12rem] h-[12rem] md:w-[14rem] md:h-[14rem] lg:w-[16rem] lg:h-[16rem] flex items-center justify-center"
             >
-              <span className="text-3xl md:text-4xl lg:text-[2.489rem] font-bold text-white">
+              <span className="text-xl md:text-3xl lg:text-[2.489rem] font-bold text-white">
                 65세 이상
               </span>
             </motion.div>
@@ -1246,7 +1345,7 @@ export default function SpecialImplantPage() {
                 }}
                 className="bg-teal-secondary py-4 flex items-center justify-center w-full"
               >
-                <span className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-white">
+                <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-white">
                   혜택 조건
                 </span>
               </motion.div>
@@ -1277,14 +1376,14 @@ export default function SpecialImplantPage() {
 
                   {/* Text Content */}
                   <div className="flex flex-col gap-2 w-full max-w-[19.063rem]">
-                    <h3 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-dark-primary text-center leading-[1.6]">
+                    <h3 className="text-base md:text-xl lg:text-[2.074rem] font-bold text-dark-primary text-center leading-[1.6]">
                       임플란트
                     </h3>
                     <div className="flex flex-col gap-1 text-center">
-                      <p className="text-lg md:text-xl lg:text-[1.44rem] text-dark-primary leading-[1.6]">
+                      <p className="text-14 md:text-base lg:text-[1.44rem] text-dark-primary leading-[1.6]">
                         평생 2개까지,
                       </p>
-                      <p className="text-lg md:text-xl lg:text-[1.44rem] text-dark-primary leading-[1.6]">
+                      <p className="text-14 md:text-base lg:text-[1.44rem] text-dark-primary leading-[1.6]">
                         치아가 남아있는 상태
                       </p>
                     </div>
@@ -1300,7 +1399,7 @@ export default function SpecialImplantPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col gap-8 md:gap-8 lg:gap-8 mt-12 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-[69.375rem] mx-auto w-full mb-12"
+            className="flex flex-col gap-6 md:gap-8 lg:gap-8 mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-[69.375rem] mx-auto w-full mb-8 md:mb-12"
           >
             {/* Section Header */}
             <motion.div
@@ -1312,9 +1411,9 @@ export default function SpecialImplantPage() {
                 delay: 0.1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="border-b border-dark-primary pb-2"
+              className="border-b border-dark-primary pb-2 text-center lg:text-left"
             >
-              <h2 className="text-2xl md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary">
+              <h2 className="text-xl md:text-2xl lg:text-[2.489rem] font-bold text-dark-primary">
                 임플란트 건강보험 안내
               </h2>
             </motion.div>
@@ -1333,15 +1432,15 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col md:flex-row items-start"
               >
-                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0">
+                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0 justify-center lg:justify-start">
                   <div className="bg-teal-secondary rounded-full px-4 py-1 w-[12rem] flex items-center justify-center">
-                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">
+                    <span className="text-base md:text-lg lg:text-xl font-bold text-white whitespace-nowrap">
                       적용 대상
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1">
-                  <p className="text-lg text-dark-primary">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary">
                     만 65세 이상 치아의 일부가 없는 대한민국 국민
                   </p>
                 </div>
@@ -1359,15 +1458,15 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col md:flex-row items-start"
               >
-                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0">
+                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0 justify-center lg:justify-start">
                   <div className="bg-teal-secondary rounded-full px-4 py-1 w-[12rem] flex items-center justify-center">
-                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">
+                    <span className="text-base md:text-lg lg:text-xl font-bold text-white whitespace-nowrap">
                       적용 부위
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1">
-                  <p className="text-lg text-dark-primary leading-[1.6]">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
                     1인 평생 2개로 아랫니, 윗니 구분 없이 어금니와 앞니 모두
                     적용 가능합니다.
                     <br />
@@ -1391,15 +1490,15 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col md:flex-row items-start"
               >
-                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0">
+                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0 justify-center lg:justify-start">
                   <div className="bg-teal-secondary rounded-full px-4 py-1 w-[12rem] flex items-center justify-center">
-                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">
+                    <span className="text-base md:text-lg lg:text-xl font-bold text-white whitespace-nowrap">
                       본인부담률
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1">
-                  <p className="text-lg text-dark-primary">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left mx-auto lg:mx-0">
+                  <p className="text-14 md:text-base lg:text-lg text-dark-primary">
                     치료비 본인부담금 30%
                   </p>
                 </div>
@@ -1417,21 +1516,21 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col md:flex-row items-start"
               >
-                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0">
+                <div className="flex items-center gap-2 p-6 w-full md:w-[15.938rem] shrink-0 justify-center lg:justify-start">
                   <div className="bg-teal-secondary rounded-full px-4 py-1 w-[12rem] flex items-center justify-center">
-                    <span className="text-lg md:text-xl font-bold text-white whitespace-nowrap">
+                    <span className="text-base md:text-lg lg:text-xl font-bold text-white whitespace-nowrap">
                       기타
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left">
                   <div className="flex flex-col gap-4">
-                    <p className="text-lg text-dark-primary leading-[1.6]">
+                    <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
                       치아 1개도 없는 무치악의 경우, 전체 임플란트를 해야 하는
                       비용 부담이 크기 때문에 대상에서 제외됩니다. 단, 무치악은
                       틀니 건강보험을 적용받을 수 있습니다.
                     </p>
-                    <p className="text-lg text-dark-primary leading-[1.6]">
+                    <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
                       건강보험 틀니 및 임플란트는 반드시 치과 병·의원에서 사전에
                       등록 후 시술하여야 하며 신경치료, 스케일링, 잇몸치료, 잇몸
                       수술 등이 건강보험 적용 되는 치과의 진료 과목입니다.

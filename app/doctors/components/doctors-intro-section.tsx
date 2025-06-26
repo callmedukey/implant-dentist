@@ -135,7 +135,7 @@ const DoctorCard = ({
       </motion.div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col justify-end gap-6 p-6 lg:px-8 lg:py-8">
+      <div className="flex flex-1 flex-col justify-end gap-4 md:gap-5 lg:gap-6 p-4 md:p-6 lg:px-8 lg:py-8">
         {/* Name and Title */}
         <motion.div
           initial={{ opacity: 0, x: isEven ? -20 : 20 }}
@@ -147,10 +147,10 @@ const DoctorCard = ({
           className="flex flex-col gap-4"
         >
           <div className="flex items-center gap-2">
-            <h3 className="text-3xl font-bold text-dark-primary md:text-4xl">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-dark-primary">
               {doctor.name}
             </h3>
-            <span className="text-base font-normal text-dark-primary md:text-lg">
+            <span className="text-14 md:text-base lg:text-lg font-normal text-dark-primary">
               {doctor.title}
             </span>
           </div>
@@ -169,7 +169,7 @@ const DoctorCard = ({
             }}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-teal-secondary px-4 py-1 w-fit"
           >
-            <span className="text-sm font-normal text-white md:text-base">
+            <span className="text-14 md:text-sm lg:text-base font-normal text-white">
               주요약력
             </span>
           </motion.div>
@@ -213,7 +213,7 @@ const DoctorCard = ({
                 >
                   <ChevronRight className="size-4 text-dark-primary flex-shrink-0" />
                 </motion.div>
-                <span className="text-base font-normal text-dark-primary md:text-lg">
+                <span className="text-14 md:text-base lg:text-lg font-normal text-dark-primary">
                   {credential}
                 </span>
               </motion.div>
@@ -227,7 +227,7 @@ const DoctorCard = ({
 
 const DoctorsIntroSection = () => {
   return (
-    <section className="mx-auto flex w-full max-w-[69.375rem] flex-col gap-16 px-4 pb-16 md:gap-20 md:px-0 md:pb-24">
+    <section className="mx-auto flex w-full max-w-[69.375rem] flex-col gap-12 md:gap-16 lg:gap-20 px-4 pb-8 md:pb-12 lg:pb-16 md:px-0">
       {doctors.map((doctor, index) => (
         <DoctorCard key={doctor.name} doctor={doctor} index={index} />
       ))}

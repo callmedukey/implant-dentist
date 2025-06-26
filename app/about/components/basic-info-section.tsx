@@ -34,7 +34,7 @@ const BasicInfoSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-12 md:gap-16 lg:gap-[5.25rem] px-4 py-12 md:py-16 **:break-keep">
+    <section className="flex flex-col items-center gap-8 md:gap-12 lg:gap-16 px-4 py-8 md:py-12 lg:py-16 **:break-keep">
       {/* Description Section */}
       <motion.div
         className="flex flex-col gap-2 max-w-full md:max-w-2xl lg:max-w-[61.3125rem] text-center"
@@ -49,7 +49,7 @@ const BasicInfoSection = () => {
         style={{ willChange: "transform, opacity" }}
       >
         <motion.p
-          className="text-lg md:text-xl lg:text-[1.44rem] leading-relaxed text-dark-primary"
+          className="text-14 md:text-lg lg:text-xl leading-relaxed text-dark-primary"
           initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{
@@ -65,7 +65,7 @@ const BasicInfoSection = () => {
           신뢰도 높은 임플란트를 식립합니다.
         </motion.p>
         <motion.p
-          className="text-lg md:text-xl lg:text-[1.44rem] leading-relaxed text-dark-primary"
+          className="text-14 md:text-lg lg:text-xl leading-relaxed text-dark-primary"
           initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{
@@ -84,7 +84,7 @@ const BasicInfoSection = () => {
 
       {/* Title and Logo Section */}
       <motion.div
-        className="flex flex-col justify-center items-center gap-4 md:gap-6 max-w-full md:max-w-xl lg:max-w-[45.625rem]"
+        className="flex flex-col justify-center items-center gap-3 md:gap-4 lg:gap-6 max-w-full md:max-w-xl lg:max-w-[45.625rem]"
         initial={{ opacity: 0, scale: 0.8, rotateX: -20 }}
         whileInView={{ opacity: 1, scale: 1, rotateX: 0 }}
         transition={{
@@ -97,7 +97,7 @@ const BasicInfoSection = () => {
         style={{ willChange: "transform, opacity", transformPerspective: 1000 }}
       >
         <motion.h2
-          className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-center text-dark-primary"
+          className="text-xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-center text-dark-primary"
           initial={{ opacity: 0, y: 30, clipPath: "inset(100% 0 0 0)" }}
           whileInView={{ opacity: 1, y: 0, clipPath: "inset(0% 0 0 0)" }}
           transition={{
@@ -170,7 +170,7 @@ const BasicInfoSection = () => {
               },
             }}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-col gap-6 md:gap-8 w-1/2 md:w-1/4"
+            className="flex flex-col gap-3 md:gap-6 lg:gap-8 w-1/2 md:w-1/4"
             style={{
               willChange: "transform, opacity",
               transformPerspective: 800,
@@ -194,7 +194,7 @@ const BasicInfoSection = () => {
               />
             </div>
             <motion.h3
-              className="text-lg md:text-xl lg:text-[1.44rem] font-bold text-center text-dark-primary h-8 md:h-10"
+              className="text-base md:text-lg lg:text-xl font-bold text-center text-dark-primary h-8 md:h-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{

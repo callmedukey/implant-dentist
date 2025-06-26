@@ -8,7 +8,7 @@ import accentLogo from "@/public/images/white-accent-logo.svg";
 
 const ImageWithOverlayTextSection = () => {
   return (
-    <section className="relative w-full sm:h-[30.5rem] overflow-hidden py-4 sm:py-0 min-h-fit">
+    <section className="relative w-full h-[24rem] sm:h-[30.5rem] overflow-hidden py-4 md:py-0">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -28,7 +28,7 @@ const ImageWithOverlayTextSection = () => {
         <div className="flex flex-col sm:flex-row items-end gap-4 sm:gap-5 sm:mr-auto">
           {/* First Card - Natural Tooth Preservation */}
           <motion.div
-            className="bg-teal-secondary rounded-t-lg p-6 md:py-[4.25rem] px-4 flex flex-col items-center text-center max-w-[20rem] w-full sm:h-[27.5rem] **:break-keep"
+            className="bg-teal-secondary rounded-t-lg p-4 md:p-6 lg:py-[4.25rem] px-4 flex flex-col items-center text-center max-w-[20rem] w-full sm:h-[27.5rem] **:break-keep"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -47,7 +47,7 @@ const ImageWithOverlayTextSection = () => {
               <div className="w-10 h-[0.094rem] bg-white" />
 
               {/* Text */}
-              <p className="text-white text-lg md:text-xl font-bold leading-[1.6em] whitespace-nowrap">
+              <p className="text-white text-14 md:text-base lg:text-lg leading-[1.6em] whitespace-nowrap">
                 자연치아 보존에 집중하는
                 <br />
                 환자 중심 치과 진료
@@ -57,7 +57,7 @@ const ImageWithOverlayTextSection = () => {
 
           {/* Second Card - Long-lasting Implants */}
           <motion.div
-            className="bg-teal-bg rounded-t-lg p-6 md:p-10 flex flex-col items-center text-center max-w-[14rem] w-full **:break-keep"
+            className="bg-teal-bg rounded-t-lg p-4 md:p-6 lg:p-10 flex flex-col items-center text-center max-w-[14rem] w-full **:break-keep"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -70,7 +70,7 @@ const ImageWithOverlayTextSection = () => {
               </div>
 
               {/* Text */}
-              <p className="text-teal-secondary text-base md:text-lg lg:text-[1.2rem] font-normal leading-[1.6em]">
+              <p className="text-teal-secondary text-14 md:text-base lg:text-lg font-normal leading-[1.6em]">
                 오랫동안 안심하고
                 <br />
                 사용할 수 있는

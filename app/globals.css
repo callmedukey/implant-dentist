@@ -93,6 +93,7 @@ body {
   --text-xl: 1.44rem; /* 23.04px */
   --text-lg: 1.2rem; /* 19.2px */
   --text-base: 1rem; /* 16px */
+  --text-14: 0.875rem; /* 14px - Standard mobile text size */
   --text-sm: 0.8331rem; /* 13.33px */ --animate-marquee: marquee var(--duration) infinite linear; --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
   @keyframes marquee {
   from {

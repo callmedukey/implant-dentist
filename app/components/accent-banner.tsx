@@ -5,8 +5,8 @@ import logoImage from "@/public/images/accent-logo.svg";
 
 const AccentBanner = () => {
   return (
-    <section className="flex justify-center items-center bg-white py-4 min-h-[20rem] md:min-h-[27.8125rem] px-4 md:px-6 lg:px-8 **:break-keep">
-      <div className="flex flex-col items-center gap-8 w-full">
+    <section className="flex justify-center items-center bg-white py-12 md:min-h-[27.8125rem] px-4 md:px-6 lg:px-8 **:break-keep">
+      <div className="flex flex-col items-center gap-4 sm:gap-8 w-full">
         <motion.div
           className="max-w-[15rem] md:max-w-[18rem] lg:max-w-[20.6875rem] h-[9rem] md:h-[11rem] lg:h-[12.576rem]"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -30,9 +30,9 @@ const AccentBanner = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           style={{ willChange: "transform, opacity" }}
         >
-          <p className="text-teal-secondary font-pretendard font-bold text-lg md:text-xl lg:text-2xl leading-[160%] text-center">
+          <h1 className="text-teal-secondary font-pretendard font-bold text-14 md:text-xl lg:text-2xl leading-[160%] text-center">
             언제 어디서나, 같은 마음으로 진료합니다
-          </p>
+          </h1>
         </motion.div>
       </div>
     </section>

@@ -73,10 +73,10 @@ const ServiceList = () => {
   return (
     <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-[3.5rem] w-full max-w-[69.375rem] mx-auto px-4 md:px-6 lg:px-8 my-8">
       <div className="flex flex-col gap-2 w-full">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-dark-primary leading-[1.6]">
+        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-center text-dark-primary leading-[1.6]">
           진료과목 및 서비스 안내
         </h2>
-        <p className="text-lg md:text-xl lg:text-2xl font-bold text-center text-teal-secondary leading-[1.6]">
+        <p className="text-14 md:text-xl lg:text-2xl font-bold text-center text-teal-secondary leading-[1.6]">
           건강한 치아를 위한 맞춤 치료
         </p>
       </div>
@@ -101,14 +101,14 @@ const ServiceList = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent/0" />
             <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 lg:p-6 flex flex-col gap-2 lg:gap-3">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-[1.6]">
+              <h3 className="text-base md:text-xl lg:text-2xl font-bold text-white leading-[1.6]">
                 {service.title}
               </h3>
               <div className="flex flex-col gap-0.5 lg:gap-1">
                 <p className="text-xs md:text-sm font-normal text-white leading-[1.6]">
                   {service.subtitle1}
                 </p>
-                <p className="text-xs md:text-sm font-normal text-white leading-[1.6]">
+                <p className="text-sm font-normal text-white leading-[1.6] whitespace-nowrap">
                   {service.subtitle2}
                 </p>
               </div>

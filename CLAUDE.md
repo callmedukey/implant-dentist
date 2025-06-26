@@ -62,7 +62,7 @@ When implementing designs from Figma, always adapt them for responsive layouts:
      - Desktop: `text-5xl lg:text-5xl` or `text-6xl lg:text-6xl`
    
    - **Section Headings**:
-     - Mobile: `text-2xl`
+     - Mobile: `text-xl` (Updated from `text-2xl` for better mobile readability)
      - Tablet: `text-3xl md:text-3xl`
      - Desktop: `text-4xl lg:text-4xl`
    
@@ -72,17 +72,62 @@ When implementing designs from Figma, always adapt them for responsive layouts:
      - Desktop: `text-2xl lg:text-2xl`
    
    - **Body Text**:
-     - Mobile: `text-base` (default)
+     - Mobile: `text-14` (0.875rem / 14px - Custom size added to globals.css)
      - Tablet/Desktop: `text-base` or `text-lg md:text-lg` for emphasis
    
    - **Small Text/Captions**:
-     - Mobile: `text-xs`
+     - Mobile: `text-14` (0.875rem / 14px - Use same as body text for consistency)
      - Tablet/Desktop: `text-sm md:text-sm`
    
    - **Card Titles** (within grid items):
-     - Mobile: `text-lg`
+     - Mobile: `text-base` (Updated from `text-lg` for better mobile display)
      - Tablet: `text-xl md:text-xl`
      - Desktop: `text-2xl lg:text-2xl`
+   
+   - **Name/Personal Headings** (e.g., doctor names):
+     - Mobile: `text-2xl` (Updated from `text-3xl` for better mobile display)
+     - Tablet: `text-4xl md:text-4xl`
+     - Desktop: `text-4xl lg:text-4xl`
+
+   **Important Mobile Text Size Updates (December 2024)**:
+   - Added custom `text-14` size (0.875rem) to globals.css for standard mobile body text
+   - All body text on mobile should use `text-14` instead of `text-base` or `text-lg`
+   - Section headings reduced from `text-2xl` to `text-xl` on mobile
+   - Card titles reduced from `text-lg` to `text-base` on mobile
+   - These changes ensure better readability and consistency on mobile devices
+
+### Footer Text Size Guidelines
+
+**Mobile Footer Standards**:
+- Use three text sizes: `text-14`, `text-base`, and `text-lg`
+- **NEVER use `text-xs`** - it's too small for readability
+
+**Text Size Usage**:
+1. **text-14 (0.875rem / 14px)** - Use for regular body content:
+   - Body text and descriptions
+   - Operating hours and days
+   - Icon labels (네이버, 카카오톡)
+   - Business details (address, registration number)
+   - Footer links (개인정보처리방침, 이용약관)
+   - Copyright notice
+
+2. **text-base (1rem / 16px)** - Use for emphasis:
+   - Business name (양주 조은이플란트치과의원)
+
+3. **text-lg (1.125rem / 18px)** - Use for headings and important elements:
+   - Section headings (전화 문의, 진료시간 안내, 진료 예약 · 채팅 상담)
+   - Phone numbers (031-847-5550)
+
+**Layout Balance**:
+- Moderate vertical padding: `py-6` on mobile (vs `py-20` on desktop)
+- Balanced gaps between elements: `gap-3` to `gap-4` on mobile
+- Comfortable margins: `mb-6` for section separation
+- Balanced line heights: `leading-[1.2]` on mobile, `leading-[1.6]` on desktop
+
+**Content Optimization**:
+- Simplified time formats: "09:30-18:30" instead of "AM 09:30 - PM 06:30"
+- Shortened labels: "일/공휴일 휴진" instead of "일요일 및 공휴일 휴진"
+- Condensed icon labels: "네이버" instead of "네이버 예약"
 
 6. **Testing Requirements**: After implementing any Figma design, verify the layout works correctly at:
    - 375px (mobile)

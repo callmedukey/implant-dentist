@@ -19,7 +19,7 @@ const logos = [
 
 const NetworkSection = () => {
   return (
-    <section className="relative py-8 md:py-10 overflow-hidden">
+    <section className="relative py-4 md:py-10 overflow-hidden">
       <div className="max-w-[95.625rem] mx-auto px-4 md:px-8">
         <div className="flex flex-col items-center gap-8 md:gap-12">
           {/* Header */}
@@ -36,10 +36,10 @@ const NetworkSection = () => {
               quality={100}
               className="w-48 md:w-64 lg:w-96 h-auto"
             />
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-primary text-center font-bold">
+            <h2 className="text-xl md:text-3xl lg:text-4xl text-primary text-center font-bold">
               신뢰를 더하는 협진 네트워크
             </h2>
-            <p className="text-base md:text-lg lg:text-xl text-primary text-center max-w-5xl">
+            <p className="text-14 md:text-lg lg:text-xl text-primary text-center max-w-5xl">
               다양한 의료기관과의 협진 네트워크를 통해 보다 전문적이고 체계적인
               치과 진료 서비스를 제공합니다.
             </p>

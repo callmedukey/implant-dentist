@@ -6,7 +6,7 @@ import treatmentExpertiseImage from "@/public/images/chronic-disease/treatment-e
 
 const ChronicDiseaseInfo = () => {
   return (
-    <section className="flex flex-col gap-8 md:gap-16 lg:gap-[5.8125rem] py-16 md:py-24 w-full">
+    <section className="flex flex-col gap-6 md:gap-12 lg:gap-[5.8125rem] py-8 md:py-16 lg:py-24 w-full">
       {/* Treatment Expertise Card */}
       <div className="flex flex-col lg:flex-row overflow-hidden w-full">
         {/* Image */}
@@ -42,10 +42,10 @@ const ChronicDiseaseInfo = () => {
             delay: 0.3,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="flex flex-col gap-6 md:gap-8 p-6 md:p-8 lg:px-[1.875rem] lg:py-0 justify-center flex-1"
+          className="flex flex-col gap-4 md:gap-6 lg:gap-8 p-4 md:p-6 lg:px-[1.875rem] lg:py-0 justify-center flex-1"
         >
           <h3
-            className="text-2xl md:text-3xl lg:text-[2.0738rem] leading-[1.6] font-bold"
+            className="text-xl md:text-2xl lg:text-[2.0738rem] leading-[1.6] font-bold text-center lg:text-left"
             style={{ color: "var(--color-dark-primary)" }}
           >
             조은이플란트치과의
@@ -53,7 +53,7 @@ const ChronicDiseaseInfo = () => {
             만성질환 치료 노하우
           </h3>
           <p
-            className="text-lg md:text-xl lg:text-[1.44rem] leading-[1.6]"
+            className="text-14 md:text-base lg:text-[1.44rem] leading-[1.6] text-center lg:text-left"
             style={{ color: "var(--color-dark-primary)" }}
           >
             대학병원에서 만성질환 환자들 치료의{" "}
@@ -80,15 +80,15 @@ const ChronicDiseaseInfo = () => {
             delay: 0.3,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="flex flex-col gap-6 md:gap-8 p-6 md:p-8 lg:px-[3rem] lg:py-[3rem] justify-center flex-1 order-2 lg:order-1 lg:min-h-[30.3125rem]"
+          className="flex flex-col gap-4 md:gap-6 lg:gap-8 p-4 md:p-6 lg:px-[3rem] lg:py-[3rem] justify-center flex-1 order-2 lg:order-1 lg:min-h-[30.3125rem]"
         >
-          <div className="ml-auto space-y-6 md:space-y-8">
-            <h3 className="text-2xl md:text-3xl lg:text-[2.0738rem] leading-[1.6] font-bold text-dark-primary">
+          <div className="mx-auto lg:ml-auto lg:mr-0 space-y-4 md:space-y-6 lg:space-y-8">
+            <h3 className="text-xl md:text-2xl lg:text-[2.0738rem] leading-[1.6] font-bold text-dark-primary text-center lg:text-left">
               만성질환 특화 진료
               <br />
               프로세스를 위한 원내 교육
             </h3>
-            <p className="text-lg md:text-xl lg:text-[1.44rem] leading-[1.6] text-dark-primary">
+            <p className="text-14 md:text-base lg:text-[1.44rem] leading-[1.6] text-dark-primary text-center lg:text-left">
               조은이플란트치과는 기저질환을 가지고 있는
               <br className="hidden lg:block" />
               환자분들의 안전한 진료 를 위해

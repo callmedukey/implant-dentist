@@ -6,7 +6,7 @@ import bannerImage from "@/public/images/about/about-banner.webp";
 const ImageBanner = () => {
   return (
     <motion.div
-      className="relative w-full h-[10rem] sm:h-[21.25rem] overflow-hidden"
+      className="relative w-full h-[8rem] sm:h-[12rem] md:h-[16rem] lg:h-[21.25rem] overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}

@@ -42,25 +42,25 @@ const Footer = () => {
     <footer className="relative">
       {/* Operation Info Section */}
       <div className="bg-teal-bg">
-        <div className="w-full max-w-screen-max mx-auto py-12 lg:py-20">
+        <div className="w-full max-w-screen-max mx-auto py-6 lg:py-20">
           <div className="flex flex-wrap justify-center">
             {/* Phone Contact */}
             <motion.div
-              className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0"
+              className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6 lg:mb-0"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <motion.div
-                className="flex flex-col items-center gap-[1.8125rem] h-full lg:border-r border-teal-secondary lg:pr-8"
+                className="flex flex-col items-center gap-3 lg:gap-[1.8125rem] h-full lg:border-r border-teal-secondary lg:pr-8"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <motion.h3
-                  className="text-2xl font-bold text-dark-primary leading-[1.6]"
+                  className="text-lg lg:text-2xl font-semibold text-dark-primary leading-[1.2] lg:leading-[1.6]"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -69,7 +69,7 @@ const Footer = () => {
                   전화 문의
                 </motion.h3>
                 <motion.p
-                  className="text-lg text-dark-primary leading-[1.6] text-center"
+                  className="text-14 lg:text-lg text-dark-primary leading-[1.2] lg:leading-[1.6] text-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -80,7 +80,7 @@ const Footer = () => {
                   언제든지 문의 주세요
                 </motion.p>
                 <motion.p
-                  className="text-3xl font-bold text-teal-secondary leading-[1.6]"
+                  className="text-lg lg:text-3xl font-bold text-teal-secondary leading-[1.2] lg:leading-[1.6]"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -93,15 +93,15 @@ const Footer = () => {
 
             {/* Operating Hours */}
             <motion.div
-              className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0"
+              className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6 lg:mb-0"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             >
-              <div className="flex flex-col gap-8 h-full lg:px-8">
+              <div className="flex flex-col gap-4 lg:gap-8 h-full lg:px-8">
                 <motion.h3
-                  className="text-2xl font-bold text-dark-primary leading-[1.6] text-center"
+                  className="text-lg lg:text-2xl font-bold text-dark-primary leading-[1.6] text-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -109,81 +109,71 @@ const Footer = () => {
                 >
                   진료시간 안내
                 </motion.h3>
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-2 lg:gap-6">
                   <motion.div
-                    className="flex flex-col gap-4 max-w-sm mx-auto lg:max-w-none"
+                    className="flex flex-col gap-2 max-w-sm mx-auto lg:max-w-none"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.5 }}
                   >
                     <motion.div
-                      className="flex justify-between items-center gap-4"
+                      className="flex justify-between items-center gap-2"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.6 }}
                     >
-                      <span className="text-base lg:text-lg text-dark-primary flex items-center whitespace-nowrap">
-                        월<span className="font-bold text-3xl">・</span>화
-                        <span className="font-bold text-3xl">・</span>목
-                        <span className="font-bold text-3xl">・</span>금
+                      <span className="text-14 lg:text-lg text-dark-primary whitespace-nowrap">
+                        월・화・목・금
                       </span>
-                      <span className="text-sm lg:text-base text-dark-primary whitespace-nowrap">
-                        AM 09:30 - PM 06:30
+                      <span className="text-14 lg:text-base text-dark-primary whitespace-nowrap">
+                        09:30-18:30
                       </span>
                     </motion.div>
                     <motion.div
-                      className="flex justify-between items-center gap-4"
+                      className="flex justify-between items-center gap-2"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.7 }}
                     >
-                      <span className="text-base lg:text-lg text-dark-primary whitespace-nowrap">
-                        수{" "}
-                        <span className="text-teal-secondary font-bold">
-                          (야간 진료)
+                      <span className="text-14 lg:text-lg text-dark-primary whitespace-nowrap">
+                        수
+                        <span className="text-teal-secondary font-bold text-14">
+                          (야간)
                         </span>
                       </span>
-                      <span className="text-sm lg:text-base text-dark-primary whitespace-nowrap">
-                        AM 09:30 - PM 07:30
+                      <span className="text-14 lg:text-base text-dark-primary whitespace-nowrap">
+                        09:30-19:30
                       </span>
                     </motion.div>
                     <motion.div
-                      className="flex justify-between items-center gap-4"
+                      className="flex justify-between items-center gap-2"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.8 }}
                     >
-                      <span className="text-base lg:text-lg text-dark-primary whitespace-nowrap">
+                      <span className="text-14 lg:text-lg text-dark-primary whitespace-nowrap">
                         토요일
                       </span>
-                      <span className="text-sm lg:text-base text-dark-primary whitespace-nowrap">
-                        AM 09:30 - PM 02:00
+                      <span className="text-14 lg:text-base text-dark-primary whitespace-nowrap">
+                        09:30-14:00
                       </span>
                     </motion.div>
                     <motion.div
-                      className="flex justify-center items-center"
+                      className="flex flex-col items-center gap-1 mt-2"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.9 }}
                     >
-                      <span className="text-sm lg:text-base text-dark-primary text-center">
-                        토요일은 점심시간 없이 진료합니다
+                      <span className="text-14 lg:text-base text-dark-primary text-center">
+                        토요일 점심시간 없음
                       </span>
-                    </motion.div>
-                    <motion.div
-                      className="flex justify-center items-center"
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 1 }}
-                    >
-                      <p className="text-base lg:text-lg text-dark-primary text-center font-bold">
-                        일요일 및 공휴일 휴진
+                      <p className="text-14 lg:text-lg text-dark-primary text-center font-semibold">
+                        일/공휴일 휴진
                       </p>
                     </motion.div>
                   </motion.div>
@@ -193,21 +183,21 @@ const Footer = () => {
 
             {/* Reservation & Chat */}
             <motion.div
-              className="w-full md:w-full lg:w-1/3 px-4"
+              className="w-full md:w-full lg:w-1/3 px-4 mt-6 lg:mt-0"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             >
               <motion.div
-                className="flex flex-col items-center gap-8 h-full lg:border-l border-teal-secondary lg:pl-8"
+                className="flex flex-col items-center gap-4 lg:gap-8 h-full lg:border-l border-teal-secondary lg:pl-8"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
                 <motion.h3
-                  className="text-2xl font-bold text-dark-primary leading-[1.6]"
+                  className="text-lg lg:text-2xl font-semibold text-dark-primary leading-[1.2] lg:leading-[1.6]"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -215,12 +205,12 @@ const Footer = () => {
                 >
                   진료 예약 · 채팅 상담
                 </motion.h3>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4 lg:gap-6">
                   <motion.a
                     href="https://booking.naver.com/booking/13/bizes/860783?tr=bnm"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-4 group"
+                    className="flex flex-col items-center gap-2 group"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -229,24 +219,29 @@ const Footer = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <motion.div
-                      className="w-[3.125rem] h-[3.125rem] rounded-full flex items-center justify-center"
+                      className="w-10 h-10 lg:w-[3.125rem] lg:h-[3.125rem] rounded-full flex items-center justify-center"
                       whileHover={{
                         boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
                         y: -2,
                       }}
                       transition={{ duration: 0.2 }}
                     >
-                      <Image src={naverLogo} alt="네이버 로고" unoptimized />
+                      <Image
+                        src={naverLogo}
+                        alt="네이버 로고"
+                        unoptimized
+                        className="w-8 h-8 lg:w-auto lg:h-auto"
+                      />
                     </motion.div>
-                    <span className="text-base text-black group-hover:text-teal-secondary transition-colors">
-                      네이버 예약
+                    <span className="text-14 lg:text-base text-black group-hover:text-teal-secondary transition-colors">
+                      네이버
                     </span>
                   </motion.a>
                   <motion.a
                     href="https://pf.kakao.com/_FMavxj/chat"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-4 group"
+                    className="flex flex-col items-center gap-2 group"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -255,17 +250,22 @@ const Footer = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <motion.div
-                      className="w-[3.375rem] h-[3.125rem] flex items-center justify-center"
+                      className="w-10 h-10 lg:w-[3.375rem] lg:h-[3.125rem] flex items-center justify-center"
                       whileHover={{
                         y: -2,
                         filter: "drop-shadow(0 8px 16px rgba(0,0,0,0.1))",
                       }}
                       transition={{ duration: 0.2 }}
                     >
-                      <Image src={kakaoLogo} alt="카카오톡 로고" unoptimized />
+                      <Image
+                        src={kakaoLogo}
+                        alt="카카오톡 로고"
+                        unoptimized
+                        className="w-8 h-8 lg:w-auto lg:h-auto"
+                      />
                     </motion.div>
-                    <span className="text-base text-black group-hover:text-teal-secondary transition-colors">
-                      카카오톡 문의
+                    <span className="text-14 lg:text-base text-black group-hover:text-teal-secondary transition-colors">
+                      카카오톡
                     </span>
                   </motion.a>
                 </div>
@@ -399,7 +399,7 @@ const Footer = () => {
                 </motion.form>
 
                 {/* Mobile Form */}
-                <div className="flex lg:hidden items-center gap-2 text-white font-bold text-sm">
+                <div className="flex lg:hidden items-center gap-2 text-white font-bold text-14">
                   <span>빠른 상담 신청</span>
                   <ArrowRight strokeWidth={3} className="w-4 h-4" />
                 </div>
@@ -417,7 +417,7 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex flex-col justify-center items-center py-4 lg:py-6 px-4 lg:px-0">
+        <div className="flex flex-col justify-center items-center py-4 lg:py-6 px-2 lg:px-0">
           <motion.div
             className="flex flex-col gap-1 w-full max-w-screen-max"
             initial={{ opacity: 0, y: 20 }}
@@ -426,18 +426,18 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <motion.div
-              className="flex items-center px-4 lg:px-6 py-1 w-full"
+              className="flex items-center px-2 lg:px-6 py-1 lg:py-1 w-full"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-lg lg:text-xl font-bold text-dark-primary text-center w-full sm:text-left">
+              <h2 className="text-base lg:text-xl font-medium text-dark-primary text-center w-full sm:text-left">
                 양주 조은이플란트치과의원
               </h2>
             </motion.div>
             <motion.div
-              className="flex items-center gap-2 lg:gap-6 px-4 lg:px-6 py-2"
+              className="flex items-center gap-2 lg:gap-6 px-2 lg:px-6 py-1 lg:py-2"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -445,7 +445,7 @@ const Footer = () => {
             >
               <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-6 text-center lg:text-left mx-auto w-full">
                 <motion.span
-                  className="text-sm lg:text-base text-dark-primary leading-[1.6]"
+                  className="text-14 lg:text-base text-dark-primary leading-tight"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -454,7 +454,7 @@ const Footer = () => {
                   경기도 양주시 부흥로 2152-4 2층
                 </motion.span>
                 <motion.span
-                  className="text-sm lg:text-base text-dark-primary leading-[1.6]"
+                  className="text-14 lg:text-base text-dark-primary leading-tight"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -463,7 +463,7 @@ const Footer = () => {
                   문의 031-847-5550
                 </motion.span>
                 <motion.span
-                  className="text-sm lg:text-base text-dark-primary leading-[1.6]"
+                  className="text-14 lg:text-base text-dark-primary leading-tight"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -472,7 +472,7 @@ const Footer = () => {
                   대표자 이충휘
                 </motion.span>
                 <motion.span
-                  className="text-sm lg:text-base text-dark-primary leading-[1.6]"
+                  className="text-14 lg:text-base text-dark-primary leading-tight"
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -489,9 +489,9 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <div className="flex flex-col lg:flex-row justify-between items-center gap-2 py-1 border-t border-dark-primary border-opacity-80 w-full">
+              <div className="flex flex-col lg:flex-row justify-between items-center gap-2 py-1 lg:py-1 border-t border-dark-primary border-opacity-80 w-full">
                 <motion.div
-                  className="flex items-center gap-1"
+                  className="flex items-center gap-2"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
@@ -499,17 +499,17 @@ const Footer = () => {
                 >
                   <PrivacyPolicyDialog>
                     <motion.button
-                      className="px-2 lg:px-4 py-1 text-xs lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
+                      className="px-1 lg:px-4 py-0.5 lg:py-1 text-14 lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       개인정보처리방침
                     </motion.button>
                   </PrivacyPolicyDialog>
-                  <div className="w-0 h-4 border-l border-dark-primary" />
+                  <div className="w-0 h-3 lg:h-4 border-l border-dark-primary" />
                   <TermsDialog>
                     <motion.button
-                      className="px-2 lg:px-4 py-1 text-xs lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
+                      className="px-1 lg:px-4 py-0.5 lg:py-1 text-14 lg:text-sm text-dark-primary hover:text-teal-secondary transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -518,7 +518,7 @@ const Footer = () => {
                   </TermsDialog>
                 </motion.div>
                 <motion.p
-                  className="text-xs lg:text-sm text-dark-primary text-center lg:text-right"
+                  className="text-14 lg:text-sm text-dark-primary text-center lg:text-right"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}

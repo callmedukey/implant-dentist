@@ -56,7 +56,7 @@ export const ChronicDiseaseBanner = () => {
                     delay: 0.3,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="text-2xl md:text-3xl lg:text-[2.074rem] font-bold text-white leading-[1.6]"
+                  className="text-base md:text-xl lg:text-[2.074rem] font-bold text-white leading-[1.6]"
                 >
                   만성 질환자는 치과 치료시
                 </motion.h2>
@@ -80,11 +80,11 @@ export const ChronicDiseaseBanner = () => {
                       delay: 0.6,
                       ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="inline-block bg-white text-danger font-bold text-2xl md:text-3xl lg:text-[2.074rem] px-4 py-0 rounded leading-[1.6] text-[#EA0C09]"
+                    className="inline-block bg-white text-danger font-bold text-base md:text-xl lg:text-[2.074rem] px-2 md:px-3 lg:px-4 py-0 rounded leading-[1.6] text-[#EA0C09]"
                   >
                     더 큰 주의
                   </motion.span>
-                  <span className="text-2xl md:text-3xl lg:text-[2.074rem] font-bold text-white leading-[1.6]">
+                  <span className="text-base md:text-xl lg:text-[2.074rem] font-bold text-white leading-[1.6]">
                     가 필요합니다.
                   </span>
                 </motion.div>
@@ -100,7 +100,7 @@ export const ChronicDiseaseBanner = () => {
                   delay: 0.7,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="text-lg md:text-xl lg:text-[2.074rem] font-bold text-white leading-[1.6]"
+                className="text-14 md:text-lg lg:text-[2.074rem] font-bold text-white leading-[1.6]"
               >
                 만성질환은 치과 치료과정에서 예상치 못한 합병증이나 부작용을
                 유발할 수 있습니다
