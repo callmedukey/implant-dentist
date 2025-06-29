@@ -2,7 +2,7 @@ import * as motion from "motion/react-client";
 
 const AccentSection = () => {
   return (
-    <section className="w-full py-8 md:py-12 lg:py-16">
+    <section className="w-full py-16 md:py-12 lg:py-16 mt-8">
       <div className="max-w-[--breakpoint-max] mx-auto px-4 md:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

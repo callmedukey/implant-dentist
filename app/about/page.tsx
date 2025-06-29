@@ -54,7 +54,7 @@ export default function AboutPage() {
       </section>
 
       {/* 주치의 소개 Section */}
-      <section id="doctors" className="scroll-mt-[6.25rem]">
+      <section id="doctors" className="scroll-mt-[4.25rem]">
         <DoctorsHeadingSection />
         <DoctorsIntroSection />
       </section>
@@ -153,14 +153,14 @@ export default function AboutPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="w-full bg-teal-secondary py-8 md:py-12 lg:py-16 px-4 md:px-8 relative overflow-hidden"
+            className="w-full bg-teal-secondary py-8 md:py-12 lg:py-16 px-4 md:px-8 relative overflow-hidden mt-8 md:mt-0"
           >
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0 bg-gradient-to-r from-teal-primary to-teal-secondary origin-left"
+              className="absolute inset-0"
               style={{ willChange: "transform" }}
             />
             <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-2 relative z-10">
@@ -173,10 +173,10 @@ export default function AboutPage() {
                   delay: 0.3,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="text-base md:text-xl lg:text-2xl font-bold text-white text-center"
+                className="text-14 md:text-xl lg:text-2xl font-bold text-white text-center"
               >
-                조은이플란트치과는 수준 높은 진료 시스템을 제공해 드릴 것을
-                약속드립니다.
+                조은이플란트치과는 수준 높은 진료 시스템을{" "}
+                <br className="md:hidden" /> 제공해 드릴 것을 약속드립니다.
               </motion.p>
 
               <motion.div className="flex flex-wrap justify-center items-center gap-2">
@@ -189,7 +189,7 @@ export default function AboutPage() {
                     delay: 0.5,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="text-base md:text-xl lg:text-2xl font-bold text-white"
+                  className="text-14 md:text-xl lg:text-2xl font-bold text-white"
                 >
                   한분, 한분을 위한
                 </motion.span>
@@ -322,7 +322,7 @@ export default function AboutPage() {
                 }}
                 className="flex flex-col lg:flex-row gap-6 lg:gap-[1.8125rem] items-start lg:items-center"
               >
-                <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-dark-primary w-full lg:w-[15.9375rem] flex-shrink-0">
+                <h2 className="text-lg md:text-3xl lg:text-4xl font-bold text-dark-primary w-full lg:w-[15.9375rem] flex-shrink-0 text-center md:text-left">
                   진료시간 안내
                 </h2>
 
@@ -407,7 +407,9 @@ export default function AboutPage() {
                     <p className="text-base md:text-lg lg:text-xl font-bold text-teal-secondary">
                       일요일 · 공휴일
                     </p>
-                    <p className="text-base md:text-lg lg:text-xl font-bold text-dark-primary">휴무</p>
+                    <p className="text-base md:text-lg lg:text-xl font-bold text-dark-primary">
+                      휴무
+                    </p>
                   </motion.div>
 
                   {/* Lunch Break - Spans 2 columns */}
@@ -422,7 +424,9 @@ export default function AboutPage() {
                     }}
                     className="bg-teal-secondary rounded-lg flex flex-col justify-center items-center text-center p-3 md:p-6 lg:p-12 gap-1 md:gap-3 lg:gap-6 h-[5rem] md:h-[8rem] lg:h-[12.1875rem] md:col-span-2 hover:scale-102 transition-transform duration-200"
                   >
-                    <p className="text-base md:text-lg lg:text-xl font-bold text-white">점심시간</p>
+                    <p className="text-base md:text-lg lg:text-xl font-bold text-white">
+                      점심시간
+                    </p>
                     <p className="text-base md:text-lg lg:text-xl font-bold text-white whitespace-nowrap">
                       PM 01:00 ~ PM 02:00
                     </p>
@@ -441,7 +445,7 @@ export default function AboutPage() {
                 }}
                 className="flex flex-col lg:flex-row gap-6 lg:gap-[1.875rem] items-start lg:items-center"
               >
-                <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-dark-primary w-full lg:w-[15.9375rem] flex-shrink-0">
+                <h2 className="text-lg md:text-3xl lg:text-4xl font-bold text-dark-primary w-full lg:w-[15.9375rem] flex-shrink-0 text-center md:text-left">
                   예약 바로가기
                 </h2>
 
@@ -616,7 +620,7 @@ export default function AboutPage() {
                   오시는 길
                 </h1>
                 <p className="text-base md:text-xl lg:text-2xl font-bold text-teal-secondary text-center">
-                  경기도 양주시 부흥로 2152-4 2층
+                  경기도 양주시 부흥로 2152-4, 2층
                 </p>
               </motion.div>
             </div>
@@ -646,7 +650,7 @@ export default function AboutPage() {
                 duration: 0.8,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="flex flex-col gap-6 md:gap-8 lg:gap-10"
+              className="flex flex-col gap-6 md:gap-8 lg:gap-10 mt-8 md:mt-0"
             >
               <div className="flex flex-col gap-3 md:gap-4">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-dark-primary">
@@ -762,7 +766,7 @@ export default function AboutPage() {
                 duration: 0.8,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="flex flex-col gap-6 md:gap-8 lg:gap-10"
+              className="flex flex-col gap-6 md:gap-8 lg:gap-10 mt-8 md:mt-0"
             >
               <div className="flex flex-col gap-3 md:gap-4">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-dark-primary">

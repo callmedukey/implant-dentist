@@ -37,7 +37,7 @@ const BasicInfoSection = () => {
     <section className="flex flex-col items-center gap-8 md:gap-12 lg:gap-16 px-4 py-8 md:py-12 lg:py-16 **:break-keep">
       {/* Description Section */}
       <motion.div
-        className="flex flex-col gap-2 max-w-full md:max-w-2xl lg:max-w-[61.3125rem] text-center"
+        className="flex flex-col gap-4 max-w-full md:max-w-2xl lg:max-w-[61.3125rem] text-center"
         initial={{ opacity: 0, y: 50, scale: 0.95 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{
@@ -61,8 +61,9 @@ const BasicInfoSection = () => {
           viewport={{ once: true }}
           style={{ willChange: "transform, opacity, filter" }}
         >
-          자연치아는 최대한 보존하고, 불가피한 경우에는 정밀 진단을 바탕으로
-          신뢰도 높은 임플란트를 식립합니다.
+          자연치아는 최대한 보존하고, <br className="md:hidden" /> 불가피한
+          경우에는 정밀 진단을 바탕으로 <br className="md:hidden" /> 신뢰도 높은
+          임플란트를 식립합니다.
         </motion.p>
         <motion.p
           className="text-14 md:text-lg lg:text-xl leading-relaxed text-dark-primary"
@@ -77,14 +78,14 @@ const BasicInfoSection = () => {
           viewport={{ once: true }}
           style={{ willChange: "transform, opacity, filter" }}
         >
-          단순한 시술이 아닌, 오랜 시간 건강하게 사용할 수 있는 결과를 위해
-          진심을 다합니다.
+          단순한 시술이 아닌, <br className="md:hidden" /> 오랜 시간 건강하게
+          사용할 수 있는 결과를 위해 진심을 다합니다.
         </motion.p>
       </motion.div>
 
       {/* Title and Logo Section */}
       <motion.div
-        className="flex flex-col justify-center items-center gap-3 md:gap-4 lg:gap-6 max-w-full md:max-w-xl lg:max-w-[45.625rem]"
+        className="flex flex-col justify-center items-center gap-3 md:gap-4 lg:gap-6 max-w-full md:max-w-xl lg:max-w-[45.625rem] mt-8"
         initial={{ opacity: 0, scale: 0.8, rotateX: -20 }}
         whileInView={{ opacity: 1, scale: 1, rotateX: 0 }}
         transition={{
@@ -97,7 +98,7 @@ const BasicInfoSection = () => {
         style={{ willChange: "transform, opacity", transformPerspective: 1000 }}
       >
         <motion.h2
-          className="text-xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-center text-dark-primary"
+          className="text-[1.35rem] md:text-3xl lg:text-4xl font-bold leading-relaxed text-center text-dark-primary"
           initial={{ opacity: 0, y: 30, clipPath: "inset(100% 0 0 0)" }}
           whileInView={{ opacity: 1, y: 0, clipPath: "inset(0% 0 0 0)" }}
           transition={{

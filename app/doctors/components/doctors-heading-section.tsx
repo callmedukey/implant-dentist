@@ -35,15 +35,16 @@ const DoctorsHeadingSection = () => {
         />
         <div className="flex w-full flex-col gap-4">
           <h2 className="text-center text-base md:text-xl lg:text-2xl font-bold leading-[1.6] text-black">
-            양주 조은이플란트치과는 전원 보건복지부 인증 전문의로 구성된
-            치과입니다.
+            양주 조은이플란트치과는 <br className="md:hidden" />
+            <span className="text-teal-secondary">전원 보건복지부</span> 인증
+            전문의로 <br className="md:hidden" /> 구성된 치과입니다.
           </h2>
           <p className="text-center text-14 md:text-base lg:text-lg font-normal leading-[1.6] text-dark-primary">
-            저희 양주 조은이플란트치과는 풍부한 경험과 철저한 전문 지식을
-            바탕으로,
+            저희 양주 조은이플란트치과는 풍부한 경험과{" "}
+            <br className="md:hidden" /> 철저한 전문 지식을 바탕으로,
             <br />
-            환자 개개인에게 맞춤형 치료를 제공하며, 신뢰를 기반으로 한 안전한
-            진료를 약속드립니다
+            환자 개개인에게 맞춤형 치료를 제공하며, <br className="md:hidden" />
+            신뢰를 기반으로 한 안전한 진료를 약속드립니다
           </p>
         </div>
       </motion.div>

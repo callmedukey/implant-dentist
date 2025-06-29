@@ -27,7 +27,8 @@ const AboutFinalSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-base md:text-xl lg:text-2xl font-normal leading-relaxed"
           >
-            처음 방문하셔도 안심하실 수 있도록, 정성과 배려로 진료합니다.
+            처음 방문하셔도 안심하실 수 있도록,
+            <br className="md:hidden" /> 정성과 배려로 진료합니다.
           </motion.p>
         </div>
 
@@ -53,7 +54,9 @@ const AboutFinalSection = () => {
                 href="/about#clinic-tour"
                 className="inline-flex items-center gap-4 bg-teal-primary text-white px-6 py-1 rounded-full hover:bg-teal-primary/90 transition-colors"
               >
-                <span className="text-14 md:text-base font-bold">병원 둘러보기</span>
+                <span className="text-14 md:text-base font-bold">
+                  병원 둘러보기
+                </span>
                 <Image
                   src={arrowIcon}
                   alt="Arrow"

@@ -9,7 +9,7 @@ import { TextGenerateEffect } from "./text-generate-effect";
 
 const IntroSection = () => {
   return (
-    <section className="w-full flex justify-center bg-white py-6 md:py-10">
+    <section className="w-full flex justify-center bg-[#F8F8F8] pt-12 md:pt-20 mb-12 md:mb-20 mt-24">
       <div className="w-full max-w-screen-max px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const IntroSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex-1 flex flex-col justify-center items-center gap-4 p-8 md:p-12 lg:p-14 **:break-keep"
+            className="flex-1 flex flex-col justify-center items-center gap-4 p-8 md:p-12 lg:p-14 **:break-keep z-10"
           >
             {/* Header with quote */}
             <div className="w-full flex items-center justify-between gap-2 max-w-md mr-auto">
