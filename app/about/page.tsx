@@ -5,8 +5,8 @@ import Link from "next/link";
 
 // Import images
 import { ClinicCarousel } from "@/app/clinic-tour/components/clinic-carousel";
-import DoctorsHeadingSection from "@/app/doctors/components/doctors-heading-section";
-import DoctorsIntroSection from "@/app/doctors/components/doctors-intro-section";
+import DoctorsHeadingSection from "@/app/components/doctors-heading-section";
+import DoctorsIntroSection from "@/app/components/doctors-intro-section";
 import locationDetailMap from "@/public/images/location/location-detail-map.webp";
 import locationInterior from "@/public/images/location/location-interior.webp";
 import locationParking from "@/public/images/location/location-parking.webp";

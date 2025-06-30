@@ -1,12 +1,21 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
 
-import logoImage from "@/public/images/accent-logo.svg";
+import heroImage from "@/public/hero-image.png";
+import whiteLogoImage from "@/public/images/white-accent-logo.svg";
 
 const AccentBanner = () => {
   return (
-    <section className="flex justify-center items-center bg-white py-12 md:min-h-[27.8125rem] px-4 md:px-6 lg:px-8 **:break-keep">
-      <div className="flex flex-col items-center gap-4 sm:gap-8 w-full">
+    <section className="flex justify-center items-center bg-white py-12  md:min-h-[45rem] px-4 md:px-6 lg:px-8 **:break-keep relative">
+      <Image
+        src={heroImage}
+        alt="조은이플란트치과 전문의"
+        fill
+        className="object-cover object-right grayscale"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gray-900/50 z-10" />
+      <div className="flex flex-col items-center gap-4 sm:gap-8 w-full z-20">
         <motion.div
           className="max-w-[15rem] md:max-w-[18rem] lg:max-w-[20.6875rem] h-[9rem] md:h-[11rem] lg:h-[12.576rem]"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -16,10 +25,10 @@ const AccentBanner = () => {
           style={{ willChange: "transform, opacity" }}
         >
           <Image
-            src={logoImage}
+            src={whiteLogoImage}
             alt="조은이플란트치과 로고"
             unoptimized
-            className="w-full h-full"
+            className="w-full h-full z-10"
           />
         </motion.div>
         <motion.div
@@ -30,7 +39,7 @@ const AccentBanner = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           style={{ willChange: "transform, opacity" }}
         >
-          <h1 className="text-teal-secondary font-pretendard font-bold text-14 md:text-xl lg:text-2xl leading-[160%] text-center">
+          <h1 className="text-white font-pretendard font-bold text-14 md:text-xl lg:text-2xl leading-[160%] text-center">
             언제 어디서나, 같은 마음으로 진료합니다
           </h1>
         </motion.div>

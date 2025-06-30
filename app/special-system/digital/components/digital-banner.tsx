@@ -55,10 +55,9 @@ export default function DigitalBanner() {
               }}
               className="text-base md:text-lg lg:text-xl font-bold text-dark-primary"
             >
-              정확성 높고 객관적인{" "}
+              정확성 높고 객관적인 <br className="md:hidden" />
               <span className="text-teal-secondary">
-                디지털진단 3D CT, <br className="sm:hidden" /> 디지털 분석
-                프로그램
+                디지털진단 3D CT, 디지털 분석 프로그램
               </span>
             </motion.p>
           </div>

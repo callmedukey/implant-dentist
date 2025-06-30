@@ -43,7 +43,7 @@ export default function JawTreatmentPage() {
     <main className="**:break-keep">
       {/* 턱관절 질환 Section - EXACT COPY FROM disease/page.tsx */}
       <section id="disease" className="scroll-mt-[6.25rem]">
-        <div className="flex flex-col items-center p-4 md:py-12 lg:py-16 **:break-keep">
+        <div className="flex flex-col items-center p-4 md:py-12 lg:py-16 **:break-keep mt-16 md:mt-0">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -177,7 +177,7 @@ export default function JawTreatmentPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-6 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-6 md:mt-16 lg:mt-20 px-2 sm:px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -193,7 +193,7 @@ export default function JawTreatmentPage() {
               턱관절 장애의 원인
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
               {/* Cause 1 - 부정교합 */}
               <motion.div
                 initial={{ opacity: 0, y: 30, scale: 0.95 }}
@@ -206,7 +206,7 @@ export default function JawTreatmentPage() {
                 }}
                 className="flex flex-col gap-3 md:gap-6"
               >
-                <div className="relative w-full h-[12rem] md:h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[10rem] md:h-[15rem] rounded-lg overflow-hidden">
                   <Image
                     src={causeMalocclusion}
                     alt="부정교합 원인"
@@ -215,7 +215,7 @@ export default function JawTreatmentPage() {
                     className="object-cover"
                   />
                 </div>
-                <div className="flex flex-col gap-1 px-2 text-center">
+                <div className="flex flex-col gap-1  text-center">
                   <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary leading-[1.6]">
                     부정교합
                   </h3>
@@ -238,13 +238,13 @@ export default function JawTreatmentPage() {
                 }}
                 className="flex flex-col gap-3 md:gap-6"
               >
-                <div className="relative w-full h-[12rem] md:h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[10rem] md:h-[15rem] rounded-lg overflow-hidden">
                   <Image
                     src={causeBadHabits}
                     alt="악습관 원인"
                     fill
                     quality={100}
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <div className="flex flex-col gap-1 px-3 text-center">
@@ -270,7 +270,7 @@ export default function JawTreatmentPage() {
                 }}
                 className="flex flex-col gap-3 md:gap-6"
               >
-                <div className="relative w-full h-[12rem] md:h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[10rem] md:h-[15rem] rounded-lg overflow-hidden">
                   <Image
                     src={causeStress}
                     alt="스트레스 원인"
@@ -302,7 +302,7 @@ export default function JawTreatmentPage() {
                 }}
                 className="flex flex-col gap-3 md:gap-6"
               >
-                <div className="relative w-full h-[12rem] md:h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[10rem] md:h-[15rem] rounded-lg overflow-hidden">
                   <Image
                     src={causeTrauma}
                     alt="외상 원인"
@@ -330,7 +330,7 @@ export default function JawTreatmentPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-6 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-4xl mx-auto w-full"
+            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-4xl mx-auto w-full mt-16"
           >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -346,168 +346,162 @@ export default function JawTreatmentPage() {
               턱관절 장애의 증상
             </motion.h2>
 
-            <div className="flex flex-col gap-4 md:gap-10 lg:gap-14 w-full">
-              {/* Symptoms Row 1 */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 lg:gap-14">
-                {/* Symptom 1 - 턱관절소리 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.1,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomJawSound}
-                      alt="턱관절소리 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    턱관절소리
-                  </h3>
-                </motion.div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 lg:gap-14 w-full">
+              {/* Symptom 1 - 턱관절소리 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.1,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomJawSound}
+                    alt="턱관절소리 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  턱관절소리
+                </h3>
+              </motion.div>
 
-                {/* Symptom 2 - 벌어지지 않는 입 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.2,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomLimitedOpening}
-                      alt="벌어지지 않는 입 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    벌어지지 않는 입
-                  </h3>
-                </motion.div>
+              {/* Symptom 2 - 벌어지지 않는 입 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.2,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomLimitedOpening}
+                    alt="벌어지지 않는 입 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  벌어지지 않는 입
+                </h3>
+              </motion.div>
 
-                {/* Symptom 3 - 턱관절 통증 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.3,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomJawPain}
-                      alt="턱관절 통증 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    턱관절 통증
-                  </h3>
-                </motion.div>
-              </div>
+              {/* Symptom 3 - 턱관절 통증 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.3,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomJawPain}
+                    alt="턱관절 통증 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  턱관절 통증
+                </h3>
+              </motion.div>
 
-              {/* Symptoms Row 2 */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 lg:gap-14">
-                {/* Symptom 4 - 이명 · 편두통 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.4,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomTinnitusHeadache}
-                      alt="이명 편두통 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    이명 · 편두통
-                  </h3>
-                </motion.div>
+              {/* Symptom 4 - 이명 · 편두통 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.4,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomTinnitusHeadache}
+                    alt="이명 편두통 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  이명 · 편두통
+                </h3>
+              </motion.div>
 
-                {/* Symptom 5 - 목 · 어깨 결림 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.5,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomNeckShoulder}
-                      alt="목 어깨 결림 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    목 · 어깨 결림
-                  </h3>
-                </motion.div>
+              {/* Symptom 5 - 목 · 어깨 결림 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.5,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomNeckShoulder}
+                    alt="목 어깨 결림 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  목 · 어깨 결림
+                </h3>
+              </motion.div>
 
-                {/* Symptom 6 - 안면 비대칭 */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.6,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                  className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
-                >
-                  <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
-                    <Image
-                      src={symptomFacialAsymmetry}
-                      alt="안면 비대칭 증상"
-                      fill
-                      quality={100}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
-                    안면 비대칭
-                  </h3>
-                </motion.div>
-              </div>
+              {/* Symptom 6 - 안면 비대칭 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.6,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col items-center gap-3 md:gap-8 bg-gray-lighter rounded-lg p-3 md:p-6"
+              >
+                <div className="relative w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]">
+                  <Image
+                    src={symptomFacialAsymmetry}
+                    alt="안면 비대칭 증상"
+                    fill
+                    quality={100}
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg md:text-2xl lg:text-[1.44rem] font-bold text-teal-secondary text-center leading-[1.6]">
+                  안면 비대칭
+                </h3>
+              </motion.div>
             </div>
           </motion.section>
 
@@ -517,7 +511,7 @@ export default function JawTreatmentPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-3 md:gap-8 mt-6 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full mb-4 md:mb-8"
+            className="flex flex-col items-center gap-3 md:gap-8 mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full mb-4 md:mb-8 "
           >
             {/* Section Header */}
             <motion.div
@@ -728,16 +722,18 @@ export default function JawTreatmentPage() {
               className="max-w-5xl mx-auto mt-4 md:mt-8 space-y-3 md:space-y-6"
             >
               <p className="text-14 md:text-lg lg:text-xl text-dark-primary text-center">
-                턱관절 장애의 치료에는 약물치료, 장치치료, 물리치료, 수술적 치료
-                등 다양한 접근이 있습니다.
+                턱관절 장애의 치료에는 약물치료, 장치치료,{" "}
+                <br className="md:hidden" /> 물리치료, 수술적 치료 등 다양한
+                접근이 있습니다.
               </p>
               <p className="text-14 md:text-lg lg:text-xl text-dark-primary text-center">
                 이 중 물리치료는 열, 전기자극 등{" "}
                 <span className="text-teal-secondary font-bold">
-                  물리적 자극 을 통해 손상된 조직의 회복을 촉진하고,{" "}
+                  물리적 자극 을 통해 <br className="md:hidden" /> 손상된 조직의
+                  회복을 촉진하고,{" "}
                 </span>
-                근경련 및 관절의 경직, 통증을 효과적으로 완화하는 치료법으로
-                널리 사용됩니다.
+                근경련 및 관절의 경직, 통증을 <br className="md:hidden" />{" "}
+                효과적으로 완화하는 치료법으로 널리 사용됩니다.
               </p>
             </motion.div>
           </div>
@@ -776,14 +772,14 @@ export default function JawTreatmentPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center space-y-2"
+              className="text-center sm:space-y-2"
             >
               <p className="text-14 md:text-xl lg:text-2xl font-bold text-white">
-                조은이플란트치과는 중주파 물리치료기를 포함한 턱관절 전문 장비를
-                도입하여,
+                조은이플란트치과는 중주파 물리치료기를 포함한{" "}
+                <br className="md:hidden" /> 턱관절 전문 장비를 도입하여,
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2 mt-2 md:mt-4">
-                <span className="inline-block bg-white text-teal-secondary font-bold text-14 md:text-xl lg:text-2xl px-3 md:px-4 py-1 rounded">
+                <span className="inline-block bg-white text-teal-secondary font-bold text-14 md:text-xl lg:text-2xl px-2 md:px-4 py-1 rounded">
                   저출력 레이저 자극 요법(Low-Level Laser Therapy, LLLT)
                 </span>
                 <span className="text-14 md:text-xl lg:text-2xl font-bold text-white">
@@ -1072,7 +1068,7 @@ export default function JawTreatmentPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full mt-6 md:mt-16 lg:mt-20 mb-4 md:mb-8 px-4 md:px-8 lg:px-[4.813rem] max-w-[52.688rem] mx-auto"
+            className="w-full mt-16 lg:mt-20 mb-16 px-4 md:px-8 lg:px-[4.813rem] max-w-[52.688rem] mx-auto"
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -1116,7 +1112,7 @@ export default function JawTreatmentPage() {
           className="absolute bottom-4 md:bottom-8 right-4 md:right-8 lg:right-12 inline-flex items-center gap-2 md:gap-4 bg-dark-primary text-white px-4 md:px-6 py-1 rounded-full hover:bg-dark-primary/90 transition-colors duration-200 cursor-default"
           style={{ backgroundColor: "#212323" }}
         >
-          <span className="text-14 md:text-base font-normal">비급여수가표</span>
+          <span className="text-xs md:text-base font-normal">비급여수가표</span>
           <Image
             src="/images/icons/chevron-down-icon.svg"
             alt="화살표"

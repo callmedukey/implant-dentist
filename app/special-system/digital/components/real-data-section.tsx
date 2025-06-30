@@ -6,7 +6,7 @@ import scannerIcon from "@/public/images/digital/scanner-icon.webp";
 
 export default function RealDataSection() {
   return (
-    <section className="relative w-full overflow-hidden py-8 md:py-12 lg:py-16">
+    <section className="relative w-full overflow-hidden py-8 md:py-12 lg:py-16 mt-8">
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export default function RealDataSection() {
             src={scannerIcon}
             alt="스캐너 아이콘"
             quality={100}
-            className="size-24 mx-auto lg:mx-0"
+            className="size-18 mx-auto lg:mx-0"
           />
 
           <h2 className="text-xl md:text-2xl lg:text-[2.0738rem] font-bold text-dark-primary leading-[1.6] text-center lg:text-left">

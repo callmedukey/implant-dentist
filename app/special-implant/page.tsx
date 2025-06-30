@@ -44,7 +44,7 @@ export default function SpecialImplantPage() {
         id="special-implant"
         className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
-        <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
+        <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep mt-8 md:mt-0">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -195,14 +195,14 @@ export default function SpecialImplantPage() {
                   장비에 진심인 조은이플란트는 빠르게 변해가는 임플란트 트렌드를
                   항상 익히고,{" "}
                   <span className="font-bold text-teal-secondary">
-                    원내 디지털 장비를 주기적으로
+                    원내 디지털 장비를 주기적으로{" "}
                   </span>
                   <br className="hidden lg:block" />
                   <span className="font-bold text-teal-secondary">
                     최신으로 업그레이드
                   </span>
-                  하며 빠르고 정밀한 진료가 이루어질 수 있는 환경을 마련하고
-                  있습니다.
+                  하며 빠르고 정밀한 진료가 이루어질 수 있는{" "}
+                  <br className="md:hidden" /> 환경을 마련하고 있습니다.
                 </p>
               </div>
 
@@ -626,7 +626,7 @@ export default function SpecialImplantPage() {
                   <span className="font-bold text-teal-secondary">
                     자연스럽게 결합되도록{" "}
                   </span>
-                  도와주며,{" "}
+                  도와주며, <br className="md:hidden" />
                   <span className="font-bold text-teal-secondary">
                     시술 후 빠른 회복
                   </span>
@@ -664,7 +664,7 @@ export default function SpecialImplantPage() {
       {/* 디지털 임플란트 Section - EXACT COPY FROM digital/page.tsx */}
       <section
         id="digital"
-        className="scroll-mt-[6.25rem] min-h-screen bg-white pt-8 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[4.25rem] min-h-screen bg-white pt-8 pb-0 md:pt-0 md:pb-0"
       >
         {/* Updated Digital Implant Hero Section */}
         <section className="py-8 md:py-12 lg:py-16">
@@ -795,7 +795,6 @@ export default function SpecialImplantPage() {
                           네비게이션
                         </span>{" "}
                         임플란트{" "}
-                        <span className="text-xs">(상담 시 추가 문의)</span>
                       </p>
                     </div>
                   </motion.div>
@@ -1142,7 +1141,8 @@ export default function SpecialImplantPage() {
                 }}
                 className="text-xl md:text-2xl lg:text-[2.074rem] font-bold text-white"
               >
-                디지털 임플란트, 기존의 패러다임을 바꾸다
+                디지털 임플란트, <br className="md:hidden" /> 기존의 패러다임을
+                바꾸다
               </motion.h2>
             </div>
           </motion.div>
@@ -1162,7 +1162,7 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12rem] max-w-[80%] rounded-lg overflow-hidden mx-auto sm:max-w-full">
                   <Image
                     src={digitalCard1Bg}
                     alt="경험을 넘어선 치과 치료"
@@ -1176,7 +1176,9 @@ export default function SpecialImplantPage() {
                     경험을 넘어선 치과 치료
                   </h3>
                   <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
-                    조은이플란트치과는 감각이나 경험치에만 의존하지 않습니다.
+                    조은이플란트치과는 감각이나 경험치에만{" "}
+                    <br className="md:hidden" />
+                    의존하지 않습니다.
                   </p>
                 </div>
               </motion.div>
@@ -1193,7 +1195,7 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12rem] max-w-[80%] rounded-lg overflow-hidden mx-auto sm:max-w-full">
                   <Image
                     src={digitalCard2Bg}
                     alt="데이터에 기반한 정확한 진단"
@@ -1207,8 +1209,8 @@ export default function SpecialImplantPage() {
                     데이터에 기반한 정확한 진단
                   </h3>
                   <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
-                    돌다리도 두드리듯, 정확하고 객관적인 데이터로 진단하고
-                    식립합니다.
+                    돌다리도 두드리듯, 정확하고 객관적인 데이터로{" "}
+                    <br className="md:hidden" /> 진단하고 식립합니다.
                   </p>
                 </div>
               </motion.div>
@@ -1225,7 +1227,7 @@ export default function SpecialImplantPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12rem] max-w-[80%] rounded-lg overflow-hidden mx-auto sm:max-w-full">
                   <Image
                     src={digitalCard3Bg}
                     alt="최신 장비로 설계한 임플란트"
@@ -1239,8 +1241,9 @@ export default function SpecialImplantPage() {
                     최신 장비로 설계한 임플란트
                   </h3>
                   <p className="text-14 md:text-base lg:text-lg text-dark-primary text-center leading-relaxed">
-                    정밀한 CT와 최신 스캐너를 이용하여 파악된 정확한 환자
-                    데이터를 기반으로 식립을 계획합니다.
+                    정밀한 CT와 최신 스캐너를 이용하여 파악된{" "}
+                    <br className="md:hidden" />
+                    정확한 환자 데이터를 기반으로 식립을 계획합니다.
                   </p>
                 </div>
               </motion.div>
@@ -1300,7 +1303,7 @@ export default function SpecialImplantPage() {
                 delay: 0.6,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary leading-[1.6] mt-2"
+              className="text-base md:text-xl lg:text-[1.44rem] font-bold text-teal-secondary leading-[1.6] mt-2 text-center mx-auto w-full "
             >
               65세 이상 환자분들의 건강한 노후를 함께합니다
             </motion.p>
@@ -1439,7 +1442,7 @@ export default function SpecialImplantPage() {
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left mx-auto md:mx-0">
                   <p className="text-14 md:text-base lg:text-lg text-dark-primary">
                     만 65세 이상 치아의 일부가 없는 대한민국 국민
                   </p>
@@ -1465,14 +1468,15 @@ export default function SpecialImplantPage() {
                     </span>
                   </div>
                 </div>
-                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left">
+                <div className="p-6 pt-0 md:pt-6 flex-1 text-center lg:text-left mx-auto md:mx-0">
                   <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
-                    1인 평생 2개로 아랫니, 윗니 구분 없이 어금니와 앞니 모두
-                    적용 가능합니다.
-                    <br />
-                    <span className="text-[#EA0C09] font-bold">
-                      (1인당 평생 2개까지 적용되며, 뼈이식 비용은 보험 적용이
-                      불가합니다.)
+                    1인 평생 2개로 아랫니, 윗니 구분 없이{" "}
+                    <br className="md:hidden" />
+                    어금니와 앞니 모두 적용 가능합니다.
+                    <br className="hidden md:block" />
+                    <span className="text-[#EA0C09] font-bold block">
+                      (1인당 평생 2개까지 적용되며, <br className="md:hidden" />
+                      뼈이식 비용은 보험 적용이 불가합니다.)
                     </span>
                   </p>
                 </div>
@@ -1527,13 +1531,17 @@ export default function SpecialImplantPage() {
                   <div className="flex flex-col gap-4">
                     <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
                       치아 1개도 없는 무치악의 경우, 전체 임플란트를 해야 하는
-                      비용 부담이 크기 때문에 대상에서 제외됩니다. 단, 무치악은
-                      틀니 건강보험을 적용받을 수 있습니다.
+                      비용 부담이 크기 때문에 대상에서 제외됩니다.{" "}
+                      <br className="md:hidden" /> 단, 무치악은 틀니 건강보험을
+                      적용받을 수 있습니다.
                     </p>
                     <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-[1.6]">
-                      건강보험 틀니 및 임플란트는 반드시 치과 병·의원에서 사전에
-                      등록 후 시술하여야 하며 신경치료, 스케일링, 잇몸치료, 잇몸
-                      수술 등이 건강보험 적용 되는 치과의 진료 과목입니다.
+                      건강보험 틀니 및 임플란트는 <br className="md:hidden" />
+                      반드시 치과 병·의원에서 사전에 등록 후 시술하여야 하며{" "}
+                      <br className="md:hidden" />
+                      신경치료, 스케일링, 잇몸치료, 잇몸 수술 등이 건강보험 적용
+                      되는 <br className="hidden md:block" /> 치과의 진료
+                      과목입니다.
                     </p>
                   </div>
                 </div>

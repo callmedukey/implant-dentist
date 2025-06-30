@@ -35,14 +35,15 @@ export default function DigitalScanner() {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="text-14 md:text-base lg:text-xl text-dark-primary text-center px-4 leading-[1.6]"
           >
-            치아의 상태를 정확하게 파악하기 위해 3D 디지털 구강스캐너를 사용하여
+            치아의 상태를 정확하게 파악하기 위해 3D 디지털 구강스캐너를{" "}
+            <br className="md:hidden" /> 사용하여
             <br className="hidden md:block" />
             <span className="text-teal-secondary">정밀하게 스캔</span>
             하고{" "}
             <span className="text-teal-secondary">
               디지털 치아 제작 시스템과 연동
-            </span>{" "}
-            하여 더욱더
+            </span>
+            하여 <br className="md:hidden" /> 더욱더
             <span className="text-teal-secondary">편안하고 정확한 치료</span>를
             받을 수 있습니다.
           </motion.p>

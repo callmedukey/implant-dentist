@@ -38,7 +38,7 @@ export default function IntegratedCarePage() {
     <main className="**:break-keep">
       {/* 치아미백 Section - EXACT COPY FROM whitening/page.tsx */}
       <section id="whitening" className="scroll-mt-[6.25rem]">
-        <div className="flex flex-col items-center py-4 md:py-12 lg:py-16">
+        <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 mt-16 md:mt-0">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -159,7 +159,7 @@ export default function IntegratedCarePage() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="max-w-6xl mx-auto w-full px-4 md:px-8 mt-6 md:mt-16 lg:mt-20"
+            className="max-w-6xl mx-auto w-full px-4 md:px-8 mt-6 md:mt-16 lg:mt-20 pt-8 md:pt-0"
           >
             <div className="flex flex-col items-center gap-2 md:gap-6 lg:gap-8">
               {/* Text Content */}
@@ -196,13 +196,14 @@ export default function IntegratedCarePage() {
               delay: 0.2,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="max-w-6xl mx-auto w-full px-4 md:px-8 mt-6 md:mt-16 lg:mt-20"
+            className="max-w-6xl mx-auto w-full px-4 md:px-8 mt-6 md:mt-16 lg:mt-20 pt-8 md:pt-0"
           >
             <div className="flex flex-col gap-3 md:gap-8 lg:gap-12">
               {/* Header */}
               <div className="text-center max-w-[68.375rem] mx-auto">
                 <h2 className="text-lg md:text-3xl lg:text-[2.489rem] font-bold text-dark-primary leading-[1.6] mb-2">
-                  개인의 치아상태와 색상, 변색의 원인을 고려한 치아미백
+                  개인의 치아상태와 색상, 변색의 원인을{" "}
+                  <br className="md:hidden" /> 고려한 치아미백
                 </h2>
                 <p className="text-14 md:text-lg lg:text-[1.44rem] leading-[1.6]">
                   조은이플란트치과에서는{" "}
@@ -223,7 +224,7 @@ export default function IntegratedCarePage() {
                   delay: 0.3,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="relative w-full h-[8rem] lg:h-[15rem]"
+                className="relative w-full h-[5rem] lg:h-[15rem]"
               >
                 <Image
                   src={teethBeforeAfterWhitening}
@@ -315,7 +316,7 @@ export default function IntegratedCarePage() {
       {/* 충치치료 Section - EXACT COPY FROM cavity/page.tsx */}
       <section
         id="cavity"
-        className="scroll-mt-[6.25rem] min-h-screen bg-white **:break-keep"
+        className="scroll-mt-[4.25rem] min-h-screen bg-white **:break-keep mt-8 md:mt-0"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12">
@@ -388,7 +389,7 @@ export default function IntegratedCarePage() {
             </motion.div>
 
             {/* Treatment Philosophy Cards */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12 mt-8 md:mt-16">
               {/* Natural Tooth Preservation */}
               <motion.div
                 initial={{ opacity: 0, y: 40, scale: 0.95 }}
@@ -404,8 +405,6 @@ export default function IntegratedCarePage() {
                 <Image
                   src={preservationIcon}
                   alt="자연치아 보존 치료"
-                  width={100}
-                  height={100}
                   quality={100}
                   className="w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]"
                 />
@@ -435,8 +434,6 @@ export default function IntegratedCarePage() {
                 <Image
                   src={longevityIcon}
                   alt="치아 수명 연장 치료"
-                  width={100}
-                  height={100}
                   quality={100}
                   className="w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]"
                 />
@@ -466,8 +463,6 @@ export default function IntegratedCarePage() {
                 <Image
                   src={diagnosisIcon}
                   alt="정확한 진단, 섬세한 치료"
-                  width={100}
-                  height={100}
                   quality={100}
                   className="w-[5rem] md:w-[6.25rem] h-[5rem] md:h-[6.25rem]"
                 />
@@ -522,7 +517,7 @@ export default function IntegratedCarePage() {
                       alt="법랑질 충치"
                       fill
                       quality={100}
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                   <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white text-teal-secondary font-bold px-3 md:px-4 py-0.5 rounded-full text-14 md:text-base">
@@ -560,7 +555,7 @@ export default function IntegratedCarePage() {
                       alt="상아질 충치"
                       fill
                       quality={100}
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                   <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white text-teal-secondary font-bold px-3 md:px-4 py-0.5 rounded-full text-14 md:text-base">
@@ -597,7 +592,7 @@ export default function IntegratedCarePage() {
                       alt="치수염 충치"
                       fill
                       quality={100}
-                      className="object-cover"
+                      className="object-contain "
                     />
                   </div>
                   <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white text-teal-secondary font-bold px-3 md:px-4 py-0.5 rounded-full text-14 md:text-base">
@@ -635,7 +630,7 @@ export default function IntegratedCarePage() {
                       alt="치수 괴사"
                       fill
                       quality={100}
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                   <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white text-teal-secondary font-bold px-3 md:px-4 py-0.5 rounded-full text-14 md:text-base">
@@ -661,7 +656,7 @@ export default function IntegratedCarePage() {
       </section>
 
       {/* 구강연조직질환 Section - EXACT COPY FROM soft-tissue/page.tsx */}
-      <section id="soft-tissue" className="scroll-mt-[6.25rem]">
+      <section id="soft-tissue" className="scroll-mt-[4.25rem]">
         <div className="flex flex-col items-center py-8 md:py-12 lg:py-16 **:break-keep">
           {/* Header Section */}
           <motion.section
@@ -755,7 +750,7 @@ export default function IntegratedCarePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full mt-6 md:mt-16 lg:mt-20"
+            className="w-full mt-16 lg:mt-20"
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -780,7 +775,7 @@ export default function IntegratedCarePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-3 md:gap-12 lg:gap-16 mt-6 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col items-center gap-3 md:gap-12 lg:gap-16 mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             {/* Process Header */}
             <motion.div
@@ -811,7 +806,7 @@ export default function IntegratedCarePage() {
                 delay: 0.3,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative w-full h-[40rem] md:h-[60rem] lg:h-[75.408rem]"
+              className="relative w-full h-[30rem] md:h-[60rem] lg:h-[75.408rem]"
             >
               <Image
                 src={biopsyProcess}

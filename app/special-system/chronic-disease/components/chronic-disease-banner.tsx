@@ -15,16 +15,16 @@ export const ChronicDiseaseBanner = () => {
         duration: 1,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className="relative w-full"
+      className="relative w-full mt-8 md:mt-0"
     >
-      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[458px]">
+      <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[458px]">
         {/* Background Image */}
         <Image
           src={bannerImage}
           alt="만성질환 치과치료 배경"
           fill
           quality={100}
-          className="object-cover"
+          className="object-cover object-right"
           priority
         />
 
@@ -102,8 +102,9 @@ export const ChronicDiseaseBanner = () => {
                 }}
                 className="text-14 md:text-lg lg:text-[2.074rem] font-bold text-white leading-[1.6]"
               >
-                만성질환은 치과 치료과정에서 예상치 못한 합병증이나 부작용을
-                유발할 수 있습니다
+                만성질환은 치과 치료과정에서 예상치 못한{" "}
+                <br className="md:hidden" />
+                합병증이나 부작용을 유발할 수 있습니다
               </motion.p>
             </motion.div>
           </div>

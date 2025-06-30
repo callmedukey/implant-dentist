@@ -52,7 +52,10 @@ export default function SpecialSystemPage() {
   return (
     <main>
       {/* 만성질환 특화진료 Section - EXACT COPY FROM chronic-disease/page.tsx */}
-      <section id="chronic-disease" className="scroll-mt-[6.25rem]">
+      <section
+        id="chronic-disease"
+        className="scroll-mt-[6.25rem] mt-16 md:mt-0"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -157,7 +160,7 @@ export default function SpecialSystemPage() {
                     delay: 0.2,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="flex-1 flex flex-col gap-10"
+                  className="flex-1 flex flex-col gap-10 mx-auto"
                 >
                   <h2 className="text-xl md:text-2xl lg:text-[2.0737rem] font-bold text-dark-primary leading-[1.6] text-center lg:text-left">
                     전신상태를 고려한 세심한 치과진료,
@@ -169,9 +172,10 @@ export default function SpecialSystemPage() {
                     입니다
                   </h2>
                   <p className="text-14 md:text-base lg:text-xl font-normal text-dark-primary leading-[1.6] text-center lg:text-left">
-                    당뇨, 고혈압, 심혈관 질환, 골다공증, 신장 투석 등 만성질환이
-                    있는 분들도 안심하고 치료 받을 수 있도록 만성질환에 특화된
-                    진료 프로세스를 갖추고 있습니다.
+                    당뇨, 고혈압, 심혈관 질환, 골다공증, 신장 투석 등{" "}
+                    <br className="md:hidden" /> 만성질환이 있는 분들도 안심하고
+                    치료 받을 수 있도록 <br className="md:hidden" /> 만성질환에
+                    특화된 진료 프로세스를 갖추고 있습니다.
                   </p>
                 </motion.div>
 
@@ -185,7 +189,7 @@ export default function SpecialSystemPage() {
                     delay: 0.3,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="grid grid-cols-2 md:flex md:flex-col gap-4 md:gap-14"
+                  className="grid grid-cols-2 md:flex md:flex-col gap-4 md:gap-14 mx-auto"
                 >
                   <motion.div
                     initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
@@ -241,7 +245,7 @@ export default function SpecialSystemPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col"
+          className="flex flex-col mt-16 md:mt-0"
         >
           <DigitalBanner />
           <RealDataSection />
@@ -250,7 +254,7 @@ export default function SpecialSystemPage() {
       </section>
 
       {/* 통증완화시스템 Section - EXACT COPY FROM pain-relief/page.tsx */}
-      <section id="pain-relief" className="scroll-mt-[6.25rem]">
+      <section id="pain-relief" className="scroll-mt-[4rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -328,7 +332,7 @@ export default function SpecialSystemPage() {
                 <span className="text-14 md:text-xl lg:text-[2.074rem] font-bold text-white">
                   조은이플란트치과는 교차감염 예방을 위한{" "}
                 </span>
-                <div className="flex flex-col md:flex-row items-center gap-2">
+                <div className="flex flex-col md:flex-row items-center md:gap-2">
                   <span className="text-14 md:text-xl lg:text-[2.074rem] font-bold text-teal-secondary bg-white py-1 px-2 md:px-4 rounded-md">
                     체계적인 멸균 시스템
                   </span>
@@ -378,8 +382,9 @@ export default function SpecialSystemPage() {
                     1인 1기구는 필수
                   </h3>
                   <p className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary">
-                    모든 소독 과정을 거친 개인 기구들은 진료
-                    <br />
+                    모든 소독 과정을 거친 개인 기구들은{" "}
+                    <br className="md:hidden" /> 진료
+                    <br className="hidden md:block" />
                     직전 환자분들 앞에서 개봉합니다.
                   </p>
                 </div>
@@ -411,8 +416,9 @@ export default function SpecialSystemPage() {
                     살균 진료수 사용
                   </h3>
                   <p className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary">
-                    진료 도중, 이후 이용하는 체어에서는 엄격하게 살균된
-                    진료수만을 사용하고 있습니다.
+                    진료 도중, 이후 이용하는 체어에서는{" "}
+                    <br className="md:hidden" /> 엄격하게 살균된 진료수만을
+                    사용하고 있습니다.
                   </p>
                 </div>
               </motion.div>
@@ -443,8 +449,8 @@ export default function SpecialSystemPage() {
                     안전한 진료 환경을 위한 노력
                   </h3>
                   <p className="text-14 md:text-base lg:text-[1.2rem] text-dark-primary">
-                    조은이플란트치과는 철저한 위생관리 시스템을 운영하고
-                    있습니다.
+                    조은이플란트치과는 철저한 위생관리 시스템을{" "}
+                    <br className="md:hidden" /> 운영하고 있습니다.
                   </p>
                 </div>
               </motion.div>
@@ -523,7 +529,7 @@ export default function SpecialSystemPage() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="flex flex-col gap-2 md:gap-4 lg:gap-[0.625rem] w-full lg:w-[32.75rem] border-b border-dark-primary pb-4 md:pb-6 lg:pb-4 text-center lg:text-left mr-auto"
+              className="flex flex-col gap-2 md:gap-4 lg:gap-[0.625rem] w-full lg:w-[32.75rem] border-b border-dark-primary pb-4 md:pb-6 lg:pb-4 text-center lg:text-left mr-auto mt-8 md:mt-0"
             >
               <h2 className="text-xl md:text-2xl lg:text-[2.489rem] font-bold text-dark-primary">
                 조은이플란트치과 치료보증기간

@@ -115,7 +115,7 @@ export default function PainReliefSystem() {
                     delay: 0.2,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="text-xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center"
+                  className="text-xl md:text-3xl lg:text-[2.0738rem] font-bold text-dark-primary text-center mt-8 md:mt-0"
                 >
                   조은이플란트치과의 통증 완화 시스템
                 </motion.h3>
@@ -131,11 +131,12 @@ export default function PainReliefSystem() {
                   }}
                   className="text-14 md:text-xl lg:text-xl text-dark-primary text-center leading-[1.6] px-3 py-4 md:px-4 md:py-6"
                 >
-                  치과가실때마다 {`"무통마취기로 해주세요"`}라고 부탁하지
-                  않으셔도 됩니다.
-                  <br />
-                  조은이플란트치과에서는 마취가 필요한 모든 분들의 모든 치료에
-                  무통마취기를 사용하고있습니다.
+                  치과가실때마다 {`"무통마취기로 해주세요"`}라고{" "}
+                  <br className="md:hidden" /> 부탁하지 않으셔도 됩니다.
+                  <br className="" />
+                  조은이플란트치과에서는 마취가 필요한 모든 분들의{" "}
+                  <br className="md:hidden" /> 모든 치료에 무통마취기를
+                  사용하고있습니다.
                 </motion.p>
               </div>
 

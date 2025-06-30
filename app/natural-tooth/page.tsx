@@ -32,7 +32,7 @@ export default function NaturalToothPage() {
   return (
     <main className="**:break-keep">
       {/* 치근단절제술 Section - EXACT COPY FROM apicectomy/page.tsx */}
-      <section id="apicectomy" className="scroll-mt-[6.25rem]">
+      <section id="apicectomy" className="scroll-mt-[6.25rem] mt-16 md:mt-0">
         <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 **:break-keep">
           {/* Header Section */}
           <motion.section
@@ -83,7 +83,8 @@ export default function NaturalToothPage() {
                   }}
                   className="text-lg md:text-2xl lg:text-[1.728rem] font-bold text-teal-secondary leading-[1.6] text-center"
                 >
-                  치아를 보존하기 위한 마지막 치료 선택지로 고려할 수 있습니다
+                  치아를 보존하기 위한 <br className="md:hidden" /> 마지막 치료
+                  선택지로 고려할 수 있습니다
                 </motion.p>
               </div>
             </div>
@@ -113,7 +114,8 @@ export default function NaturalToothPage() {
                   Apicoectomy
                 </p>
                 <h2 className="text-lg md:text-3xl lg:text-[2.074rem] font-bold text-white leading-[1.6]">
-                  치아를 살리는 또 다른 방법, 치근단 절제술이란?
+                  치아를 살리는 또 다른 방법, <br className="md:hidden" />
+                  치근단 절제술이란?
                 </h2>
               </div>
             </motion.div>
@@ -166,7 +168,7 @@ export default function NaturalToothPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-4 md:gap-8 mt-6 md:mt-14 lg:mt-20 max-w-6xl mx-auto w-full px-4"
+            className="flex flex-col items-center gap-4 md:gap-8 mt-16 lg:mt-20 max-w-6xl mx-auto w-full px-4"
           >
             {/* Section Header */}
             <motion.div
@@ -327,7 +329,7 @@ export default function NaturalToothPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-6 md:mt-14 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-12 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
           >
             {/* Section Header */}
             <motion.div
@@ -360,7 +362,7 @@ export default function NaturalToothPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12.5rem] rounded-lg overflow-hidden">
                   <Image
                     src={apicectomyStep1}
                     alt="치근단절제술 1단계"
@@ -374,8 +376,9 @@ export default function NaturalToothPage() {
                     STEP 01
                   </h3>
                   <p className="text-14 md:text-lg lg:text-[1.2rem] text-dark-primary leading-[1.6]">
-                    치아의 뿌리 끝 염증 조직을 제거하기 위해 잇몸 쪽으로 치아
-                    뿌리에 접근합니다.
+                    치아의 뿌리 끝 염증 조직을 제거하기 위해{" "}
+                    <br className="md:hidden" />
+                    잇몸 쪽으로 치아 뿌리에 접근합니다.
                   </p>
                 </div>
               </motion.div>
@@ -392,7 +395,7 @@ export default function NaturalToothPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12.5rem] rounded-lg overflow-hidden">
                   <Image
                     src={apicectomyStep2}
                     alt="치근단절제술 2단계"
@@ -406,7 +409,8 @@ export default function NaturalToothPage() {
                     STEP 02
                   </h3>
                   <p className="text-14 md:text-lg lg:text-[1.2rem] text-dark-primary leading-[1.6]">
-                    뿌리 끝 부분에 낭종이나 농양 또는 육아종을 확인합니다.
+                    뿌리 끝 부분에 낭종이나 농양 <br className="md:hidden" />
+                    또는 육아종을 확인합니다.
                   </p>
                 </div>
               </motion.div>
@@ -423,7 +427,7 @@ export default function NaturalToothPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12.5rem] rounded-lg overflow-hidden">
                   <Image
                     src={apicectomyStep3}
                     alt="치근단절제술 3단계"
@@ -458,7 +462,7 @@ export default function NaturalToothPage() {
                 }}
                 className="flex flex-col gap-4"
               >
-                <div className="relative w-full h-[15rem] rounded-lg overflow-hidden">
+                <div className="relative w-full h-[12.5rem] rounded-lg overflow-hidden">
                   <Image
                     src={apicectomyStep4}
                     alt="치근단절제술 4단계"
@@ -472,7 +476,8 @@ export default function NaturalToothPage() {
                     STEP 04
                   </h3>
                   <p className="text-14 md:text-lg lg:text-[1.2rem] text-dark-primary leading-[1.6]">
-                    뿌리 끝에 MTA (Mineral Trioxide Aggregate) 충전 후 마무리
+                    뿌리 끝에 MTA <br className="md:hidden" /> (Mineral Trioxide
+                    Aggregate) <br className="md:hidden" /> 충전 후 마무리
                     해줍니다.
                   </p>
                 </div>
@@ -508,7 +513,7 @@ export default function NaturalToothPage() {
                   <span className="text-14 md:text-xl lg:text-[1.44rem] font-bold text-white leading-[1.6]">
                     MTA는 일반적인 충전재와는 달리,
                   </span>
-                  <span className="bg-white text-teal-secondary px-4 py-0 rounded text-lg md:text-xl lg:text-[1.44rem] font-bold leading-[1.6]">
+                  <span className="bg-white text-teal-secondary px-4 py-0 rounded text-base md:text-lg lg:text-[1.44rem] font-bold leading-[1.6]">
                     치아 뿌리 주변 조직의 재생을 돕는 기능
                   </span>
                   <span className="text-14 md:text-xl lg:text-[1.44rem] font-bold text-white leading-[1.6]">
@@ -524,7 +529,7 @@ export default function NaturalToothPage() {
       {/* MTA 신경치료 Section - EXACT COPY FROM mta/page.tsx */}
       <section
         id="mta"
-        className="scroll-mt-[6.25rem] min-h-screen bg-white **:break-keep"
+        className="scroll-mt-[4.25rem] min-h-screen bg-white **:break-keep"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12">
@@ -587,14 +592,14 @@ export default function NaturalToothPage() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="text-center space-y-2"
             >
-              <p className="text-lg md:text-3xl lg:text-[2.074rem] font-bold text-white">
+              <p className="text-base md:text-3xl lg:text-[2.074rem] font-bold text-white">
                 조은이플란트치과는 신경치료 및 치근단 수술 시
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2">
-                <span className="inline-block bg-white text-[#97B6BB] font-bold text-lg md:text-3xl lg:text-[2.074rem] px-4 py-1 rounded">
+                <span className="inline-block bg-white text-[#97B6BB] font-bold text-base md:text-3xl lg:text-[2.074rem] px-4 py-1 rounded">
                   MTA(Mineral Trioxide Aggregate)
                 </span>
-                <span className="text-lg md:text-3xl lg:text-[2.074rem] font-bold text-white">
+                <span className="text-base md:text-3xl lg:text-[2.074rem] font-bold text-white">
                   를 적용합니다.
                 </span>
               </div>
@@ -626,8 +631,8 @@ export default function NaturalToothPage() {
       </section>
 
       {/* 잇몸치료 Section - EXACT COPY FROM gum-treatment/page.tsx */}
-      <section id="gum-treatment" className="scroll-mt-[6.25rem]">
-        <div className="flex flex-col items-center py-4 md:py-12 lg:py-16">
+      <section id="gum-treatment" className="scroll-mt-[4.25rem]">
+        <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 mt-8 md:mt-0">
           {/* Header Section */}
           <motion.section
             initial={{ opacity: 0 }}
@@ -700,17 +705,18 @@ export default function NaturalToothPage() {
               }}
               className="relative flex flex-col gap-2 py-6 md:py-12 justify-center items-start max-w-6xl mx-auto w-full px-4 text-center md:text-left"
             >
-              <p className="text-14 md:text-lg lg:text-[1.2rem] text-white leading-[1.6]">
+              <p className="text-14 md:text-lg lg:text-[1.2rem] text-white leading-[1.6] text-center mx-auto md:mx-0">
                 Periodontal Treatment
               </p>
-              <h2 className="text-lg md:text-3xl lg:text-[2.489rem] font-bold text-white leading-[1.6]">
+              <h2 className="text-lg md:text-3xl lg:text-[2.489rem] font-bold text-white leading-[1.6] text-center mx-auto md:mx-0">
                 잇몸치료란?
               </h2>
               <p className="text-14 md:text-xl text-white leading-[1.6] max-w-2xl break-keep">
-                치주질환은 성인에서 매우 흔한 구강 질환입니다. 초기에는 통증이
-                거의 없어 방치되기 쉬우며, 만성적으로 진행되면 치아를 지탱하는
-                조직이 파괴되어 치아 상실로 이어질 수 있습니다. 그렇지만 가벼운
-                잇몸질환은 잇몸 치료만으로도 충분히 관리와 개선이 가능합니다.
+                치주질환은 성인에서 매우 흔한 구강 질환입니다.{" "}
+                <br className="" /> 초기에는 통증이 거의 없어 방치되기 쉬우며,
+                만성적으로 진행되면 치아를 지탱하는 조직이 파괴되어 치아 상실로
+                이어질 수 있습니다. 그렇지만 가벼운 잇몸질환은 잇몸 치료만으로도
+                충분히 관리와 개선이 가능합니다.
               </p>
             </motion.div>
           </motion.section>
@@ -721,7 +727,7 @@ export default function NaturalToothPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-6 md:mt-14 lg:mt-16 px-4 max-w-6xl mx-auto w-full"
+            className="flex flex-col items-center gap-4 md:gap-12 lg:gap-16 mt-16 px-4 max-w-6xl mx-auto w-full"
           >
             {/* Section Header */}
             <motion.div

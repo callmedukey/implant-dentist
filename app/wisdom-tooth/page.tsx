@@ -31,7 +31,7 @@ export default function WisdomToothPage() {
       {/* 전문의 직접 발치 Section - EXACT COPY FROM specialist/page.tsx */}
       <section id="specialist" className="scroll-mt-[6.25rem]">
         {/* Hero Section */}
-        <section className="pt-8 pb-4 md:pt-20 md:pb-12">
+        <section className="pt-8 pb-4 md:pt-20 md:pb-12 mt-8 md:mt-0">
           <div className="mx-auto max-w-[69.375rem] px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ export default function WisdomToothPage() {
               구강악안면외과 전문의가
               <br className="hidden lg:block" />{" "}
               <span className="font-bold text-teal-secondary">
-                신경과 인접한 고난도 사랑니까지
+                신경과 인접한 고난도 사랑니까지 <br className="md:hidden" />
               </span>{" "}
               직접 진료 및 수술합니다.
             </motion.p>
@@ -164,13 +164,14 @@ export default function WisdomToothPage() {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center">
                     <h3 className="text-lg font-bold mb-1">
                       고난도 사랑니 발치
                     </h3>
                     <p className="text-14 sm:font-bold">
-                      수많은 고난도 케이스와 다양한 사랑니 발치 경험을 보유한
-                      전문가가 직접 시술합니다.
+                      수많은 고난도 케이스와 다양한 사랑니 발치{" "}
+                      <br className="md:hidden" /> 경험을 보유한 전문가가 직접
+                      시술합니다.
                     </p>
                   </div>
                 </div>
@@ -218,13 +219,14 @@ export default function WisdomToothPage() {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white text-center">
                     <h3 className="text-lg font-bold mb-1">
                       신경선까지 고려한 발치
                     </h3>
                     <p className="text-14 sm:font-bold">
-                      디지털 정밀 진단을 통해 신경선까지 정확히 분석하여 안전한
-                      사랑니 발치가 가능합니다.
+                      디지털 정밀 진단을 통해 신경선까지 정확히{" "}
+                      <br className="md:hidden" /> 분석하여 안전한 사랑니 발치가
+                      가능합니다.
                     </p>
                   </div>
                 </div>
@@ -255,7 +257,7 @@ export default function WisdomToothPage() {
       </section>
 
       {/* 당일 사랑니 발치 Section - EXACT COPY FROM same-day/page.tsx */}
-      <section id="same-day" className="scroll-mt-[6.25rem] pt-4 md:pt-8">
+      <section id="same-day" className="scroll-mt-[4rem] pt-4 md:pt-8">
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-16 md:pb-12">
           <div className="mx-auto max-w-[69.375rem] px-4">
@@ -366,7 +368,7 @@ export default function WisdomToothPage() {
                 </h2>
                 <div className="flex flex-wrap items-center justify-center gap-2 mt-1">
                   <span className="inline-block bg-white text-teal-secondary font-bold text-lg md:text-3xl lg:text-[2.074rem] px-4 rounded">
-                    원스틱 사랑니 발치 서비스
+                    원스톱 사랑니 발치 서비스
                   </span>
                   <span className="text-lg md:text-3xl lg:text-[2.074rem] font-bold text-white">
                     를 제공합니다.
@@ -376,7 +378,7 @@ export default function WisdomToothPage() {
             </div>
           </motion.div>
 
-          <div className="mx-auto max-w-[90rem] px-4">
+          <div className="mx-auto max-w-[90rem] px-4 mt-16 md:mt-0">
             {/* Wisdom Tooth Types Grid */}
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-10 max-w-[69.375rem] mx-auto">
               {/* Horizontal Wisdom Tooth */}
@@ -391,7 +393,7 @@ export default function WisdomToothPage() {
                 }}
                 className="flex flex-col items-center gap-1 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.667rem)]"
               >
-                <div className="relative w-full h-[14rem] md:h-[18rem] rounded-t-lg overflow-hidden">
+                <div className="relative w-full h-[13rem] md:h-[18rem] rounded-t-lg overflow-hidden max-w-[80%] mx-auto md:max-w-full">
                   <Image
                     src={horizontalWT}
                     alt="수평으로 매복된 사랑니"
@@ -417,7 +419,7 @@ export default function WisdomToothPage() {
                 }}
                 className="flex flex-col items-center gap-1 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.667rem)]"
               >
-                <div className="relative w-full h-[14rem] md:h-[18rem] rounded-t-lg overflow-hidden">
+                <div className="relative w-full h-[13rem] md:h-[18rem] rounded-t-lg overflow-hidden max-w-[80%] mx-auto md:max-w-full">
                   <Image
                     src={verticalWT}
                     alt="수직으로 매복된 사랑니"
@@ -443,7 +445,7 @@ export default function WisdomToothPage() {
                 }}
                 className="flex flex-col items-center gap-1 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.667rem)]"
               >
-                <div className="relative w-full h-[14rem] md:h-[18rem] rounded-t-lg overflow-hidden">
+                <div className="relative w-full h-[13rem] md:h-[18rem] rounded-t-lg overflow-hidden max-w-[80%] mx-auto md:max-w-full">
                   <Image
                     src={angledWT}
                     alt="각도를 가지고 매복된 사랑니"
@@ -470,9 +472,10 @@ export default function WisdomToothPage() {
               }}
               className="text-14 md:text-xl text-dark-primary max-w-7xl mx-auto mt-8 px-4 md:px-6 xl:whitespace-nowrap text-center mb-4 md:mb-8"
             >
-              신경과 가까운 고난도 케이스도 안전하게 수술하며, 회복까지 세심하게
-              관리합니다. 대학병원 수준의 수술을 기다림 없이 편안하게
-              받아보세요.
+              신경과 가까운 고난도 케이스도 안전하게 수술하며,{" "}
+              <br className="md:hidden" /> 회복까지 세심하게 관리합니다.
+              대학병원 수준의 수술을 <br className="md:hidden" /> 기다림 없이
+              편안하게 받아보세요.
             </motion.p>
           </div>
         </section>

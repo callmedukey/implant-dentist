@@ -6,7 +6,7 @@ import treatmentExpertiseImage from "@/public/images/chronic-disease/treatment-e
 
 const ChronicDiseaseInfo = () => {
   return (
-    <section className="flex flex-col gap-6 md:gap-12 lg:gap-[5.8125rem] py-8 md:py-16 lg:py-24 w-full">
+    <section className="flex flex-col gap-6 md:gap-12 lg:gap-[5.8125rem] py-8 md:py-16 lg:py-24 w-full mt-8 md:mt-0">
       {/* Treatment Expertise Card */}
       <div className="flex flex-col lg:flex-row overflow-hidden w-full">
         {/* Image */}
@@ -19,7 +19,7 @@ const ChronicDiseaseInfo = () => {
             delay: 0.1,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="relative w-full lg:w-1/2 h-[300px] md:h-[400px] lg:h-[30.3125rem] pr-2"
+          className="relative w-full lg:w-1/2 h-[300px] md:h-[400px] lg:h-[30.3125rem] md:pr-2"
         >
           <div className="relative w-full h-full rounded-r-md overflow-hidden">
             <Image
@@ -60,9 +60,8 @@ const ChronicDiseaseInfo = () => {
             <span className="text-teal-secondary">경험이</span>
             <br className="hidden lg:block" />
             <span className="text-teal-secondary">풍부한 전문의</span>가 특화된
-            진료 프로세스를 바탕으로
-            <br className="hidden lg:block" />
-            <span className="text-teal-secondary">안전하게 진료</span>
+            진료 프로세스를 바탕으로 <br className="hidden lg:block" />
+            <span className="text-teal-secondary"> 안전하게 진료</span>
             합니다.
           </p>
         </motion.div>
@@ -94,7 +93,7 @@ const ChronicDiseaseInfo = () => {
               환자분들의 안전한 진료 를 위해
               <span className="text-teal-secondary">모든 의료진</span>을
               <br className="hidden lg:block" />
-              대상으로
+              대상으로{" "}
               <span className="text-teal-secondary">정기적인 원내교육</span>을
               실시합니다
             </p>
