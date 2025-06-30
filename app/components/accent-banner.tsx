@@ -11,7 +11,9 @@ const AccentBanner = () => {
         src={heroImage}
         alt="조은이플란트치과 전문의"
         fill
+        priority
         className="object-cover object-right grayscale"
+        quality={100}
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gray-900/50 z-10" />
