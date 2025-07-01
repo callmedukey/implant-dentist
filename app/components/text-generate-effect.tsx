@@ -47,7 +47,6 @@ export const TextGenerateEffect = ({
               className="opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
-                willChange: "transform",
               }}
             >
               {word}{" "}

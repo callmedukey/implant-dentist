@@ -24,7 +24,6 @@ const AccentBanner = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          style={{ willChange: "transform, opacity" }}
         >
           <Image
             src={whiteLogoImage}
@@ -39,7 +38,6 @@ const AccentBanner = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          style={{ willChange: "transform, opacity" }}
         >
           <h1 className="text-white font-pretendard font-bold text-14 md:text-xl lg:text-2xl leading-[160%] text-center">
             언제 어디서나, 같은 마음으로 진료합니다

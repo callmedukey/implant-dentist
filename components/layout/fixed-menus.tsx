@@ -1,7 +1,7 @@
 "use client";
 
-import { ArrowUp, X } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { ArrowUp } from "lucide-react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
@@ -14,7 +14,6 @@ import phoneIcon from "@/public/images/quick-menu/phone-icon.svg";
 
 const FixedMenus = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -33,7 +32,6 @@ const FixedMenus = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setIsExpanded(false); // Close mobile menu after clicking
   };
 
   // Render menu items - reusable for both mobile and desktop
@@ -47,7 +45,6 @@ const FixedMenus = () => {
         className={`flex flex-col items-center ${
           isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
         } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
-        onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
           src={kakaoIcon}
@@ -72,7 +69,6 @@ const FixedMenus = () => {
         className={`flex flex-col items-center ${
           isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
         } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
-        onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
           src={naverReservationIcon}
@@ -97,7 +93,6 @@ const FixedMenus = () => {
         className={`flex flex-col items-center ${
           isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
         } border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200`}
-        onClick={() => isMobile && setIsExpanded(false)}
       >
         <Image
           src={naverBlogIcon}
@@ -120,7 +115,6 @@ const FixedMenus = () => {
         className={`flex flex-col items-center ${
           isMobile ? "gap-3 px-0 py-4" : "gap-2 md:gap-4 px-0 py-3 md:py-4"
         } hover:bg-gray-50 transition-colors duration-200`}
-        onClick={() => isMobile && setIsExpanded(false)}
       >
         <div
           className={`relative ${
@@ -176,73 +170,81 @@ const FixedMenus = () => {
 
   return (
     <>
-      {/* Mobile Vertical Button */}
-      <motion.div
-        className="fixed right-4 bottom-24 z-40 md:hidden"
-        initial={{ x: 100 }}
-        animate={{
-          x: isVisible ? 0 : 100,
-        }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      >
-        <motion.button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="bg-teal-secondary text-white px-3 py-4 rounded-l-lg shadow-lg font-bold text-base"
-          whileHover={{ x: -5 }}
-          whileTap={{ scale: 0.95 }}
-          style={{
-            writingMode: "vertical-rl",
-            textOrientation: "mixed",
-            willChange: "transform",
-          }}
-        >
-          {isExpanded ? "닫기" : "퀵메뉴"}
-        </motion.button>
-      </motion.div>
-
-      {/* Mobile Expanded Menu */}
-      <AnimatePresence>
-        {isExpanded && (
-          <motion.div
-            className="fixed inset-0 z-50 md:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setIsExpanded(false)}
+      {/* Mobile Fixed Bottom Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg">
+        <div className="flex flex-row items-stretch justify-around">
+          {/* Kakao Talk */}
+          <a
+            href="https://pf.kakao.com/_FMavxj/chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center flex-1 py-3 hover:bg-gray-50 transition-colors duration-200"
           >
-            {/* Backdrop */}
-            <div className="absolute inset-0 bg-black/30" />
+            <Image
+              src={kakaoIcon}
+              alt="카카오톡 아이콘"
+              className="w-6 h-6 mb-1"
+              quality={100}
+            />
+            <span className="text-14 text-dark-primary">카톡</span>
+          </a>
 
-            {/* Menu Content - positioned from the right edge, sliding left into view */}
-            <motion.div
-              className="absolute bottom-24 bg-white rounded-l-lg shadow-lg overflow-hidden"
-              style={{
-                right: 0,
-                width: "200px",
-              }}
-              initial={{ x: 200 }}
-              animate={{ x: 0 }}
-              exit={{ x: 200 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Header */}
-              <div className="bg-teal-secondary px-4 py-3 flex items-center justify-between">
-                <span className="text-white text-sm font-bold">QUICK MENU</span>
-                <button
-                  onClick={() => setIsExpanded(false)}
-                  className="text-white hover:opacity-80 transition-opacity"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
+          {/* Naver Reservation */}
+          <a
+            href="https://booking.naver.com/booking/13/bizes/860783?tr=bnm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center flex-1 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+          >
+            <Image
+              src={naverReservationIcon}
+              alt="네이버 예약 아이콘"
+              className="w-6 h-6 mb-1"
+              quality={100}
+            />
+            <span className="text-14 text-dark-primary">예약</span>
+          </a>
 
-              {/* Menu Items */}
-              <div className="flex flex-col">{renderMenuItems(true)}</div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          {/* Naver Blog */}
+          <a
+            href="https://blog.naver.com/chooneeplant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center flex-1 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+          >
+            <Image
+              src={naverBlogIcon}
+              alt="네이버 블로그 아이콘"
+              className="w-6 h-6 mb-1"
+              quality={100}
+            />
+            <span className="text-14 text-dark-primary">블로그</span>
+          </a>
+
+          {/* Phone */}
+          <a
+            href="tel:031-847-5550"
+            className="flex flex-col items-center justify-center flex-1 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors duration-200"
+          >
+            <div className="relative w-6 h-6 mb-1">
+              <Image src={phoneIcon} alt="전화 아이콘" fill unoptimized />
+            </div>
+            <span className="text-14 text-dark-primary">전화</span>
+          </a>
+
+          {/* Back to Top */}
+          <button
+            onClick={scrollToTop}
+            className="flex flex-col items-center justify-center flex-1 py-3 border-l border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors duration-200"
+          >
+            <ArrowUp
+              className="w-6 h-6 mb-1 text-dark-primary"
+              strokeWidth={2}
+            />
+            <span className="text-14 text-dark-primary font-bold">TOP</span>
+          </button>
+        </div>
+      </div>
 
       {/* Desktop Fixed Menu */}
       <motion.div

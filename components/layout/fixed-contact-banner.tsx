@@ -335,7 +335,6 @@ const FixedContactBanner = () => {
               style={{
                 writingMode: "vertical-rl",
                 textOrientation: "mixed",
-                willChange: "transform",
               }}
             >
               상담 신청하기
@@ -392,7 +391,6 @@ const FixedContactBanner = () => {
           y: { type: "spring", stiffness: 300, damping: 30 },
           opacity: { duration: 0.2 },
         }}
-        style={{ willChange: "transform, opacity" }}
       >
         <div className="mx-auto max-w-screen-max p-2.5">
           <div className="flex items-center justify-center gap-[1.3125rem] bg-teal-secondary px-10 py-2">

@@ -136,7 +136,6 @@ export default function AboutPage() {
             }}
             viewport={{ once: true, amount: 0.3 }}
             className="w-full max-w-[69.375rem] h-[300px] md:h-[400px] lg:h-[42.75rem] rounded-lg overflow-hidden my-12 md:my-16 lg:my-20 shadow-2xl"
-            style={{ willChange: "transform" }}
           >
             <Image
               src={staffBgImage}
@@ -161,7 +160,6 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="absolute inset-0"
-              style={{ willChange: "transform" }}
             />
             <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-2 relative z-10">
               <motion.p

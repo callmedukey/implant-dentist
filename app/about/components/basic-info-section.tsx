@@ -46,7 +46,6 @@ const BasicInfoSection = () => {
           bounce: 0.3,
         }}
         viewport={{ once: true, amount: 0.3 }}
-        style={{ willChange: "transform, opacity" }}
       >
         <motion.p
           className="text-14 md:text-lg lg:text-xl leading-relaxed text-dark-primary"
@@ -59,7 +58,6 @@ const BasicInfoSection = () => {
             bounce: 0.2,
           }}
           viewport={{ once: true }}
-          style={{ willChange: "transform, opacity, filter" }}
         >
           자연치아는 최대한 보존하고, <br className="md:hidden" /> 불가피한
           경우에는 정밀 진단을 바탕으로 <br className="md:hidden" /> 신뢰도 높은
@@ -76,7 +74,6 @@ const BasicInfoSection = () => {
             bounce: 0.2,
           }}
           viewport={{ once: true }}
-          style={{ willChange: "transform, opacity, filter" }}
         >
           단순한 시술이 아닌, <br className="md:hidden" /> 오랜 시간 건강하게
           사용할 수 있는 결과를 위해 진심을 다합니다.
@@ -95,7 +92,6 @@ const BasicInfoSection = () => {
           delay: 0.1,
         }}
         viewport={{ once: true, amount: 0.5 }}
-        style={{ willChange: "transform, opacity", transformPerspective: 1000 }}
       >
         <motion.h2
           className="text-[1.35rem] md:text-3xl lg:text-4xl font-bold leading-relaxed text-center text-dark-primary"
@@ -107,7 +103,6 @@ const BasicInfoSection = () => {
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
           viewport={{ once: true }}
-          style={{ willChange: "transform, opacity, clipPath" }}
         >
           치아 하나에도 원칙과 철학이 있는 진료
         </motion.h2>
@@ -122,7 +117,6 @@ const BasicInfoSection = () => {
             bounce: 0.4,
           }}
           viewport={{ once: true }}
-          style={{ willChange: "transform, opacity" }}
         >
           <Image
             src={logoIcon}
@@ -173,7 +167,6 @@ const BasicInfoSection = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col gap-3 md:gap-6 lg:gap-8 w-1/2 md:w-1/4"
             style={{
-              willChange: "transform, opacity",
               transformPerspective: 800,
               transformStyle: "preserve-3d",
             }}
@@ -205,7 +198,6 @@ const BasicInfoSection = () => {
                 bounce: 0.3,
               }}
               viewport={{ once: true }}
-              style={{ willChange: "transform, opacity" }}
             >
               {value.title}
             </motion.h3>

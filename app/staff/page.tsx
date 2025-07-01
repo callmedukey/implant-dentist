@@ -113,7 +113,6 @@ const StaffPage = () => {
         }}
         viewport={{ once: true, amount: 0.3 }}
         className="w-full max-w-[69.375rem] h-[400px] md:h-[500px] lg:h-[42.75rem] rounded-lg overflow-hidden my-16 md:my-24 shadow-2xl"
-        style={{ willChange: "transform" }}
       >
         <Image
           src={staffBgImage}
@@ -138,7 +137,6 @@ const StaffPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="absolute inset-0 bg-gradient-to-r from-teal-primary to-teal-secondary origin-left"
-          style={{ willChange: "transform" }}
         />
         <div className="max-w-[90rem] mx-auto flex flex-col items-center gap-2 relative z-10">
           <motion.p

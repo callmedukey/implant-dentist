@@ -5,7 +5,6 @@
 
 /* Prevent layout shift from scrollbar */
 html {
-  overflow-x: hidden;
   scrollbar-gutter: stable;
 }
 

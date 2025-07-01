@@ -86,7 +86,6 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 500, damping: 30 }}
-      style={{ willChange: "transform" }}
     >
       <div className="flex items-center gap-2 max:gap-20">
         <div className="flex items-center gap-2">
@@ -108,7 +107,6 @@ export default function Header() {
               style={{
                 background:
                   "linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.7) 50%, transparent 60%)",
-                willChange: "transform, opacity",
               }}
               animate={{
                 x: ["-100%", "200%"],
@@ -139,7 +137,6 @@ export default function Header() {
                   stiffness: 400,
                   damping: 20,
                 }}
-                style={{ willChange: "transform, opacity" }}
               >
                 {item.hasDropdown ? (
                   <DropdownMenu>

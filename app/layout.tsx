@@ -69,8 +69,8 @@ export default function RootLayout({
           <Header />
           <main className="pt-[4rem] sm:pt-[6.25rem]">{children}</main>
           <Footer />
-          <FixedContactBanner />
           <FixedMenus />
+          <FixedContactBanner />
         </PopupProvider>
       </body>
     </html>

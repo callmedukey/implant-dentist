@@ -46,7 +46,13 @@ const NetworkSection = () => {
           </motion.div>
 
           {/* Logo Slider */}
-          <div className="relative w-full mt-4 md:mt-8">
+          <motion.div 
+            className="relative w-full mt-4 md:mt-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
             <Marquee
               className="[--duration:15s] [--gap:2rem] md:[--gap:6rem] lg:[--gap:2rem] mb-8"
               pauseOnHover
@@ -65,7 +71,7 @@ const NetworkSection = () => {
                 </div>
               ))}
             </Marquee>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

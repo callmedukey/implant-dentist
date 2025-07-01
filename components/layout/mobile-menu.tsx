@@ -47,7 +47,6 @@ export default function MobileMenu({
               stiffness: 300,
               damping: 20,
             }}
-            style={{ willChange: "transform, opacity" }}
           >
             {item.hasDropdown ? (
               <div className="flex flex-col">
