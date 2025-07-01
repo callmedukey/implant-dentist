@@ -135,7 +135,7 @@ export default function AboutPage() {
               transition: { duration: 2, ease: "easeInOut" },
             }}
             viewport={{ once: true, amount: 0.3 }}
-            className="w-full max-w-[69.375rem] h-[300px] md:h-[400px] lg:h-[42.75rem] rounded-lg overflow-hidden my-12 md:my-16 lg:my-20 shadow-2xl"
+            className="w-full max-w-[69.375rem] h-[300px] md:h-[400px] lg:h-[42.75rem] rounded-lg overflow-hidden my-12 md:my-16 lg:my-20 shadow-2xl relative"
           >
             <Image
               src={staffBgImage}
