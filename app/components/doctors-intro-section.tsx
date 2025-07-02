@@ -51,7 +51,7 @@ const doctors: DoctorData[] = [
       "한림대학교 성심병원 구강악안면외과 레지던트 수료",
       "한림대학교 성심병원 인턴 수료",
       "단국대학교 치과대학 졸업",
-      "미국 UCLA 치과대락 익스턴십",
+      "미국 UCLA 치과대학 익스턴십",
       "덴티움 임플란트 live surgery moderator",
       "미국심장협회 인준 BLS provider",
       "대한구강악안면외과학회 정회원",

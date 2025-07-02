@@ -170,6 +170,9 @@ const Footer = () => {
                       transition={{ duration: 0.4, delay: 0.9 }}
                     >
                       <span className="text-14 lg:text-base text-dark-primary text-center">
+                        점심시간 13:00-14:00
+                      </span>
+                      <span className="text-14 lg:text-base text-dark-primary text-center">
                         토요일 점심시간 없음
                       </span>
                       <p className="text-14 lg:text-lg text-dark-primary text-center font-semibold">
