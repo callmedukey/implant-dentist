@@ -18,7 +18,7 @@ export default async function AdminPage() {
   const session = await auth();
 
   if (!session || session.user.role !== "ADMIN") {
-    redirect("/admin/login");
+    redirect("/login");
   }
 
   return (

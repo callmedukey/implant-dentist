@@ -17,12 +17,14 @@ export default function PopupCreateDialog() {
   const [state, action, pending] = useActionState(createPopupAction, {});
   const [popupType, setPopupType] = useState<PopupType>("TEXT");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (state.success) {
       setOpen(false);
       setImagePreview(null);
+      setImageDimensions(null);
       // Reset form
       const form = document.getElementById(
         "popup-create-form"
@@ -38,11 +40,20 @@ export default function PopupCreateDialog() {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setImagePreview(reader.result as string);
+        const result = reader.result as string;
+        setImagePreview(result);
+        
+        // Get image dimensions
+        const img = new Image();
+        img.onload = () => {
+          setImageDimensions({ width: img.width, height: img.height });
+        };
+        img.src = result;
       };
       reader.readAsDataURL(file);
     } else {
       setImagePreview(null);
+      setImageDimensions(null);
     }
   };
 
@@ -163,6 +174,11 @@ export default function PopupCreateDialog() {
                     alt="팝업 이미지 미리보기"
                     className="max-w-full h-auto max-h-48 rounded-md border border-gray-300"
                   />
+                  {imageDimensions && (
+                    <p className="mt-2 text-sm text-gray-600">
+                      크기: {imageDimensions.width} × {imageDimensions.height}px
+                    </p>
+                  )}
                 </div>
               )}
             </div>

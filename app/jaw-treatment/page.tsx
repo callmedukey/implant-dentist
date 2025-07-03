@@ -689,7 +689,7 @@ export default function JawTreatmentPage() {
       {/* 턱관절 치료 전문장비 Section - EXACT COPY FROM equipment/page.tsx */}
       <section
         id="equipment"
-        className="scroll-mt-[6.25rem] bg-white **:break-keep pt-4 md:pt-8"
+        className="scroll-mt-[5rem] lg:scroll-mt-[4rem] bg-white **:break-keep pt-4 md:pt-8"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-6 md:pt-20 md:pb-16">

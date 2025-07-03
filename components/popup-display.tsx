@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 import { Popup, PopupImage } from "@/prisma/generated/prisma";
 
 type PopupWithImage = Popup & {
@@ -41,8 +42,13 @@ export default function PopupDisplay({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[95vw] max-h-[80vh] p-0 overflow-hidden flex flex-col">
-        <div className="flex-1 overflow-y-auto p-6">
+      <DialogContent className="max-w-[95vw] max-h-[80vh] p-0 overflow-hidden flex flex-col gap-0">
+        <div
+          className={cn(
+            "flex-1 overflow-y-auto p-6",
+            popup.type === "IMAGE" ? "p-0" : "p-6"
+          )}
+        >
           {popup.type === "TEXT" ? (
             <>
               <DialogHeader>
@@ -61,20 +67,18 @@ export default function PopupDisplay({
               <DialogHeader>
                 <DialogTitle className="sr-only">팝업 이미지</DialogTitle>
               </DialogHeader>
-              <div className="relative">
-                {popup.popupImage && (
-                  <div className="relative w-full">
-                    <Image
-                      src={popup.popupImage.imageUrl}
-                      alt="팝업 이미지"
-                      width={800}
-                      height={600}
-                      className="w-full h-auto rounded-md"
-                      priority
-                    />
-                  </div>
-                )}
-              </div>
+              {popup.popupImage && (
+                <div className="relative w-full">
+                  <Image
+                    src={popup.popupImage.imageUrl}
+                    alt="팝업 이미지"
+                    width={popup.popupImage.width}
+                    height={popup.popupImage.height}
+                    className="w-full h-auto rounded-md"
+                    priority
+                  />
+                </div>
+              )}
             </>
           )}
         </div>
@@ -88,7 +92,7 @@ export default function PopupDisplay({
           </button>
           <button
             onClick={handleClose}
-            className="px-4 py-2 text-sm bg-teal-600 text-white hover:bg-teal-700 rounded-md transition-colors"
+            className="px-4 py-2 text-sm bg-teal-secondary font-bold text-white hover:bg-teal-primary rounded-md transition-colors"
           >
             닫기
           </button>

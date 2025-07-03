@@ -78,14 +78,21 @@ export default function PopupList({ popups }: PopupListProps) {
                     이미지 팝업
                   </p>
                   {popup.popupImage && (
-                    <div className="relative h-48 w-full bg-gray-100 rounded-md overflow-hidden">
-                      <Image
-                        src={popup.popupImage.imageUrl}
-                        alt="팝업 이미지"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                    <>
+                      <div className="relative h-48 w-full bg-gray-100 rounded-md overflow-hidden">
+                        <Image
+                          src={popup.popupImage.imageUrl}
+                          alt="팝업 이미지"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      {popup.popupImage.width > 0 && popup.popupImage.height > 0 && (
+                        <p className="mt-2 text-xs text-gray-600">
+                          크기: {popup.popupImage.width} × {popup.popupImage.height}px
+                        </p>
+                      )}
+                    </>
                   )}
                 </div>
               )}

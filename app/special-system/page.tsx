@@ -54,7 +54,7 @@ export default function SpecialSystemPage() {
       {/* 만성질환 특화진료 Section - EXACT COPY FROM chronic-disease/page.tsx */}
       <section
         id="chronic-disease"
-        className="scroll-mt-[6.25rem] mt-16 md:mt-0"
+        className="scroll-mt-[5rem] lg:scroll-mt-[6rem] mt-16 md:mt-0"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -148,7 +148,7 @@ export default function SpecialSystemPage() {
                   duration: 0.6,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="flex flex-col lg:flex-row gap-10 items-start lg:items-center **:break-keep"
+                className="flex flex-col lg:flex-row gap-10 items-start lg:items-center **:break-keep overflow-x-hidden"
               >
                 {/* Text Content */}
                 <motion.div
@@ -240,7 +240,7 @@ export default function SpecialSystemPage() {
       </section>
 
       {/* 디지털시스템 Section - EXACT COPY FROM digital/page.tsx */}
-      <section id="digital" className="scroll-mt-[6.25rem]">
+      <section id="digital" className="scroll-mt-[7rem] lg:scroll-mt-[9rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -267,7 +267,10 @@ export default function SpecialSystemPage() {
       </section>
 
       {/* 멸균시스템 Section - EXACT COPY FROM sterilization/page.tsx */}
-      <section id="sterilization" className="scroll-mt-[6.25rem]">
+      <section
+        id="sterilization"
+        className="scroll-mt-[6rem] lg:scroll-mt-[4rem]"
+      >
         <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-[8.125rem] pb-8 md:py-12 lg:py-24 **:break-keep mb-8 md:mb-12 lg:mb-24">
           {/* Hero Section */}
           <motion.section
@@ -460,7 +463,10 @@ export default function SpecialSystemPage() {
       </section>
 
       {/* 보증 시스템 Section - EXACT COPY FROM warranty/page.tsx */}
-      <section id="warranty" className="scroll-mt-[6.25rem]">
+      <section
+        id="warranty"
+        className="scroll-mt-[5.5rem] lg:scroll-mt-[4.5rem]"
+      >
         <div className="flex flex-col items-center py-8 md:py-12 lg:py-24 **:break-keep">
           {/* Header Section */}
           <motion.section
@@ -517,7 +523,7 @@ export default function SpecialSystemPage() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-[3.4375rem] px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full"
+            className="flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-[3.4375rem] px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full overflow-x-hidden"
           >
             {/* Text Content */}
             <motion.div

@@ -42,7 +42,7 @@ export default function SpecialImplantPage() {
       {/* 특별한 임플란트 Section - EXACT COPY FROM special-implant/page.tsx */}
       <section
         id="special-implant"
-        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[5rem] lg:pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep mt-8 md:mt-0">
           {/* Header Section */}
@@ -442,7 +442,7 @@ export default function SpecialImplantPage() {
       {/* 명품 뼈이식 Section - EXACT COPY FROM bone-graft/page.tsx */}
       <section
         id="bone-graft"
-        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[4rem] lg:scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           <motion.section
@@ -584,7 +584,7 @@ export default function SpecialImplantPage() {
             className="flex flex-col items-center gap-8 md:gap-16 lg:gap-20 px-4 md:px-8 lg:px-[3.5rem] max-w-6xl mx-auto w-full mt-8 md:mt-16 lg:mt-20"
           >
             {/* Feature Row */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[1.875rem] w-full">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[1.875rem] w-full overflow-x-hidden">
               {/* Image */}
               <motion.div
                 initial={{ opacity: 0, x: -40, scale: 0.95 }}
@@ -1255,7 +1255,7 @@ export default function SpecialImplantPage() {
       {/* 보험 임플란트 Section - EXACT COPY FROM insurance/page.tsx */}
       <section
         id="insurance"
-        className="scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[4rem] lg:scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           {/* Header Section */}

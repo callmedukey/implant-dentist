@@ -29,7 +29,7 @@ export default function WisdomToothPage() {
   return (
     <main className="min-h-screen bg-white **:break-keep">
       {/* 전문의 직접 발치 Section - EXACT COPY FROM specialist/page.tsx */}
-      <section id="specialist" className="scroll-mt-[6.25rem]">
+      <section id="specialist" className="scroll-mt-[5rem]">
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12 mt-8 md:mt-0">
           <div className="mx-auto max-w-[69.375rem] px-4">

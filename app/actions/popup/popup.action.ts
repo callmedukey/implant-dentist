@@ -4,6 +4,7 @@ import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 
 import { revalidatePath } from "next/cache";
+import sharp from "sharp";
 
 import { auth } from "@/auth";
 import { PopupType } from "@/prisma/generated/prisma";
@@ -88,6 +89,8 @@ export async function createPopupAction(
 
   try {
     let imageUrl: string | undefined;
+    let imageWidth: number | undefined;
+    let imageHeight: number | undefined;
 
     // Handle image upload
     if (type === "IMAGE" && imageFile && imageFile.size > 0) {
@@ -105,6 +108,11 @@ export async function createPopupAction(
       const bytes = await imageFile.arrayBuffer();
       const buffer = Buffer.from(bytes);
 
+      // Get image dimensions using sharp
+      const metadata = await sharp(buffer).metadata();
+      imageWidth = metadata.width;
+      imageHeight = metadata.height;
+
       // Write file
       await writeFile(filepath, buffer);
 
@@ -121,6 +129,8 @@ export async function createPopupAction(
           ? {
               create: {
                 imageUrl,
+                width: imageWidth || 0,
+                height: imageHeight || 0,
               },
             }
           : undefined,

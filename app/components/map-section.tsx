@@ -39,13 +39,13 @@ const MapSection = () => {
           maxSize={1.4}
           speed={0.1}
         />
-        {/* SVG Map - aligned to the right and fills full height */}
-        <div className="hidden md:block absolute right-0 top-0 bottom-0 w-[45%] lg:w-[50%] xl:w-[45%] h-full">
+        {/* SVG Map - mobile: full coverage, desktop: aligned to the right */}
+        <div className="absolute md:right-0 md:top-0 md:bottom-0 w-full md:w-[45%] lg:w-[50%] xl:w-[45%] h-full">
           <Image
             src={mapImage}
             alt="전국 네트워크 지도"
             fill
-            className="object-cover object-left"
+            className="object-cover object-center md:object-left"
             unoptimized
           />
         </div>
@@ -102,43 +102,6 @@ const MapSection = () => {
           </div>
         </motion.div>
 
-        {/* Mobile text overlay - centered */}
-        <div className="md:hidden absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[280px] z-10">
-          {/* Header */}
-          <div className="mb-3">
-            <h2 className="text-xl font-bold text-teal-secondary mb-1">
-              전국 네트워크
-            </h2>
-            <p className="text-14 font-bold text-white mb-3 whitespace-nowrap">
-              어디서든 만나볼 수 있는{" "}
-              <span className="text-teal-secondary">조은이플란트치과</span>
-            </p>
-          </div>
-
-          {/* Locations */}
-          <div className="space-y-2">
-            {locations.map((location) => (
-              <div
-                key={location.name}
-                className="py-2 border-b border-white/30 last:border-b-0"
-              >
-                <div className="flex items-start gap-2">
-                  <MapPin
-                    className="w-4 h-4 text-white flex-shrink-0 mt-0.5"
-                    strokeWidth={1.5}
-                  />
-                  <div className="space-y-0.5">
-                    <h3 className="text-14 font-bold text-white">
-                      {location.name}
-                    </h3>
-                    <p className="text-14 text-white/90">{location.address}</p>
-                    <p className="text-14 text-white/90">{location.phone}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -529,7 +529,7 @@ export default function NaturalToothPage() {
       {/* MTA 신경치료 Section - EXACT COPY FROM mta/page.tsx */}
       <section
         id="mta"
-        className="scroll-mt-[4.25rem] min-h-screen bg-white **:break-keep"
+        className="scroll-mt-[6rem] min-h-screen bg-white **:break-keep"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12">
@@ -631,7 +631,7 @@ export default function NaturalToothPage() {
       </section>
 
       {/* 잇몸치료 Section - EXACT COPY FROM gum-treatment/page.tsx */}
-      <section id="gum-treatment" className="scroll-mt-[4.25rem]">
+      <section id="gum-treatment" className="scroll-mt-[6rem]">
         <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 mt-8 md:mt-0">
           {/* Header Section */}
           <motion.section

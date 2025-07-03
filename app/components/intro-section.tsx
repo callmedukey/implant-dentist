@@ -16,7 +16,7 @@ const IntroSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid sm:grid-cols-2 xl:flex flex-col lg:flex-row items-end"
+          className="grid sm:grid-cols-2 xl:flex flex-col lg:flex-row items-end overflow-x-hidden"
         >
           {/* Doctor Image */}
           <motion.div
