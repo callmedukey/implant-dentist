@@ -1,9 +1,8 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
 
+import endApposImage from "@/public/images/end.svg";
 import doctorImage from "@/public/images/intro/doctor-lee.webp";
-import quoteSvg1 from "@/public/images/intro/quote-left-1.svg";
-import quoteSvg2 from "@/public/images/intro/quote-left-2.svg";
 
 import { TextGenerateEffect } from "./text-generate-effect";
 
@@ -56,20 +55,12 @@ const IntroSection = () => {
               </div>
 
               {/* Quote Icon */}
-              <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-[4.8125rem] lg:h-[4.8125rem] bg-white rounded-full flex items-center justify-center">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-[4.8125rem] lg:h-[4.8125rem] rounded-full flex items-center justify-center">
                 <Image
-                  src={quoteSvg1}
+                  src={endApposImage}
                   alt=""
                   unoptimized
                   className="absolute left-[0.2rem]"
-                />
-                <Image
-                  src={quoteSvg2}
-                  alt=""
-                  width={35}
-                  height={55}
-                  unoptimized
-                  className="absolute right-[0.2rem]"
                 />
               </div>
             </div>
@@ -84,7 +75,7 @@ const IntroSection = () => {
               >
                 <TextGenerateEffect
                   words="환자 한 분, 한 분의 소중함을 잊지 않겠습니다."
-                  className="text-14 md:text-xl  text-dark-primary leading-relaxed"
+                  className="text-14 md:text-xl  **:text-dark-primary leading-relaxed"
                   duration={0.8}
                   delay={0}
                 />
@@ -97,7 +88,7 @@ const IntroSection = () => {
               >
                 <TextGenerateEffect
                   words="정확한 진단과 정직한 진료, 그리고 끝까지 책임지는 치료로 보답하겠습니다."
-                  className="text-14 md:text-xl text-dark-primary leading-relaxed"
+                  className="text-14 md:text-xl **:text-dark-primary leading-relaxed"
                   duration={0.8}
                   delay={1.5}
                 />
@@ -110,7 +101,7 @@ const IntroSection = () => {
               >
                 <TextGenerateEffect
                   words="언제 어디서나 같은 마음으로 진료하는 조은이플란트치과가 되겠습니다."
-                  className="text-14 md:text-xl text-dark-primary leading-relaxed"
+                  className="text-14 md:text-xl **:text-dark-primary leading-relaxed"
                   duration={0.8}
                   delay={3}
                 />

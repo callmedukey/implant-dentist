@@ -42,7 +42,7 @@ export default function SpecialImplantPage() {
       {/* 특별한 임플란트 Section - EXACT COPY FROM special-implant/page.tsx */}
       <section
         id="special-implant"
-        className="scroll-mt-[5rem] lg:pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[5rem] lg:scroll-mt-[4.5rem] lg:pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep mt-8 md:mt-0">
           {/* Header Section */}
@@ -431,8 +431,9 @@ export default function SpecialImplantPage() {
                 치과 치료는 끝이 아니라, 관리의 시작입니다.
               </p>
               <p className="text-14 md:text-base lg:text-lg text-dark-primary leading-relaxed">
-                조은이플란트치과는 식립한 임플란트를 오랫동안 잘 사용하실 수
-                있도록 꼼꼼하게 케어해드립니다.
+                조은이플란트치과는 식립한 임플란트를 오랫동안 잘{" "}
+                <br className="lg:hidden" /> 사용하실 수 있도록 꼼꼼하게
+                케어해드립니다.
               </p>
             </motion.div>
           </motion.section>
@@ -442,7 +443,7 @@ export default function SpecialImplantPage() {
       {/* 명품 뼈이식 Section - EXACT COPY FROM bone-graft/page.tsx */}
       <section
         id="bone-graft"
-        className="scroll-mt-[4rem] lg:scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[4rem] lg:scroll-mt-[5.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           <motion.section
@@ -664,7 +665,7 @@ export default function SpecialImplantPage() {
       {/* 디지털 임플란트 Section - EXACT COPY FROM digital/page.tsx */}
       <section
         id="digital"
-        className="scroll-mt-[4.25rem] min-h-screen bg-white pt-8 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[2rem] lg:scroll-mt-[4.5rem] min-h-screen bg-white pt-8 pb-0 md:pt-0 md:pb-0"
       >
         {/* Updated Digital Implant Hero Section */}
         <section className="py-8 md:py-12 lg:py-16">
@@ -817,7 +818,7 @@ export default function SpecialImplantPage() {
               <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-dark-primary mb-3">
                 네비게이션 임플란트
               </h2>
-              <p className="text-14 md:text-base lg:text-2xl text-dark-primary max-w-5xl mx-auto px-4 md:px-8 leading-relaxed mt-4">
+              <p className="text-14 md:text-base lg:text-2xl text-dark-primary max-w-5xl mx-auto px-4 md:px-8 leading-relaxed mt-4 break-keep">
                 네비게이션 임플란트는 3D CT를 통해 골조직, 신경 위치 등을
                 파악하여 디지털 모의 수술을 진행한 후 빠르고 안전성 높은
                 수술경로를 찾아주는 디지털 임플란트 시술방법입니다.
@@ -1255,7 +1256,7 @@ export default function SpecialImplantPage() {
       {/* 보험 임플란트 Section - EXACT COPY FROM insurance/page.tsx */}
       <section
         id="insurance"
-        className="scroll-mt-[4rem] lg:scroll-mt-[6.25rem] pt-4 pb-0 md:pt-0 md:pb-0"
+        className="scroll-mt-[4.5rem] lg:scroll-mt-[5.5rem] pt-4 pb-0 md:pt-0 md:pb-0"
       >
         <div className="flex flex-col items-center py-8 md:py-16 lg:py-20 **:break-keep">
           {/* Header Section */}

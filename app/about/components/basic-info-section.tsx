@@ -76,7 +76,8 @@ const BasicInfoSection = () => {
           viewport={{ once: true }}
         >
           단순한 시술이 아닌, <br className="md:hidden" /> 오랜 시간 건강하게
-          사용할 수 있는 결과를 위해 진심을 다합니다.
+          사용할 수 있는 <br className="md:hidden" /> 결과를 위해 진심을
+          다합니다.
         </motion.p>
       </motion.div>
 

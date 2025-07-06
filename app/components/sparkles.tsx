@@ -184,7 +184,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 distance: {},
                 direction: "none",
                 drift: 0,
-                enable: true,
+                enable: false,
                 gravity: {
                   acceleration: 9.81,
                   enable: false,
@@ -231,17 +231,17 @@ export const SparklesCore = (props: ParticlesProps) => {
                   mode: "delete",
                   value: 0,
                 },
-                value: particleDensity || 120,
+                value: particleDensity || 200,
               },
               opacity: {
                 value: {
-                  min: 0.1,
+                  min: 0.3,
                   max: 1,
                 },
                 animation: {
                   count: 0,
                   enable: true,
-                  speed: speed || 4,
+                  speed: speed || 2,
                   decay: 0,
                   delay: 0,
                   sync: false,
@@ -252,11 +252,11 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               reduceDuplicates: false,
               shadow: {
-                blur: 0,
+                blur: 5,
                 color: {
-                  value: "#000",
+                  value: particleColor || "#ffffff",
                 },
-                enable: false,
+                enable: true,
                 offset: {
                   x: 0,
                   y: 0,
@@ -271,7 +271,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               size: {
                 value: {
                   min: minSize || 1,
-                  max: maxSize || 3,
+                  max: maxSize || 4,
                 },
                 animation: {
                   count: 0,
@@ -286,7 +286,11 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
               stroke: {
-                width: 0,
+                width: 0.5,
+                color: {
+                  value: particleColor || "#ffffff",
+                },
+                opacity: 0.3,
               },
               zIndex: {
                 value: 0,

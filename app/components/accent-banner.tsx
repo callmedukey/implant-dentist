@@ -3,17 +3,17 @@ import Image from "next/image";
 
 import { TextGenerateEffect } from "@/app/components/text-generate-effect";
 import heroImage from "@/public/hero-image.png";
-import whiteLogoImage from "@/public/images/white-accent-logo.svg";
+import titleLogo from "@/public/images/title-logo.svg";
 
 const AccentBanner = () => {
   return (
-    <section className="flex justify-center items-center bg-white py-12  md:min-h-[45rem] px-4 md:px-6 lg:px-8 **:break-keep relative">
+    <section className="flex justify-center items-center bg-white h-[calc(100vh-4rem)] md:min-h-[45rem] px-4 md:px-6 lg:px-8 **:break-keep relative">
       <Image
         src={heroImage}
         alt="조은이플란트치과 전문의"
         fill
         priority
-        className="object-cover object-right grayscale"
+        className="object-cover object-center grayscale"
         quality={100}
         sizes="100vw"
       />
@@ -26,28 +26,36 @@ const AccentBanner = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <Image
+          {/* <Image
             src={whiteLogoImage}
             alt="조은이플란트치과 로고"
             unoptimized
-            className="w-full h-full z-10"
-          />
+            className="w-full h-full z-10 hidden md:block"
+          /> */}
         </motion.div>
-        <motion.h1
-          className="flex flex-col items-center gap-4 w-full"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-        >
-          <TextGenerateEffect
-            words={`"언제 어디서나, 같은 마음으로 진료합니다"`}
-            className="text-white font-pretendard font-bold text-14 md:text-xl lg:text-3xl leading-[160%] text-center"
-            filter={true}
-            duration={0.8}
-            delay={0.4}
+        <div className="flex flex-col gap-4 absolute bottom-36 right-2 lg:right-4">
+          <Image
+            src={titleLogo}
+            alt="조은이플란트치과 로고"
+            unoptimized
+            className="w-full h-full z-10 ml-auto mr-0"
           />
-        </motion.h1>
+          <motion.h1
+            className="flex items-center justify-center gap-0 md:gap-4 w-full"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          >
+            <TextGenerateEffect
+              words={`언제 어디서나, 같은 마음으로 진료합니다`}
+              className="text-white font-pretendard font-bold text-base md:text-xl lg:text-3xl leading-[160%] text-right mr-2 ml-auto md:mx-0"
+              filter={true}
+              duration={0.8}
+              delay={0.4}
+            />
+          </motion.h1>
+        </div>
       </div>
     </section>
   );

@@ -29,7 +29,10 @@ export default function WisdomToothPage() {
   return (
     <main className="min-h-screen bg-white **:break-keep">
       {/* 전문의 직접 발치 Section - EXACT COPY FROM specialist/page.tsx */}
-      <section id="specialist" className="scroll-mt-[5rem]">
+      <section
+        id="specialist"
+        className="scroll-mt-[5rem] lg:scroll-mt-[5.5rem]"
+      >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12 mt-8 md:mt-0">
           <div className="mx-auto max-w-[69.375rem] px-4">
@@ -257,7 +260,10 @@ export default function WisdomToothPage() {
       </section>
 
       {/* 당일 사랑니 발치 Section - EXACT COPY FROM same-day/page.tsx */}
-      <section id="same-day" className="scroll-mt-[4rem] pt-4 md:pt-8">
+      <section
+        id="same-day"
+        className="scroll-mt-[4rem] lg:scroll-mt-[4.75rem] pt-4 md:pt-8"
+      >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-16 md:pb-12">
           <div className="mx-auto max-w-[69.375rem] px-4">
@@ -333,9 +339,8 @@ export default function WisdomToothPage() {
                   <span className="font-bold text-teal-secondary">
                     대학병원 겸임교수로 재직 중인 구강악안면외과 전문의
                   </span>
-                  가
-                  <br className="hidden sm:block" />
-                  직접진단부터 수술까지 원스톱으로 진행합니다.
+                  가 <br className="hidden sm:block" />
+                  직접 진단부터 수술까지 원스톱으로 진행합니다.
                 </p>
               </motion.div>
             </motion.div>

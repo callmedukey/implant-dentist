@@ -58,7 +58,7 @@ const ChronicDiseaseInfo = () => {
           >
             대학병원에서 만성질환 환자들 치료의{" "}
             <span className="text-teal-secondary">경험이</span>
-            <br className="hidden lg:block" />
+            <br className="hidden lg:block" />{" "}
             <span className="text-teal-secondary">풍부한 전문의</span>가 특화된
             진료 프로세스를 바탕으로 <br className="hidden lg:block" />
             <span className="text-teal-secondary"> 안전하게 진료</span>
@@ -88,14 +88,15 @@ const ChronicDiseaseInfo = () => {
               프로세스를 위한 원내 교육
             </h3>
             <p className="text-14 md:text-base lg:text-[1.44rem] leading-[1.6] text-dark-primary text-center lg:text-left">
-              조은이플란트치과는 기저질환을 가지고 있는
+              조은이플란트치과는 기저질환을 가지고 있는{" "}
               <br className="hidden lg:block" />
-              환자분들의 안전한 진료 를 위해
-              <span className="text-teal-secondary">모든 의료진</span>을
-              <br className="hidden lg:block" />
-              대상으로{" "}
-              <span className="text-teal-secondary">정기적인 원내교육</span>을
-              실시합니다
+              환자분들의 <br className="lg:hidden" /> 안전한 진료 를 위해{" "}
+              <span className="text-teal-secondary"> 모든 의료진</span>을
+              <br className="hidden lg:block" /> 대상으로{" "}
+              <br className="lg:hidden" />
+              <span className="text-teal-secondary">
+                정기적인 원내교육
+              </span>을 실시합니다
             </p>
           </div>
         </motion.div>

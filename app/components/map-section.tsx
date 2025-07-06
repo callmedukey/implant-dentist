@@ -27,30 +27,50 @@ const MapSection = () => {
   return (
     <section className="w-full relative">
       {/* Dark background container */}
-      <div className="relative min-h-[480px] lg:min-h-[800px] bg-dark-secondary overflow-hidden">
-        {/* Sparkles background effect */}
+      <div className="relative h-auto md:h-[800px] bg-dark-secondary overflow-hidden">
+        {/* Sparkles background effect - Mobile */}
         <SparklesCore
-          id="map-sparkles"
+          id="map-sparkles-mobile"
           background="transparent"
           particleColor="#ffffff"
           particleDensity={40}
-          className="absolute inset-0"
+          className="absolute inset-0 md:hidden"
           minSize={0.6}
           maxSize={1.4}
-          speed={0.1}
+          speed={0}
         />
-        {/* SVG Map - mobile: full coverage, desktop: aligned to the right */}
-        <div className="absolute md:right-0 md:top-0 md:bottom-0 w-full md:w-[45%] lg:w-[50%] xl:w-[45%] h-full">
+        {/* Sparkles background effect - Desktop */}
+        <SparklesCore
+          id="map-sparkles-desktop"
+          background="transparent"
+          particleColor="#ffffff"
+          particleDensity={20}
+          className="absolute inset-0 hidden md:block"
+          minSize={0.6}
+          maxSize={1.4}
+          speed={0}
+        />
+        {/* SVG Map - mobile version for mobile, desktop version for desktop */}
+        <div className="relative md:absolute top-0 md:right-0 md:top-0 md:bottom-0 w-full md:w-[45%] lg:w-[50%] xl:w-[45%] h-[400px] md:h-full origin-top">
+          {/* Mobile map - visible only on mobile */}
+          {/* <Image
+            src={mapMobileImage}
+            alt="전국 네트워크 지도"
+            fill
+            className="md:hidden object-contain scale-80"
+            unoptimized
+          /> */}
+          {/* Desktop map - visible only on desktop */}
           <Image
             src={mapImage}
             alt="전국 네트워크 지도"
             fill
-            className="object-cover object-center md:object-left"
+            className="object-contain object-top md:object-cover md:object-right scale-80 md:scale-100 origin-top"
             unoptimized
           />
         </div>
 
-        {/* Text overlay - aligned to the left */}
+        {/* Desktop text overlay - aligned to the left */}
         <motion.div
           className="hidden md:block absolute left-[4%] lg:left-[8%] xl:left-[12%] top-1/2 -translate-y-1/2 max-w-[400px] lg:max-w-[480px]"
           initial={{ opacity: 0, x: -30 }}
@@ -101,7 +121,6 @@ const MapSection = () => {
             ))}
           </div>
         </motion.div>
-
       </div>
     </section>
   );

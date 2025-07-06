@@ -44,7 +44,7 @@ export default function DigitalScanner() {
               디지털 치아 제작 시스템과 연동
             </span>
             하여 <br className="md:hidden" /> 더욱더
-            <span className="text-teal-secondary">편안하고 정확한 치료</span>를
+            <span className="text-teal-secondary"> 편안하고 정확한 치료</span>를
             받을 수 있습니다.
           </motion.p>
 

@@ -240,7 +240,7 @@ export default function SpecialSystemPage() {
       </section>
 
       {/* 디지털시스템 Section - EXACT COPY FROM digital/page.tsx */}
-      <section id="digital" className="scroll-mt-[7rem] lg:scroll-mt-[9rem]">
+      <section id="digital" className="scroll-mt-[6.75rem] lg:scroll-mt-[9rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -269,7 +269,7 @@ export default function SpecialSystemPage() {
       {/* 멸균시스템 Section - EXACT COPY FROM sterilization/page.tsx */}
       <section
         id="sterilization"
-        className="scroll-mt-[6rem] lg:scroll-mt-[4rem]"
+        className="scroll-mt-[6.5rem] lg:scroll-mt-[4rem]"
       >
         <div className="flex flex-col items-center gap-8 md:gap-12 lg:gap-[8.125rem] pb-8 md:py-12 lg:py-24 **:break-keep mb-8 md:mb-12 lg:mb-24">
           {/* Hero Section */}
@@ -465,7 +465,7 @@ export default function SpecialSystemPage() {
       {/* 보증 시스템 Section - EXACT COPY FROM warranty/page.tsx */}
       <section
         id="warranty"
-        className="scroll-mt-[5.5rem] lg:scroll-mt-[4.5rem]"
+        className="scroll-mt-[5.25rem] lg:scroll-mt-[4.5rem]"
       >
         <div className="flex flex-col items-center py-8 md:py-12 lg:py-24 **:break-keep">
           {/* Header Section */}

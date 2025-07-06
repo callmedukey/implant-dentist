@@ -45,10 +45,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* 병원소개 Section */}
-      <section
-        id="about"
-        className="scroll-mt-[6.25rem] lg:scroll-mt-[8.25rem]"
-      >
+      <section id="about" className="scroll-mt-[4.5rem] lg:scroll-mt-[8.25rem]">
         <AccentSection />
         <ImageWithOverlayTextSection />
         <BasicInfoSection />
@@ -59,7 +56,7 @@ export default function AboutPage() {
       {/* 주치의 소개 Section */}
       <section
         id="doctors"
-        className="scroll-mt-[6.25rem] lg:scroll-mt-[6.25rem] mt-8"
+        className="scroll-mt-[5rem] lg:scroll-mt-[6.25rem] mt-8"
       >
         <DoctorsHeadingSection />
         <DoctorsIntroSection />
@@ -68,7 +65,7 @@ export default function AboutPage() {
       {/* 의료진 소개 Section - From staff/page.tsx */}
       <motion.section
         id="staff"
-        className="scroll-mt-[5rem]"
+        className="scroll-mt-[4.25rem] lg:scroll-mt-[4.8rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -183,7 +180,7 @@ export default function AboutPage() {
                 <br className="md:hidden" /> 제공해 드릴 것을 약속드립니다.
               </motion.p>
 
-              <motion.div className="flex flex-wrap justify-center items-center gap-2">
+              <motion.div className="flex lg:flex-wrap justify-center items-center gap-2 whitespace-nowrap">
                 <motion.span
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -234,7 +231,7 @@ export default function AboutPage() {
       {/* 치과 둘러보기 Section - From clinic-tour/page.tsx */}
       <motion.section
         id="clinic-tour"
-        className="scroll-mt-[6rem] lg:scroll-mt-[8rem]"
+        className="scroll-mt-[5rem] lg:scroll-mt-[8rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -277,7 +274,7 @@ export default function AboutPage() {
       {/* 진료 및 예약 안내 Section - From reservation/page.tsx */}
       <motion.section
         id="reservation"
-        className="scroll-mt-[6rem] lg:scroll-mt-[8rem]"
+        className="scroll-mt-[5rem] lg:scroll-mt-[8rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -588,7 +585,7 @@ export default function AboutPage() {
       {/* 오시는 길 Section - From location/page.tsx */}
       <motion.section
         id="location"
-        className="scroll-mt-[6rem] lg:scroll-mt-[8rem]"
+        className="scroll-mt-[5rem] lg:scroll-mt-[8rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

@@ -32,7 +32,10 @@ export default function NaturalToothPage() {
   return (
     <main className="**:break-keep">
       {/* 치근단절제술 Section - EXACT COPY FROM apicectomy/page.tsx */}
-      <section id="apicectomy" className="scroll-mt-[6.25rem] mt-16 md:mt-0">
+      <section
+        id="apicectomy"
+        className="scroll-mt-[5.75rem] lg:scroll-mt-[6.25rem] mt-16 md:mt-0"
+      >
         <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 **:break-keep">
           {/* Header Section */}
           <motion.section
@@ -529,7 +532,7 @@ export default function NaturalToothPage() {
       {/* MTA 신경치료 Section - EXACT COPY FROM mta/page.tsx */}
       <section
         id="mta"
-        className="scroll-mt-[6rem] min-h-screen bg-white **:break-keep"
+        className="scroll-mt-[5rem] lg:scroll-mt-[5.5rem] min-h-screen bg-white **:break-keep"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-4 md:pt-20 md:pb-12">
@@ -703,12 +706,12 @@ export default function NaturalToothPage() {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative flex flex-col gap-2 py-6 md:py-12 justify-center items-start max-w-6xl mx-auto w-full px-4 text-center md:text-left"
+              className="relative flex flex-col gap-2 py-6 md:py-12 justify-center items-start max-w-6xl mx-auto w-full px-4 md:text-left"
             >
-              <p className="text-14 md:text-lg lg:text-[1.2rem] text-white leading-[1.6] text-center mx-auto md:mx-0">
+              <p className="text-14 md:text-lg lg:text-[1.2rem] text-white leading-[1.6]">
                 Periodontal Treatment
               </p>
-              <h2 className="text-lg md:text-3xl lg:text-[2.489rem] font-bold text-white leading-[1.6] text-center mx-auto md:mx-0">
+              <h2 className="text-lg md:text-3xl lg:text-[2.489rem] font-bold text-white leading-[1.6]">
                 잇몸치료란?
               </h2>
               <p className="text-14 md:text-xl text-white leading-[1.6] max-w-2xl break-keep">

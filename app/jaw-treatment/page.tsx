@@ -42,7 +42,10 @@ export default function JawTreatmentPage() {
   return (
     <main className="**:break-keep">
       {/* 턱관절 질환 Section - EXACT COPY FROM disease/page.tsx */}
-      <section id="disease" className="scroll-mt-[6.25rem]">
+      <section
+        id="disease"
+        className="scroll-mt-[5.75rem] lg:scroll-mt-[6.25rem]"
+      >
         <div className="flex flex-col items-center p-4 md:py-12 lg:py-16 **:break-keep mt-16 md:mt-0">
           {/* Header Section */}
           <motion.section
@@ -689,7 +692,7 @@ export default function JawTreatmentPage() {
       {/* 턱관절 치료 전문장비 Section - EXACT COPY FROM equipment/page.tsx */}
       <section
         id="equipment"
-        className="scroll-mt-[5rem] lg:scroll-mt-[4rem] bg-white **:break-keep pt-4 md:pt-8"
+        className="scroll-mt-[4.25rem] lg:scroll-mt-[4rem] bg-white **:break-keep pt-4 md:pt-8"
       >
         {/* Hero Section */}
         <section className="pt-8 pb-6 md:pt-20 md:pb-16">
@@ -850,7 +853,7 @@ export default function JawTreatmentPage() {
       {/* 스플린트 치료 Section - EXACT COPY FROM splint/page.tsx */}
       <section
         id="splint"
-        className="scroll-mt-[6.25rem] relative pb-6 sm:mb-12 mb-6"
+        className="scroll-mt-[6rem] lg:scroll-mt-[6.25rem] relative pb-6 sm:mb-12 mb-6"
       >
         <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 **:break-keep">
           {/* Header Section */}

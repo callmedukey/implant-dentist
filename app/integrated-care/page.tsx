@@ -37,7 +37,10 @@ export default function IntegratedCarePage() {
   return (
     <main className="**:break-keep">
       {/* 치아미백 Section - EXACT COPY FROM whitening/page.tsx */}
-      <section id="whitening" className="scroll-mt-[5.5rem]">
+      <section
+        id="whitening"
+        className="scroll-mt-[5.75rem] lg:scroll-mt-[6rem]"
+      >
         <div className="flex flex-col items-center py-4 md:py-12 lg:py-16 mt-16 md:mt-0">
           {/* Header Section */}
           <motion.section
@@ -656,7 +659,10 @@ export default function IntegratedCarePage() {
       </section>
 
       {/* 구강연조직질환 Section - EXACT COPY FROM soft-tissue/page.tsx */}
-      <section id="soft-tissue" className="scroll-mt-[6rem] mt-2">
+      <section
+        id="soft-tissue"
+        className="scroll-mt-[5.25rem] lg:scroll-mt-[6rem] mt-2"
+      >
         <div className="flex flex-col items-center py-8 md:py-12 lg:py-16 **:break-keep">
           {/* Header Section */}
           <motion.section
