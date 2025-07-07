@@ -20,7 +20,7 @@ const AccentSection = () => {
           <p className="text-base md:text-xl lg:text-2xl text-dark-primary text-center sm:font-bold mt-2">
             {`조은이플란트치과는 "`}
             <span className="text-teal-secondary font-bold">좋은 치아</span>
-            {`"와`}
+            {`"와 `}
             <br className="md:hidden" />
             &quot;
             <span className="text-teal-secondary font-bold">좋은 임플란트</span>
