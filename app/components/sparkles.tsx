@@ -235,8 +235,8 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               opacity: {
                 value: {
-                  min: 0.3,
-                  max: 1,
+                  min: 0.1,
+                  max: 0.5,
                 },
                 animation: {
                   count: 0,
@@ -252,7 +252,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               reduceDuplicates: false,
               shadow: {
-                blur: 5,
+                blur: 15,
                 color: {
                   value: particleColor || "#ffffff",
                 },
@@ -286,11 +286,11 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
               stroke: {
-                width: 0.5,
+                width: 0,
                 color: {
                   value: particleColor || "#ffffff",
                 },
-                opacity: 0.3,
+                opacity: 0,
               },
               zIndex: {
                 value: 0,
