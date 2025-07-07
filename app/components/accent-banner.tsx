@@ -33,19 +33,24 @@ const AccentBanner = () => {
             className="w-full h-full z-10 hidden md:block"
           /> */}
         </motion.div>
-        <div className="flex flex-col gap-4 absolute bottom-36 right-2 lg:right-4">
-          <Image
-            src={titleLogo}
-            alt="조은이플란트치과 로고"
-            unoptimized
-            className="w-full h-full z-10 ml-auto mr-0"
-          />
+        <div className="flex flex-col gap-4 absolute bottom-52 lg:bottom-36 right-2 lg:right-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <Image
+              src={titleLogo}
+              alt="조은이플란트치과 로고"
+              unoptimized
+              className="w-full h-full z-10 ml-auto mr-0"
+            />
+          </motion.div>
           <motion.h1
             className="flex items-center justify-center gap-0 md:gap-4 w-full"
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           >
             <TextGenerateEffect
               words={`언제 어디서나, 같은 마음으로 진료합니다`}
