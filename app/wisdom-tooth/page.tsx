@@ -67,8 +67,8 @@ export default function WisdomToothPage() {
               className="text-center mb-4 md:mb-8"
             >
               <h2 className="text-lg md:text-3xl lg:text-4xl font-bold text-teal-secondary">
-                조은이플란트치과에서는 구강악면외과 <br className="sm:hidden" />{" "}
-                전문의가 직접 발치합니다
+                조은이플란트치과에서는 구강악안면외과{" "}
+                <br className="sm:hidden" /> 전문의가 직접 발치합니다
               </h2>
             </motion.div>
 

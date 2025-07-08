@@ -171,8 +171,8 @@ const FixedMenus = () => {
   return (
     <>
       {/* Mobile Fixed Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/80 border-t border-gray-200 shadow-lg">
-        <div className="flex flex-row items-stretch justify-around">
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/80 border-t border-gray-200 shadow-lg h-20">
+        <div className="flex flex-row items-stretch justify-around h-full">
           {/* Kakao Talk */}
           <a
             href="https://pf.kakao.com/_FMavxj/chat"

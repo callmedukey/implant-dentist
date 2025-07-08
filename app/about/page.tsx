@@ -515,7 +515,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <Link
-                      href="#"
+                      href="https://pf.kakao.com/_FMavxj/chat"
                       className="mt-4 md:mt-6 inline-flex items-center gap-2 md:gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-4 md:px-6 py-1 rounded-full transition-colors"
                     >
                       <span className="text-14 md:text-base">예약하기</span>
@@ -560,7 +560,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <Link
-                      href="#"
+                      href="https://booking.naver.com/booking/13/bizes/860783?tr=bnm"
                       className="mt-4 md:mt-6 inline-flex items-center gap-2 md:gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-4 md:px-6 py-1 rounded-full transition-colors"
                     >
                       <span className="text-14 md:text-base">예약하기</span>
@@ -659,11 +659,30 @@ export default function AboutPage() {
                 </h2>
                 <div className="flex items-center w-full lg:w-1/2">
                   <div className="h-[3px] bg-teal-secondary flex-1"></div>
+                  {/* Desktop Link */}
                   <Link
                     href="https://kko.kakao.com/jNJnAxyTJp"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
+                    className="hidden md:inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
+                  >
+                    <span className="text-14 md:text-base">길 찾기</span>
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path
+                        d="M1 4H9M9 4L6 1M9 4L6 7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                  {/* Mobile Link */}
+                  <Link
+                    href="https://map.kakao.com/?urlX=520488.00000000023&urlY=1196328.0000000028&itemId=445232190&q=%EC%A1%B0%EC%9D%80%EC%9D%B4%ED%94%8C%EB%9E%80%ED%8A%B8%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&srcid=445232190&map_type=TYPE_MAP&from=roughmap"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex md:hidden items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
                   >
                     <span className="text-14 md:text-base">길 찾기</span>
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
@@ -775,11 +794,30 @@ export default function AboutPage() {
                 </h2>
                 <div className="flex items-center w-full lg:w-1/2">
                   <div className="h-[3px] bg-teal-secondary flex-1"></div>
+                  {/* Desktop Link */}
                   <Link
                     href="https://kko.kakao.com/jNJnAxyTJp"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
+                    className="hidden md:inline-flex items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
+                  >
+                    <span className="text-14 md:text-base">길 안내 시작</span>
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path
+                        d="M1 4H9M9 4L6 1M9 4L6 7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                  {/* Mobile Link */}
+                  <Link
+                    href="https://map.kakao.com/?urlX=520488.00000000023&urlY=1196328.0000000028&itemId=445232190&q=%EC%A1%B0%EC%9D%80%EC%9D%B4%ED%94%8C%EB%9E%80%ED%8A%B8%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&srcid=445232190&map_type=TYPE_MAP&from=roughmap"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex md:hidden items-center gap-4 bg-teal-secondary hover:bg-teal-primary text-white px-6 py-1 rounded-full transition-colors -mx-1 z-10"
                   >
                     <span className="text-14 md:text-base">길 안내 시작</span>
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">

@@ -58,7 +58,7 @@ export default function WisdomToothPage() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-teal-secondary">
-              조은이플란트치과에서는 구강악면외과 전문의가 직접 발치합니다
+              조은이플란트치과에서는 구강악안면외과 전문의가 직접 발치합니다
             </h2>
           </motion.div>
 

@@ -37,7 +37,7 @@ const MapSection = () => {
           className="absolute inset-0 md:hidden"
           minSize={1}
           maxSize={2.5}
-          speed={2}
+          speed={1}
         />
         {/* Sparkles background effect - Desktop */}
         <SparklesCore
@@ -48,7 +48,7 @@ const MapSection = () => {
           className="absolute inset-0 hidden md:block"
           minSize={1}
           maxSize={2.5}
-          speed={2}
+          speed={1}
         />
         {/* SVG Map - mobile version for mobile, desktop version for desktop */}
         <div className="relative md:absolute top-0 md:right-0 md:top-0 md:bottom-0 w-full md:w-[45%] lg:w-[50%] xl:w-[45%] h-[400px] md:h-full origin-top">

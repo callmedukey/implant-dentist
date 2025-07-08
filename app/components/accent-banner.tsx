@@ -7,13 +7,13 @@ import titleLogo from "@/public/images/title-logo.svg";
 
 const AccentBanner = () => {
   return (
-    <section className="flex justify-center items-center bg-white h-[calc(100vh-4rem)] md:min-h-[45rem] px-4 md:px-6 lg:px-8 **:break-keep relative">
+    <section className="flex justify-center items-center bg-white h-[calc(100vh-4rem-4rem-5rem)] sm:h-[calc(100vh-6.25rem-4rem)] md:h-[calc(100vh-6.25rem-3.75rem)] lg:h-[calc(100vh-6.25rem-3.75rem)] px-4 md:px-6 lg:px-8 **:break-keep relative">
       <Image
         src={heroImage}
         alt="조은이플란트치과 전문의"
         fill
         priority
-        className="object-cover object-center grayscale"
+        className="object-cover object-center grayscale lg:object-bottom"
         quality={100}
         sizes="100vw"
       />
@@ -33,7 +33,7 @@ const AccentBanner = () => {
             className="w-full h-full z-10 hidden md:block"
           /> */}
         </motion.div>
-        <div className="flex flex-col gap-4 absolute bottom-52 lg:bottom-36 right-2 lg:right-4">
+        <div className="flex flex-col gap-4 absolute bottom-4 right-2 lg:right-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
