@@ -42,7 +42,7 @@ export default function PopupDisplay({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[95vw] max-h-[80vh] p-0 overflow-hidden flex flex-col gap-0">
+      <DialogContent className="max-w-[95vw] md:max-w-[45vw] lg:max-w-[600px] max-h-[80vh] p-0 overflow-hidden flex flex-col gap-0">
         <div
           className={cn(
             "flex-1 overflow-y-auto p-6",

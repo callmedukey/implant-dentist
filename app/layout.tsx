@@ -6,7 +6,7 @@ import FixedContactBanner from "@/components/layout/fixed-contact-banner";
 import FixedMenus from "@/components/layout/fixed-menus";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
-import PopupProvider from "@/components/popup-provider";
+import PopupProviderWrapper from "@/components/popup-provider-wrapper";
 import { cn } from "@/lib/utils";
 
 const Pretendard = localFont({
@@ -65,13 +65,13 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={cn(`${Pretendard.variable} antialiased`)}>
-        <PopupProvider>
+        <PopupProviderWrapper>
           <Header />
           <main className="pt-[4rem] sm:pt-[6.25rem]">{children}</main>
           <Footer />
           <FixedMenus />
           <FixedContactBanner />
-        </PopupProvider>
+        </PopupProviderWrapper>
       </body>
     </html>
   );
