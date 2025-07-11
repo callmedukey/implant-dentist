@@ -9,6 +9,7 @@ import DoctorsHeadingSection from "@/app/components/doctors-heading-section";
 import DoctorsIntroSection from "@/app/components/doctors-intro-section";
 import locationDetailMap from "@/public/images/location/location-detail-map.webp";
 import locationParking from "@/public/images/location/location-parking.webp";
+import locationSub from "@/public/images/location/location-sub.png";
 import kakaoChatImage from "@/public/images/reservation/kakao-chat.webp";
 import naverBookingImage from "@/public/images/reservation/naver-booking.webp";
 import phoneIcon from "@/public/images/reservation/phone-icon.svg";
@@ -21,8 +22,6 @@ import BasicInfoSection from "./components/basic-info-section";
 import ImageBanner from "./components/image-banner";
 import ImageWithOverlayTextSection from "./components/image-with-overlay-text-section";
 import KakaoMap from "./components/kakao-map";
-
-import locationSub from "@/public/images/location/location-sub.png";
 
 // Import components from doctors page
 
