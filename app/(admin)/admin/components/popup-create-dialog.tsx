@@ -17,7 +17,10 @@ export default function PopupCreateDialog() {
   const [state, action, pending] = useActionState(createPopupAction, {});
   const [popupType, setPopupType] = useState<PopupType>("TEXT");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
-  const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null);
+  const [imageDimensions, setImageDimensions] = useState<{
+    width: number;
+    height: number;
+  } | null>(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -42,7 +45,7 @@ export default function PopupCreateDialog() {
       reader.onloadend = () => {
         const result = reader.result as string;
         setImagePreview(result);
-        
+
         // Get image dimensions
         const img = new Image();
         img.onload = () => {
