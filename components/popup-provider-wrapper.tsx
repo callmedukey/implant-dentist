@@ -1,3 +1,4 @@
+import type { Popup, PopupImage } from "@/prisma/generated/prisma";
 import { prisma } from "@/prisma/prisma-client";
 
 import PopupProvider from "./popup-provider";
@@ -7,8 +8,8 @@ export default async function PopupProviderWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  let popups = [];
-  
+  let popups: (Popup & { popupImage: PopupImage | null })[] = [];
+
   try {
     popups = await prisma.popup.findMany({
       include: {
@@ -24,9 +25,9 @@ export default async function PopupProviderWrapper({
 
   // Generate preload links for popup images
   const preloadLinks = popups
-    .filter(popup => popup.popupImage?.imageUrl)
+    .filter((popup) => popup.popupImage?.imageUrl)
     .slice(0, 2) // Preload only first 2 images to avoid performance impact
-    .map(popup => (
+    .map((popup) => (
       <link
         key={popup.id}
         rel="preload"
