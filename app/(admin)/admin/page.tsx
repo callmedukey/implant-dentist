@@ -54,7 +54,7 @@ export default async function AdminPage() {
           action={async () => {
             "use server";
             const { signOut } = await import("@/auth");
-            await signOut({ redirectTo: "/admin/login" });
+            await signOut({ redirectTo: "/login" });
           }}
         >
           <button
