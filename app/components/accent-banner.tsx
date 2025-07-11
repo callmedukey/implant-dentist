@@ -2,12 +2,17 @@ import * as motion from "motion/react-client";
 import Image from "next/image";
 
 import { TextGenerateEffect } from "@/app/components/text-generate-effect";
+import { cn } from "@/lib/utils";
 import heroImage from "@/public/hero-image.png";
 import titleLogo from "@/public/images/title-logo.svg";
 
-const AccentBanner = () => {
+const AccentBanner = async () => {
   return (
-    <section className="flex justify-center items-center bg-white h-[calc(100vh-4rem-4rem)] sm:h-[calc(100vh-6.25rem-4rem)] md:h-[calc(100vh-6.25rem-3.75rem)] lg:h-[calc(100vh-6.25rem-3.75rem)] px-4 md:px-6 lg:px-8 **:break-keep relative">
+    <section
+      className={cn(
+        "flex justify-center items-center bg-white h-[calc(100vh-4rem-4rem)] sm:h-[calc(100vh-6.25rem-4rem)] md:h-[calc(100vh-6.25rem-3.75rem)] lg:h-[calc(100vh-6.25rem-3.75rem)] px-4 md:px-6 lg:px-8 **:break-keep relative"
+      )}
+    >
       <Image
         src={heroImage}
         alt="조은이플란트치과 전문의"
@@ -33,7 +38,11 @@ const AccentBanner = () => {
             className="w-full h-full z-10 hidden md:block"
           /> */}
         </motion.div>
-        <div className="flex flex-col gap-4 absolute bottom-28 lg:bottom-4 right-2 lg:right-4">
+        <div
+          className={cn(
+            "flex flex-col gap-4 absolute bottom-28 lg:bottom-4 right-2 lg:right-4"
+          )}
+        >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
