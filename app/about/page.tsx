@@ -8,7 +8,6 @@ import { ClinicCarousel } from "@/app/clinic-tour/components/clinic-carousel";
 import DoctorsHeadingSection from "@/app/components/doctors-heading-section";
 import DoctorsIntroSection from "@/app/components/doctors-intro-section";
 import locationDetailMap from "@/public/images/location/location-detail-map.webp";
-import locationInterior from "@/public/images/location/location-interior.webp";
 import locationParking from "@/public/images/location/location-parking.webp";
 import kakaoChatImage from "@/public/images/reservation/kakao-chat.webp";
 import naverBookingImage from "@/public/images/reservation/naver-booking.webp";
@@ -22,6 +21,8 @@ import BasicInfoSection from "./components/basic-info-section";
 import ImageBanner from "./components/image-banner";
 import ImageWithOverlayTextSection from "./components/image-with-overlay-text-section";
 import KakaoMap from "./components/kakao-map";
+
+import locationSub from "@/public/images/location/location-sub.png";
 
 // Import components from doctors page
 
@@ -766,7 +767,7 @@ export default function AboutPage() {
                     className="relative w-full h-[150px] md:h-[200px] lg:h-[208px] rounded-lg overflow-hidden"
                   >
                     <Image
-                      src={locationInterior}
+                      src={locationSub}
                       alt="조은이플란트치과 내부"
                       fill
                       quality={100}
