@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { TextGenerateEffect } from "@/app/components/text-generate-effect";
 import { cn } from "@/lib/utils";
-import heroImage from "@/public/hero-image.png";
+import heroImage from "@/public/hero-image-3.png";
 import titleLogo from "@/public/images/title-logo.svg";
 
 const AccentBanner = async () => {
