@@ -116,8 +116,6 @@ export default function IntegratedCarePage() {
                       <Image
                         src={toothIcon1}
                         alt=""
-                        width={50}
-                        height={47}
                         unoptimized
                         className="absolute left-0 top-[10px] md:top-[15px] lg:top-[25px] w-[35px] md:w-[45px] lg:w-[63px] h-auto"
                       />
