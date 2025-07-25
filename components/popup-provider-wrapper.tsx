@@ -26,7 +26,7 @@ export default async function PopupProviderWrapper({
   // Generate preload links for popup images
   const preloadLinks = popups
     .filter((popup) => popup.popupImage?.imageUrl)
-    .slice(0, 2) // Preload only first 2 images to avoid performance impact
+    .slice(0, 3) // Preload only first 3 images to avoid performance impact
     .map((popup) => (
       <link
         key={popup.id}

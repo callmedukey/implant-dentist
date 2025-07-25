@@ -22,6 +22,7 @@ export default function PopupProvider({
   const [isDesktop, setIsDesktop] = useState(false);
   const [showFirstPopup, setShowFirstPopup] = useState(false);
   const [showSecondPopup, setShowSecondPopup] = useState(false);
+  const [showThirdPopup, setShowThirdPopup] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
   // Set mounted state
@@ -94,8 +95,13 @@ export default function PopupProvider({
   // Show popups when they're loaded
   useEffect(() => {
     if (visiblePopups.length > 0) {
-      if (isDesktop && visiblePopups.length >= 2) {
-        // On desktop with 2+ popups, show both
+      if (isDesktop && visiblePopups.length >= 3) {
+        // On desktop with 3+ popups, show all three
+        setShowFirstPopup(true);
+        setShowSecondPopup(true);
+        setShowThirdPopup(true);
+      } else if (isDesktop && visiblePopups.length >= 2) {
+        // On desktop with 2 popups, show both
         setShowFirstPopup(true);
         setShowSecondPopup(true);
       } else if (!showPopup) {
@@ -131,14 +137,20 @@ export default function PopupProvider({
     }
   };
 
+  const handleThirdPopupClose = (open: boolean) => {
+    if (!open) {
+      setShowThirdPopup(false);
+    }
+  };
+
   const currentPopup = visiblePopups[currentPopupIndex] || null;
 
-  // Desktop: Show two popups side by side
+  // Desktop: Show popups side by side (up to 3)
   if (isDesktop && visiblePopups.length >= 2) {
     return (
       <>
         {children}
-        <div className="fixed inset-0 z-50 flex items-center justify-center gap-4 p-4" style={{ display: showFirstPopup || showSecondPopup ? 'flex' : 'none' }}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center gap-4 p-4" style={{ display: showFirstPopup || showSecondPopup || showThirdPopup ? 'flex' : 'none' }}>
           {showFirstPopup && visiblePopups[0] && (
             <div className="relative">
               <PopupDisplay
@@ -154,6 +166,15 @@ export default function PopupProvider({
                 popup={visiblePopups[1]}
                 open={showSecondPopup}
                 onOpenChange={handleSecondPopupClose}
+              />
+            </div>
+          )}
+          {showThirdPopup && visiblePopups[2] && (
+            <div className="relative">
+              <PopupDisplay
+                popup={visiblePopups[2]}
+                open={showThirdPopup}
+                onOpenChange={handleThirdPopupClose}
               />
             </div>
           )}
