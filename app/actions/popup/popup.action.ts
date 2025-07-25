@@ -138,6 +138,7 @@ export async function createPopupAction(
     });
 
     revalidatePath("/admin");
+    revalidatePath("/", "layout"); // Revalidate root layout to show new popups
 
     return { success: true };
   } catch (error) {
@@ -181,4 +182,5 @@ export async function deletePopupAction(id: string): Promise<void> {
   });
 
   revalidatePath("/admin");
+  revalidatePath("/", "layout"); // Revalidate root layout to reflect deleted popups
 }
